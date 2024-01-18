@@ -1,6 +1,10 @@
-# Introduction
+# About
 
-This is a book created from markdown and executable code.
+This is my online Learning diary.
+
+In CASA0023 we are asked to make a portfolio that will help us in the future.
+
+Hi! I am Sameera. My friends call me SAM Sammy or SAMUDA. My love for geography got me into this course and this place. It's a dream to come here.
 
 See @knuth84 for additional discussion of literate programming.
 

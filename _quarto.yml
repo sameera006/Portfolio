@@ -3,12 +3,13 @@ project:
   output-dir: docs 
 
 book:
-  title: "pf"
-  author: "Norah Jones"
+  title: "Week1"
+  author: "Sameera Siddiqui"
   date: "18/1/2024"
   chapters:
     - index.qmd
     - intro.qmd
+    - Week2.qmd
     - summary.qmd
     - references.qmd
 
@@ -19,6 +20,10 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+    docx:
+    reference-doc: custom-reference-doc.docx
 
 editor: visual
 
+
+  

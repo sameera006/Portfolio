@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Week1",
     "section": "",
-    "text": "Preface\nMY ONLINE LEARNING DIARY\nWEEK 1\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Preface\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "1  About",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "This is my online Learning diary.\nIn CASA0023 we are asked to make a portfolio that will help us in the future.\nHi! I am Sameera. My friends call me SAM Sammy or SAMUDA. My love for geography got me into this course and this place. It’s a dream to come here.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "Week2.html#quarto",
@@ -39,6 +39,13 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "(“What Is Space Junk and Why Is It a Problem?” n.d.)\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\n“What Is Space Junk and Why Is It a Problem?” n.d. https://www.nhm.ac.uk/discover/what-is-space-junk-and-why-is-it-a-problem.html."
+  },
+  {
+    "objectID": "Week2.html#xaringan-presentation",
+    "href": "Week2.html#xaringan-presentation",
+    "title": "2  Week 2",
+    "section": "2.1 Xaringan Presentation",
+    "text": "2.1 Xaringan Presentation"
   }
 ]

@@ -1,0 +1,23 @@
+hhproject:
+  type: book
+
+book:
+  title: "pf"
+  author: "Norah Jones"
+  date: "18/1/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

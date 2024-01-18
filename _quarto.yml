@@ -1,5 +1,6 @@
-hhproject:
+project:
   type: book
+  output-dir: docs
 
 book:
   title: "pf"

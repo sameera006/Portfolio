@@ -51,12 +51,3 @@ When I think about remote sensing the first thing that comes to my mind is high-
 **Atmospheric correction**-
 
 Now the tools are so good that imagery downloaded can be cleaned just like clean data or use .csv or .shp file for GIS work. We can remove all the bad layers. And run the software as many times to get the best clean image. Its like removing all the NaNs.
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).

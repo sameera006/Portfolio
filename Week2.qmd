@@ -8,6 +8,6 @@ title: "Week 2"
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
-  url = "https://github.com/sameera006/remotesensing/blob/main/wk2-presentation.Rmd",
+  url = "https://sameera006.github.io/remotesensing/",
   ratio = "16:9")
 ```

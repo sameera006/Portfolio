@@ -8,15 +8,25 @@ title: "week1"
 
 **Summary**
 
-So basically, this module is all about how to learn to use remotely sensed earth observation data to make some informed decisions on environmental hazards arising from changing climate.
+CASA0023 Remotely Sensing Cities and Environments is about remotely sensed earth observation(EO) data to make some informed decisions on environmental hazards arising from changing climate.
 
-What is remote sensing?
+**What is remote sensing?**
 
-According to NASA, Remote Sensing is acquiring information from a distance.
+According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (in situ or in-place data collection), and/or at some remote distance from the subject matter known as **Remote Sensing** of the environment. Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.
+
+The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.
+
+![](images/optical.gif){fig-align="center"}
 
 **Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission. It can also refer to smaller things, like bits of debris or paint flecks that have fallen off a rocket. Some human-made junk has been left on the Moon, too.
 
-![](images/international-space-station-two-column.jpg.thumb.768.768.jpg){width="463"}
+![](images/international-space-station-two-column.jpg.thumb.768.768.jpg){fig-align="center" width="463"}
+
+**Spectral Resolution** is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.
+
+**Spatial Resolution** is a measure of the smallest angular or linear separation between two objects that can be resolved by the remote sensing system.
+
+**Temporal Resolution** The temporal resolution of a remote sensing system generally refers to how often and when the sensor records imagery of a particular area.
 
 The **Hot topics** being discussed around the world like urban green space and accessibility, Illegal logging, Forest Fire, and temperature studies.
 
@@ -28,11 +38,15 @@ The main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across
 
 Landsat 8 --its history like the origin of satellite imagery USGS -Landsat 8 has a mission to collect global data and give scientists the ability to access changes in Earth's landscape.
 
+Remote sensing is performed using an instrument, often referred to as a sensor.
+
 Two types of **Sensors**
 
-Passive
+Passive sensors record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.
 
-Active
+and Active such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.
+
+Remote sensor data are collected passively (e.g. digital cameras) or actively (e.g., RADAR, LiDAR) using analog or digital remote sensing instruments.
 
 **Atmospheric scattering**
 
@@ -42,11 +56,33 @@ Atmospheric scattering is a natural phenomenon that can be described as the resu
 
 Rayleigh scattering describes the behavior of light when interacting with very small particles (most of the particles present in the atmosphere). Mie scattering can be used to describe the behavior of light interacting with any kind of particles, nevertheless, it is mostly used to describe the interaction with larger particles such as haze. The core of the atmospheric scattering computational models is the method to solve the scattering equations of Mie and Rayleigh.
 
-![](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){width="488"}
+![](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="488"}
+
+**Application**
 
 ***Self-Reflection***
 
-When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It's just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use landcover and generate environmental impact assessment reports for work.
+When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It's just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps.
+
+Some terminology I came across-
+
+Thermometer-measure the temperature of the air, soil, or water
+
+Anemometer-measure wind speed
+
+Psychrometer-to measure air humidity
+
+GPS-Global Positioning System
+
+Transducers
+
+Spectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.
+
+leaf area index-(LAI)
+
+RADAR-Radio detection and Ranging
+
+LiDAR-Light detection and Ranging
 
 **Atmospheric correction**-
 

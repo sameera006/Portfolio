@@ -1,6 +1,4 @@
-##  {#sec-my-online-learning-diary style="color:gray;"}
-
-# About
+# ABOUT
 
 This is my online Learning diary.
 

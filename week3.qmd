@@ -6,16 +6,16 @@ editor: visual
 
 ## **CORRECTIONS**
 
-**SUMMARY**
+## **SUMMARY**
 
 This week we looked at the story of Virginia Norwood known as the mother of Landsat. She designed the Multispectral Scanner (MSS) against the good old RBV(return beam vidicon) sensor.
 
-Landsat collects images in long narrow strips called \"swaths.\" Each swath is 185 kilometers (115 miles) wide and is 2,752 kilometers (1,710 miles) from the next adjacent swath taken that day. It takes 16 days for the swaths to overlap enough to image the whole Earth. Previous Landsat sensors swept back and forth across the swath like a whisk broom to collect data. The sensor looked at a calibration source at the end of every row, which means that measurements were consistent from orbit to orbit.
+Landsat collects images in long narrow strips called "swaths." Each swath is 185 kilometers (115 miles) wide and is 2,752 kilometers (1,710 miles) from the next adjacent swath taken that day. It takes 16 days for the swaths to overlap enough to image the whole Earth. Previous Landsat sensors swept back and forth across the swath like a whisk broom to collect data. The sensor looked at a calibration source at the end of every row, which means that measurements were consistent from orbit to orbit.
 
 \
 In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a push broom. This approach requires no moving parts and gives the sensor detectors greater dwell time. The push broom instrument is smaller and lighter than previous whisk broom instruments, but its calibration is much more complex given the large number of detectors.\
 \
-\"It was a natural step to evolve to a pushbroom sensor. The technology was proven on other satellites, and we knew we could get better accuracy. The pushbroom has no moving parts. It is a newer and more reliable technology.\"
+"It was a natural step to evolve to a pushbroom sensor. The technology was proven on other satellites, and we knew we could get better accuracy. The pushbroom has no moving parts. It is a newer and more reliable technology."
 
 Pushbroom vs Whiskbroom
 
@@ -49,19 +49,48 @@ The two most important sources of environmental attenuation are 1) atmosphere at
 
 Sometimes the remotely sensed data must be atmospherically corrected. For example, it is usually necessary to atmospherically correct the remote sensor data if biophysical parameters are going to be extracted from water bodies (e.g., chlorophyll a, suspended sediment, temperature) or vegetation (e.g., biomass, leaf-area-index, chlorophyll, percent canopy closure). If the data are not corrected, the subtle differences in reflectance (or emittance) among the important constituents may be lost.
 
-For example, consider the case of the normalized dif- ference vegetation index (NDV I) derived from L andsat Thematic M apper (TM ) band 3 (red) and band 4 (near-infrared) data:
+For example, consider the case of the normalized difference vegetation index (NDV I) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data
+
+DOS- A rather simple method to correct raw satellite (or any other imagery) is called dark object subtraction. this uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so in order to remove it we will subtract that value from rest of the pixels within the image.
+
+DIGITAL NUMBER
+
+first, we need to download some raw satellite data that comes in DN format.we are using Lansat 8 collection1 (or 2) level-1 bundle.
+
+Radiance (DN) to Reflectance
+
+radiance is how much light the sensor sees.
+
+reflectance is the ratio of light leaving the target to the amount striking the target. here will still have atmospheric effects in the way of our true apparent reflectance.
+
+TOA reflectance changes the data from what the sensor sees to the ratio of light leaving compared to striking it. BUT, the atmosphere is still present. If we remove the atmopshere we have apparent reflectance (sometimes called Bottom of Atmosphere reflectance). DOS gives us a **version** of apparent reflectance.
 
 **MOSAICKING**
 
-```{r}
-1 + 1
-```
+NDVI
 
-You can add options to executable code like this
+filtering
 
-```{r}
-#| echo: false
-2 * 2
-```
+texture
 
-The `echo: false` option disables the printing of code (only output is displayed).
+## **APPLICATION**
+
+(write down some studies which has done some correction and compare it and be critical about it)
+
+The practical content addressed corrections using raw satellite imagery, merging images, and enhancements. This application section will focus on studies that have made use of atmospheric corrections.
+
+Hansen, M.C., Potapov, P.V., Moore, R., Hancher, M., Turubanova, S.A., Tyukavina, A., Thau, D., Stehman, S.V., Goetz, S.J., Loveland, T.R., Kommareddy, A., Egorov, A., Chini, L., Justice, C.O., Townshend, J.R.G., 2013. High-Resolution Global Maps of 21st-Century Forest Cover Change. Science 342, 850--853.
+
+**Sensor**
+
+-   Landsat (2000 to 2012)
+
+Monitoring forest loss and illegal logging
+
+-   Pre-processing
+
+> "Landsat pre-processing steps included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization"
+>
+> The stack of QA layers was used to create a perpixel set of cloud-free image observations which in turn was employed to calculate timeseries spectral metrics.
+
+## REFLECTION

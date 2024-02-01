@@ -8,70 +8,48 @@ editor: visual
 
 ## **SUMMARY**
 
-This week we looked at the story of Virginia Norwood known as the mother of Landsat. She designed the Multispectral Scanner (MSS) against the good old RBV(return beam vidicon) sensor.
+This week we looked at the story of **Virginia Norwood** known as the mother of Landsat. She designed the Multispectral Scanner (**MSS**) against the good old **RBV**(return beam vidicon) sensor.
 
-Landsat collects images in long narrow strips called "swaths." Each swath is 185 kilometers (115 miles) wide and is 2,752 kilometers (1,710 miles) from the next adjacent swath taken that day. It takes 16 days for the swaths to overlap enough to image the whole Earth. Previous Landsat sensors swept back and forth across the swath like a whisk broom to collect data. The sensor looked at a calibration source at the end of every row, which means that measurements were consistent from orbit to orbit.
-
+Landsat collects images in long narrow strips called "swaths." Previous Landsat sensors swept back and forth across the swath like a **whisk broom** to collect data.\
+In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a **push broom**. \
 \
-In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a push broom. This approach requires no moving parts and gives the sensor detectors greater dwell time. The push broom instrument is smaller and lighter than previous whisk broom instruments, but its calibration is much more complex given the large number of detectors.\
-\
-"It was a natural step to evolve to a pushbroom sensor. The technology was proven on other satellites, and we knew we could get better accuracy. The pushbroom has no moving parts. It is a newer and more reliable technology."
-
-Pushbroom vs Whiskbroom
-
 <https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/>
-
-history of landsat
 
 **GEOMETRIC CORRECTION**
 
-Geometric distortions introduced by sensor system attitude (roll, pitch, and yaw) and/or altitude changes can be corrected using ground control points and appropriate mathematical models (e.g., Im et al., 2009). A ground control point (GCP) is a location on the surface of the Earth (e.g., a road intersection) that can be identified on the imagery and located accurately on a map.
+Geometric distortions introduced by sensor system attitude (roll, pitch, and yaw) and/or altitude changes can be corrected using ground control points and appropriate mathematical models (e.g., Im et al., 2009). A ground control point (**GCP**) is a location on the surface of the Earth (e.g., a road intersection) that can be identified on the imagery and located accurately on a map.
 
-two types of geometric correction-
+There are two types of geometric correction-
 
 -   image-to-image rectification and
 
 -   image-to-image registration
 
-**Image-to-map rectification** is the process by which the geometry of an image is made planimetric. Whenever accurate area, direction, and distance measurements are required, image-to-map geometric rectification should be performed. The image-to-map rectification process normally involves selecting GC P image pixel coordinates (row and column) with their map coordinates counterparts (e.g., meters northing and easting in a Universal Transverse Mercator map projection).
+**Image-to-map rectification** is the process by which the geometry of an image is made planimetric. The image-to-map rectification process normally involves selecting GCP image pixel coordinates (row and column) with their map coordinates counterparts (e.g., meters northing and easting in a Universal Transverse Mercator map projection).
 
 ![](images/085194c43202c81b1bc66fd011ab5552.GC3.webp){fig-align="center"}
 
 **Image-to-image Registration**
 
-Image-to-image registration is the translation and rotation alignment process by which two images of like geometry and of the same geographic area are positioned coincident concerning one another so that corresponding elements of the same ground area appear in the same place on the registered images.
+Image-to-image registration is the translation and rotation alignment process by which two images of like geometry and of the same geographic area are positioned coincidentally concerning one another so that corresponding elements of the same ground area appear in the same place on the registered images.
 
 ![Example of image-to-image hybrid registration](images/9bc14fff503998327710bd5d280f55cb.GC5.webp){fig-align="center"}
 
 **ATMOSPHERIC CORRECTION**
 
-The two most important sources of environmental attenuation are 1) atmosphere attenuation caused by scattering and absorption in the atmosphere, and 2) topographic attenuation.
+The two most important sources of environmental attenuation are
 
-Sometimes the remotely sensed data must be atmospherically corrected. For example, it is usually necessary to atmospherically correct the remote sensor data if biophysical parameters are going to be extracted from water bodies (e.g., chlorophyll a, suspended sediment, temperature) or vegetation (e.g., biomass, leaf-area-index, chlorophyll, percent canopy closure). If the data are not corrected, the subtle differences in reflectance (or emittance) among the important constituents may be lost.
+1\) atmosphere attenuation caused by scattering and absorption in the atmosphere, and 2) topographic attenuation.
 
-For example, consider the case of the normalized difference vegetation index (NDV I) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data
+For example, consider the case of the **normalized difference vegetation index** (NDVI) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data.
 
-DOS- A rather simple method to correct raw satellite (or any other imagery) is called dark object subtraction. this uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so in order to remove it we will subtract that value from rest of the pixels within the image.
+A rather simple method to correct raw satellite (or any other imagery) is called **dark object subtraction(DOS)** which uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so to remove it we will subtract that value from the rest of the pixels within the image.
 
-DIGITAL NUMBER
+**DIGITAL NUMBER**
 
-first, we need to download some raw satellite data that comes in DN format.we are using Lansat 8 collection1 (or 2) level-1 bundle.
+First, we need to download some raw satellite data that comes in DN format. we are using Lansat 8 collection1 (or 2) level-1 bundle.
 
-Radiance (DN) to Reflectance
-
-radiance is how much light the sensor sees.
-
-reflectance is the ratio of light leaving the target to the amount striking the target. here will still have atmospheric effects in the way of our true apparent reflectance.
-
-TOA reflectance changes the data from what the sensor sees to the ratio of light leaving compared to striking it. BUT, the atmosphere is still present. If we remove the atmopshere we have apparent reflectance (sometimes called Bottom of Atmosphere reflectance). DOS gives us a **version** of apparent reflectance.
-
-**MOSAICKING**
-
-NDVI
-
-filtering
-
-texture
+**Texture Analysis** is one of the most important characteristics dealt with during image interpretation and classification. Texture analysis has been successfully applied to forestry and vegetation studies using a variety of remote sensing data (Asner et al., 2002; Franklin et al., 2000) and radar images (Costa, 2004; Hess et al., 2003).
 
 ## **APPLICATION**
 

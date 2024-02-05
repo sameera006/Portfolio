@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "Week1.html#summary",
+    "href": "Week1.html#summary",
+    "title": "2  Week1",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary\nCASA0023 Remotely Sensing Cities and Environments is about remotely sensed earth observation(EO) data to make some informed decisions on environmental hazards arising from changing climate.\nWhat is remote sensing?\nAccording to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (in situ or in-place data collection), and/or at some remote distance from the subject matter known as Remote Sensing of the environment. Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.\nThe majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.\n\n\n\n\n\nSpace junk, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission. It can also refer to smaller things, like bits of debris or paint flecks that have fallen off a rocket. Some human-made junk has been left on the Moon, too.\n\n\n\n\n\nSpectral Resolution is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.\nSpatial Resolution is a measure of the smallest angular or linear separation between two objects that can be resolved by the remote sensing system.\nTemporal Resolution The temporal resolution of a remote sensing system generally refers to how often and when the sensor records imagery of a particular area.\nThe Hot topics being discussed around the world like urban green space and accessibility, Illegal logging, Forest Fire, and temperature studies.\nDifferent types of satellite imagery.\nSentinel 2\nThe main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across most bands, it has higher spatial resolution, its revisit time is shorter, and it has more spectral bands). However, Landsat 8 has thermal infrared bands, which means that it can be used to measure temperature.\nLandsat 8 –its history like the origin of satellite imagery USGS -Landsat 8 has a mission to collect global data and give scientists the ability to access changes in Earth’s landscape.\nRemote sensing is performed using an instrument, often referred to as a sensor.\nTwo types of Sensors\nPassive sensors record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.\nand Active such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.\nRemote sensor data are collected passively (e.g. digital cameras) or actively (e.g., RADAR, LiDAR) using analog or digital remote sensing instruments.\nAtmospheric scattering\nAtmospheric scattering is the natural phenomenon mainly responsible for the colours we observe in the sky\nAtmospheric scattering is a natural phenomenon that can be described as the result of the interaction between sunlight and particles in the atmosphere. When we look to the sky during the day we see mostly blue, while at sunset we get a more reddish color, especially near the horizon.\nRayleigh scattering describes the behavior of light when interacting with very small particles (most of the particles present in the atmosphere). Mie scattering can be used to describe the behavior of light interacting with any kind of particles, nevertheless, it is mostly used to describe the interaction with larger particles such as haze. The core of the atmospheric scattering computational models is the method to solve the scattering equations of Mie and Rayleigh."
+  },
+  {
+    "objectID": "Week1.html#application",
+    "href": "Week1.html#application",
+    "title": "2  Week1",
+    "section": "2.2 Application",
+    "text": "2.2 Application"
+  },
+  {
+    "objectID": "Week1.html#self-reflection",
+    "href": "Week1.html#self-reflection",
+    "title": "2  Week1",
+    "section": "2.3 Self-Reflection",
+    "text": "2.3 Self-Reflection\nWhen I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps.\nSome terminology I came across-\nThermometer-measure the temperature of the air, soil, or water\nAnemometer-measure wind speed\nPsychrometer-to measure air humidity\nGPS-Global Positioning System\nTransducers\nSpectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.\nleaf area index-(LAI)\nRADAR-Radio detection and Ranging\nLiDAR-Light detection and Ranging"
+  },
+  {
+    "objectID": "Week3.html#corrections",
+    "href": "Week3.html#corrections",
+    "title": "4  Week3",
+    "section": "4.1 CORRECTIONS",
+    "text": "4.1 CORRECTIONS"
+  },
+  {
+    "objectID": "Week3.html#summary",
+    "href": "Week3.html#summary",
+    "title": "4  Week3-Corrections",
+    "section": "4.2 SUMMARY",
+    "text": "4.2 SUMMARY\nThis week we looked at the story of Virginia Norwood known as the mother of Landsat. She designed the Multispectral Scanner (MSS) against the good old RBV(return beam vidicon) sensor.\nLandsat collects images in long narrow strips called “swaths.” Previous Landsat sensors swept back and forth across the swath like a whisk broom to collect data.\nIn contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a push broom.\n\nhttps://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/\nGEOMETRIC CORRECTION\nGeometric distortions introduced by sensor system attitude (roll, pitch, and yaw) and/or altitude changes can be corrected using ground control points and appropriate mathematical models (e.g., Im et al., 2009). A ground control point (GCP) is a location on the surface of the Earth (e.g., a road intersection) that can be identified on the imagery and located accurately on a map.\nThere are two types of geometric correction-\n\nimage-to-image rectification and\nimage-to-image registration\n\nImage-to-map rectification is the process by which the geometry of an image is made planimetric. The image-to-map rectification process normally involves selecting GCP image pixel coordinates (row and column) with their map coordinates counterparts (e.g., meters northing and easting in a Universal Transverse Mercator map projection).\n\n\n\n\n\nImage-to-image Registration\nImage-to-image registration is the translation and rotation alignment process by which two images of like geometry and of the same geographic area are positioned coincidentally concerning one another so that corresponding elements of the same ground area appear in the same place on the registered images.\n\n\n\nExample of image-to-image hybrid registration\n\n\nATMOSPHERIC CORRECTION\nThe two most important sources of environmental attenuation are\n1) atmosphere attenuation caused by scattering and absorption in the atmosphere, and 2) topographic attenuation.\nFor example, consider the case of the normalized difference vegetation index (NDVI) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data.\nA rather simple method to correct raw satellite (or any other imagery) is called dark object subtraction(DOS) which uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so to remove it we will subtract that value from the rest of the pixels within the image.\nDIGITAL NUMBER\nFirst, we need to download some raw satellite data that comes in DN format. we are using Lansat 8 collection1 (or 2) level-1 bundle.\nTexture Analysis is one of the most important characteristics dealt with during image interpretation and classification. Texture analysis has been successfully applied to forestry and vegetation studies using a variety of remote sensing data (Asner et al., 2002; Franklin et al., 2000) and radar images (Costa, 2004; Hess et al., 2003)."
+  },
+  {
+    "objectID": "Week3.html#application",
+    "href": "Week3.html#application",
+    "title": "4  Week3-Corrections",
+    "section": "4.3 APPLICATION",
+    "text": "4.3 APPLICATION\n(write down some studies which has done some correction and compare it and be critical about it)\nThe practical content addressed corrections using raw satellite imagery, merging images, and enhancements. This application section will focus on studies that have made use of atmospheric corrections.\nHansen, M.C., Potapov, P.V., Moore, R., Hancher, M., Turubanova, S.A., Tyukavina, A., Thau, D., Stehman, S.V., Goetz, S.J., Loveland, T.R., Kommareddy, A., Egorov, A., Chini, L., Justice, C.O., Townshend, J.R.G., 2013. High-Resolution Global Maps of 21st-Century Forest Cover Change. Science 342, 850–853.\nSensor\n\nLandsat (2000 to 2012)\n\nMonitoring forest loss and illegal logging\n\nPre-processing\n\n\n“Landsat pre-processing steps included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization”\nThe stack of QA layers was used to create a perpixel set of cloud-free image observations which in turn was employed to calculate timeseries spectral metrics."
+  },
+  {
+    "objectID": "Week3.html#reflection",
+    "href": "Week3.html#reflection",
+    "title": "4  Week3-Corrections",
+    "section": "4.4 REFLECTION",
+    "text": "4.4 REFLECTION"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "(“What Is Space Junk and Why Is It a Problem?” n.d.)\n\n\n“What Is Space Junk and Why Is It a Problem?” n.d. https://www.nhm.ac.uk/discover/what-is-space-junk-and-why-is-it-a-problem.html."
+  },
+  {
+    "objectID": "Week2.html#xaringan-presentation",
+    "href": "Week2.html#xaringan-presentation",
+    "title": "3  Week2- Presentation",
+    "section": "3.1 Xaringan Presentation",
+    "text": "3.1 Xaringan Presentation"
+  },
+  {
+    "objectID": "Week2.html#section",
+    "href": "Week2.html#section",
+    "title": "3  Week2- Presentation",
+    "section": "3.2 ",
+    "text": "3.2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Learning Diary",
+    "section": "",
+    "text": "1 ABOUT\nThis is my online Learning diary.\nIn CASA0023 we are asked to make a portfolio that will help us in the future.\nHi! I am Sameera. Reading maps has fascinated me ever since I attended cartography lessons back in school; however, I never knew that I would find my calling in the same field in the future. It is exhilarating how I followed my passion and entered the field of GIS after spending over six years working as a lecturer at an undergraduate college."
+  },
+  {
+    "objectID": "Week3.html#section",
+    "href": "Week3.html#section",
+    "title": "4  Week3-Corrections",
+    "section": "4.1 ",
+    "text": "4.1"
+  }
+]

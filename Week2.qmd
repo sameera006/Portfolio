@@ -1,10 +1,8 @@
 ---
-title: "Week 2"
+title: "Week2- Presentation"
 ---
 
 ## Xaringan Presentation
-
-## 
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(

@@ -1,17 +1,15 @@
 ---
-title: "Week3"
+title: "Week3-Corrections"
 format: html
 editor: visual
 ---
-
-## **CORRECTIONS**
 
 ## **SUMMARY**
 
 This week we looked at the story of **Virginia Norwood** known as the mother of Landsat. She designed the Multispectral Scanner (**MSS**) against the good old **RBV**(return beam vidicon) sensor.
 
 Landsat collects images in long narrow strips called "swaths." Previous Landsat sensors swept back and forth across the swath like a **whisk broom** to collect data.\
-In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a **push broom**. \
+In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a **push broom**.\
 \
 <https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/>
 

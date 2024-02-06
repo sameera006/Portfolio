@@ -139,10 +139,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">4.1</span> </a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">4.2</span> <strong>SUMMARY</strong></a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.3</span> <strong>APPLICATION</strong></a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.4</span> REFLECTION</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> <strong>SUMMARY</strong></a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.2</span> <strong>APPLICATION</strong></a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> REFLECTION</a></li>
   </ul>
 </nav>
     </div>
@@ -166,11 +165,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="section" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="section"><span class="header-section-number">4.1</span> </h2>
-</section>
-<section id="summary" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.2</span> <strong>SUMMARY</strong></h2>
+<section id="summary" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> <strong>SUMMARY</strong></h2>
 <p>This week we looked at the story of <strong>Virginia Norwood</strong> known as the mother of Landsat. She designed the Multispectral Scanner (<strong>MSS</strong>) against the good old <strong>RBV</strong>(return beam vidicon) sensor.</p>
 <p>Landsat collects images in long narrow strips called “swaths.” Previous Landsat sensors swept back and forth across the swath like a <strong>whisk broom</strong> to collect data.<br>
 In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a <strong>push broom</strong>.<br>
@@ -206,11 +202,13 @@ In contrast, the instruments on Landsat 8 view across the entire swath at once, 
 <p>First, we need to download some raw satellite data that comes in DN format. we are using Lansat 8 collection1 (or 2) level-1 bundle.</p>
 <p><strong>Texture Analysis</strong> is one of the most important characteristics dealt with during image interpretation and classification. Texture analysis has been successfully applied to forestry and vegetation studies using a variety of remote sensing data (Asner et al., 2002; Franklin et al., 2000) and radar images (Costa, 2004; Hess et al., 2003).</p>
 </section>
-<section id="application" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="application"><span class="header-section-number">4.3</span> <strong>APPLICATION</strong></h2>
-<p>(write down some studies which has done some correction and compare it and be critical about it)</p>
+<section id="application" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> <strong>APPLICATION</strong></h2>
 <p>The practical content addressed corrections using raw satellite imagery, merging images, and enhancements. This application section will focus on studies that have made use of atmospheric corrections.</p>
-<p>Hansen, M.C., Potapov, P.V., Moore, R., Hancher, M., Turubanova, S.A., Tyukavina, A., Thau, D., Stehman, S.V., Goetz, S.J., Loveland, T.R., Kommareddy, A., Egorov, A., Chini, L., Justice, C.O., Townshend, J.R.G., 2013. High-Resolution Global Maps of 21st-Century Forest Cover Change. Science 342, 850–853.</p>
+<p>Multispectral and radar satellite remote sensing (SRS) imagery has become an important source for investigating species ecology and ecosystem structure. SRS data fusion techniques, Integrating and fusing multispectral and radar images can significantly improve our ability to assess the distribution as well as the horizontal and vertical structure of ecosystems.</p>
+<p>Multispectral sensors passively measure electromagnetic radiation reflected from the Earth's surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.</p>
+<p>Additionally, radar sensors penetrate atmospheric conditions that incapacitate multispectral sensors, such as clouds, haze, and fog, and can (depending on wavelength) return information from below the canopy (Santoro, Shvidenko, McCallum, Askne, &amp; Schmullius, 2007) or even from subsurface layers (McCauley et al., 1982).</p>
+<p>This type of fusion includes object-level fusion, in which a landscape is divided into multi-pixel objects based on information from different remote sensors (Blaschke, 2010), and pixel-level fusion, where pixel values are combined to derive a fused image with new pixel values, either in the spatial (Zhang, 2010) or the temporal (Reiche, Verbesselt, Hoekman, &amp; Herold, 2015) domain. Since both pixel-and object-level fusions result in a new image, we will here refer to them as image fusion</p>
 <p><strong>Sensor</strong></p>
 <ul>
 <li>Landsat (2000 to 2012)</li>
@@ -224,8 +222,9 @@ In contrast, the instruments on Landsat 8 view across the entire swath at once, 
 <p>The stack of QA layers was used to create a perpixel set of cloud-free image observations which in turn was employed to calculate timeseries spectral metrics.</p>
 </blockquote>
 </section>
-<section id="reflection" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.4</span> REFLECTION</h2>
+<section id="reflection" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> REFLECTION</h2>
+<p>Well, this week was quite interesting and intense as we learned a lot of different techniques to improve our imagery. What I understood is that when we download imagery from the satellite onto our computer the first step to use it in our analysis is to check its characteristics like the DN, and radiance value. then we can take some measures like atmospheric correction, geometric correction, fusion, and other techniques that improves the quality of imagery we used for analysis.</p>
 
 
 </section>

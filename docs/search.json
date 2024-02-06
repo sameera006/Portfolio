@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Learning Diary",
+    "section": "",
+    "text": "1 ABOUT\nThis is my online Learning diary.\nIn CASA0023 we are asked to make a portfolio that will help us in the future.\nHi! I am Sameera. Reading maps has fascinated me ever since I attended cartography lessons back in school; however, I never knew that I would find my calling in the same field in the future. It is exhilarating how I followed my passion and entered the field of GIS after spending over six years working as a lecturer at an undergraduate college."
+  },
+  {
     "objectID": "Week1.html#summary",
     "href": "Week1.html#summary",
     "title": "2  Week1- An Introduction to Remote Sensing",
@@ -18,14 +25,14 @@
     "href": "Week1.html#self-reflection",
     "title": "2  Week1- An Introduction to Remote Sensing",
     "section": "2.3 Self-Reflection",
-    "text": "2.3 Self-Reflection\nWhen I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps.\nSome terminology I came across-\nThermometer-measure the temperature of the air, soil, or water\nAnemometer-measure wind speed\nPsychrometer-to measure air humidity\nGPS-Global Positioning System\nTransducers\nSpectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.\nleaf area index-(LAI)\nRADAR-Radio detection and Ranging\nLiDAR-Light detection and Ranging"
+    "text": "2.3 Self-Reflection\nWhen I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. (Earth Science Data Systems 2023)\nSome terminology I came across-\nThermometer-measure the temperature of the air, soil, or water\nAnemometer-measure wind speed\nPsychrometer-to measure air humidity\nGPS-Global Positioning System\nTransducers\nSpectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.\nleaf area index-(LAI)\nRADAR-Radio detection and Ranging\nLiDAR-Light detection and Ranging\n\n\n\n\nEarth Science Data Systems, NASA. 2023. “MODIS | Earthdata.” https://www.earthdata.nasa.gov/sensors/modis."
   },
   {
-    "objectID": "Week3.html#corrections",
-    "href": "Week3.html#corrections",
-    "title": "4  Week3",
-    "section": "4.1 CORRECTIONS",
-    "text": "4.1 CORRECTIONS"
+    "objectID": "Week2.html#xaringan-presentation",
+    "href": "Week2.html#xaringan-presentation",
+    "title": "3  Week2- Presentation",
+    "section": "3.1 Xaringan Presentation",
+    "text": "3.1 Xaringan Presentation"
   },
   {
     "objectID": "Week3.html#summary",
@@ -53,34 +60,6 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "(“What Is Space Junk and Why Is It a Problem?” n.d.)\n\n\n“What Is Space Junk and Why Is It a Problem?” n.d. https://www.nhm.ac.uk/discover/what-is-space-junk-and-why-is-it-a-problem.html."
-  },
-  {
-    "objectID": "Week2.html#xaringan-presentation",
-    "href": "Week2.html#xaringan-presentation",
-    "title": "3  Week2- Presentation",
-    "section": "3.1 Xaringan Presentation",
-    "text": "3.1 Xaringan Presentation"
-  },
-  {
-    "objectID": "Week2.html#section",
-    "href": "Week2.html#section",
-    "title": "3  Week2- Presentation",
-    "section": "3.2 ",
-    "text": "3.2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Learning Diary",
-    "section": "",
-    "text": "1 ABOUT\nThis is my online Learning diary.\nIn CASA0023 we are asked to make a portfolio that will help us in the future.\nHi! I am Sameera. Reading maps has fascinated me ever since I attended cartography lessons back in school; however, I never knew that I would find my calling in the same field in the future. It is exhilarating how I followed my passion and entered the field of GIS after spending over six years working as a lecturer at an undergraduate college."
-  },
-  {
-    "objectID": "Week3.html#section",
-    "href": "Week3.html#section",
-    "title": "4  Week3-Corrections",
-    "section": "4.1 ",
-    "text": "4.1"
+    "text": "Earth Science Data Systems, NASA. 2023. “MODIS |\nEarthdata.” https://www.earthdata.nasa.gov/sensors/modis."
   }
 ]

@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -210,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="self-reflection" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="self-reflection"><span class="header-section-number">2.3</span> <strong><em>Self-Reflection</em></strong></h2>
-<p>When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps.</p>
+<p>When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. <span class="citation" data-cites="earthsciencedatasystems2023">(<a href="references.html#ref-earthsciencedatasystems2023" role="doc-biblioref">Earth Science Data Systems 2023</a>)</span></p>
 <p>Some <strong>terminology</strong> I came across-</p>
 <p>Thermometer-measure the temperature of the air, soil, or water</p>
 <p>Anemometer-measure wind speed</p>
@@ -223,6 +242,11 @@ ul.task-list li input[type="checkbox"] {
 <p>LiDAR-Light detection and Ranging</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-earthsciencedatasystems2023" class="csl-entry" role="listitem">
+Earth Science Data Systems, NASA. 2023. <span>“MODIS | Earthdata.”</span> <a href="https://www.earthdata.nasa.gov/sensors/modis">https://www.earthdata.nasa.gov/sensors/modis</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

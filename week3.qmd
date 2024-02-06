@@ -61,18 +61,6 @@ Additionally, radar sensors penetrate atmospheric conditions that incapacitate m
 
 This type of fusion includes object-level fusion, in which a landscape is divided into multi-pixel objects based on information from different remote sensors (Blaschke, 2010), and pixel-level fusion, where pixel values are combined to derive a fused image with new pixel values, either in the spatial (Zhang, 2010) or the temporal (Reiche, Verbesselt, Hoekman, & Herold, 2015) domain. Since both pixel-and object-level fusions result in a new image, we will here refer to them as image fusion
 
-**Sensor**
-
--   Landsat (2000 to 2012)
-
-Monitoring forest loss and illegal logging
-
--   Pre-processing
-
-> "Landsat pre-processing steps included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization"
->
-> The stack of QA layers was used to create a perpixel set of cloud-free image observations which in turn was employed to calculate timeseries spectral metrics.
-
 ## REFLECTION
 
-Well, this week was quite interesting and intense as we learned a lot of different techniques to improve our imagery. What I understood is that when we download imagery from the satellite onto our computer the first step to use it in our analysis is to check its characteristics like the DN, and radiance value. then we can take some measures like atmospheric correction, geometric correction, fusion, and other techniques that improves the quality of imagery we used for analysis.
+Well, this week was quite interesting and intense as we learned a lot of different techniques to improve our imagery. What I understood is that when we download imagery from the satellite onto our computer the first step to use it in our analysis is to check its characteristics like the DN, and radiance value. After that, we take measures like atmospheric correction, geometric correction, fusion, and other techniques that improve the quality of imagery. Usually these days the the above corrections are already done so we do not have to check the above but it is a good practice to know all these specifics about the satellite imagery. We can always use image fusion or image enhancement and even change the texture.

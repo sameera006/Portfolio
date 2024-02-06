@@ -209,22 +209,10 @@ In contrast, the instruments on Landsat 8 view across the entire swath at once, 
 <p>Multispectral sensors passively measure electromagnetic radiation reflected from the Earth's surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.</p>
 <p>Additionally, radar sensors penetrate atmospheric conditions that incapacitate multispectral sensors, such as clouds, haze, and fog, and can (depending on wavelength) return information from below the canopy (Santoro, Shvidenko, McCallum, Askne, &amp; Schmullius, 2007) or even from subsurface layers (McCauley et al., 1982).</p>
 <p>This type of fusion includes object-level fusion, in which a landscape is divided into multi-pixel objects based on information from different remote sensors (Blaschke, 2010), and pixel-level fusion, where pixel values are combined to derive a fused image with new pixel values, either in the spatial (Zhang, 2010) or the temporal (Reiche, Verbesselt, Hoekman, &amp; Herold, 2015) domain. Since both pixel-and object-level fusions result in a new image, we will here refer to them as image fusion</p>
-<p><strong>Sensor</strong></p>
-<ul>
-<li>Landsat (2000 to 2012)</li>
-</ul>
-<p>Monitoring forest loss and illegal logging</p>
-<ul>
-<li>Pre-processing</li>
-</ul>
-<blockquote class="blockquote">
-<p>“Landsat pre-processing steps included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization”</p>
-<p>The stack of QA layers was used to create a perpixel set of cloud-free image observations which in turn was employed to calculate timeseries spectral metrics.</p>
-</blockquote>
 </section>
 <section id="reflection" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> REFLECTION</h2>
-<p>Well, this week was quite interesting and intense as we learned a lot of different techniques to improve our imagery. What I understood is that when we download imagery from the satellite onto our computer the first step to use it in our analysis is to check its characteristics like the DN, and radiance value. then we can take some measures like atmospheric correction, geometric correction, fusion, and other techniques that improves the quality of imagery we used for analysis.</p>
+<p>Well, this week was quite interesting and intense as we learned a lot of different techniques to improve our imagery. What I understood is that when we download imagery from the satellite onto our computer the first step to use it in our analysis is to check its characteristics like the DN, and radiance value. After that, we take measures like atmospheric correction, geometric correction, fusion, and other techniques that improve the quality of imagery. Usually these days the the above corrections are already done so we do not have to check the above but it is a good practice to know all these specifics about the satellite imagery. We can always use image fusion or image enhancement and even change the texture.</p>
 
 
 </section>

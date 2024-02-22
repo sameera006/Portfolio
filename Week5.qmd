@@ -1,0 +1,21 @@
+---
+title: "Week 5 - Google Earth Engine"
+---
+
+## SUMMARY
+
+This week we studied the much awaited Google Earth Engine. " [Google Earth Engine](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/google-earth-engine "Learn more about Google Earth Engine from ScienceDirect's AI-generated Topic Pages") is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geospatial datasets. It is designed to help researchers easily disseminate their results to other researchers, policy makers, [NGOs](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/non-governmental-organisation "Learn more about NGOs from ScienceDirect's AI-generated Topic Pages"), field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine's resources, without needing to be an expert in application development, web programming or [HTML](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/document-markup-languages "Learn more about HTML from ScienceDirect's AI-generated Topic Pages")." [@gorelick2017]
+
+It is accessed and controlled through an [application programming interface](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/application-programming-interface "Learn more about application programming interface from ScienceDirect's AI-generated Topic Pages") (API) and an associated web-based interactive development environment (IDE) that enables [rapid prototyping](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/rapid-prototyping "Learn more about rapid prototyping from ScienceDirect's AI-generated Topic Pages") and visualization of results. So basically GEE can load large datasets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.
+
+GEE has a concept of **client** and **server** side where the code which we put runs on the client side i.e. Browser so we do not run anything locally which speeds up the process. It uses **Javascript** as the programming Language.
+
+The raster data is called **image** and the vector data is called **feature**.
+
+A stack of images is called **Image Collection** and Feature stack (lots of polygons) is known as **Feature Collection**.
+
+![ GEE Screen : [@beginner]](images/ee-editor_1440.png){fig-align="center"}
+
+## APPLICATION
+
+## REFLECTION

@@ -1,5 +1,5 @@
 ---
-title: "Week3-Corrections"
+title: "Week 3-Corrections"
 format: html
 editor: visual
 ---
@@ -55,7 +55,7 @@ The practical content addressed corrections using raw satellite imagery, merging
 
 Multispectral and radar satellite remote sensing (SRS) imagery has become an important source for investigating species ecology and ecosystem structure. SRS data fusion techniques, Integrating and fusing multispectral and radar images can significantly improve our ability to assess the distribution as well as the horizontal and vertical structure of ecosystems.
 
-Multispectral sensors passively measure electromagnetic radiation reflected from the Earth\'s surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.
+Multispectral sensors passively measure electromagnetic radiation reflected from the Earth's surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.
 
 Additionally, radar sensors penetrate atmospheric conditions that incapacitate multispectral sensors, such as clouds, haze, and fog, and can (depending on wavelength) return information from below the canopy (Santoro, Shvidenko, McCallum, Askne, & Schmullius, 2007) or even from subsurface layers (McCauley et al., 1982).
 

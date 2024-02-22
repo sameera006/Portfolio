@@ -1,5 +1,5 @@
 ---
-title: "Week1- An Introduction to Remote Sensing"
+title: "Week 1- An Introduction to Remote Sensing"
 format: html
 editor: visual
 ---

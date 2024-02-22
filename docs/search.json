@@ -9,14 +9,14 @@
   {
     "objectID": "Week1.html#summary",
     "href": "Week1.html#summary",
-    "title": "2  Week1- An Introduction to Remote Sensing",
+    "title": "2  Week 1- An Introduction to Remote Sensing",
     "section": "2.1 Summary",
     "text": "2.1 Summary\nCASA0023 Remotely Sensing Cities and Environments is about remotely sensed earth observation(EO) data to make some informed decisions on environmental hazards arising from changing climate.\nWhat is remote sensing?\nAccording to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (in situ or in-place data collection), and/or at some remote distance from the subject matter known as Remote Sensing of the environment. Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.\nThe majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.\n\n\n\n\n\nSpace junk, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission. It can also refer to smaller things, like bits of debris or paint flecks that have fallen off a rocket. Some human-made junk has been left on the Moon, too.\n\n\n\n\n\nSpectral Resolution is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.\nSpatial Resolution is a measure of the smallest angular or linear separation between two objects that can be resolved by the remote sensing system.\nTemporal Resolution The temporal resolution of a remote sensing system generally refers to how often and when the sensor records imagery of a particular area.\nThe Hot topics being discussed around the world like urban green space and accessibility, Illegal logging, Forest Fire, and temperature studies.\nDifferent types of satellite imagery.\nSentinel 2\nThe main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across most bands, it has higher spatial resolution, its revisit time is shorter, and it has more spectral bands). However, Landsat 8 has thermal infrared bands, which means that it can be used to measure temperature.\nLandsat 8 –its history like the origin of satellite imagery USGS -Landsat 8 has a mission to collect global data and give scientists the ability to access changes in Earth’s landscape.\nRemote sensing is performed using an instrument, often referred to as a sensor.\nTwo types of Sensors\nPassive sensors record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.\nand Active such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.\nRemote sensor data are collected passively (e.g. digital cameras) or actively (e.g., RADAR, LiDAR) using analog or digital remote sensing instruments.\nAtmospheric scattering\nAtmospheric scattering is the natural phenomenon mainly responsible for the colours we observe in the sky\nAtmospheric scattering is a natural phenomenon that can be described as the result of the interaction between sunlight and particles in the atmosphere. When we look to the sky during the day we see mostly blue, while at sunset we get a more reddish color, especially near the horizon.\nRayleigh scattering describes the behavior of light when interacting with very small particles (most of the particles present in the atmosphere). Mie scattering can be used to describe the behavior of light interacting with any kind of particles, nevertheless, it is mostly used to describe the interaction with larger particles such as haze. The core of the atmospheric scattering computational models is the method to solve the scattering equations of Mie and Rayleigh."
   },
   {
     "objectID": "Week1.html#application",
     "href": "Week1.html#application",
-    "title": "2  Week1- An Introduction to Remote Sensing",
+    "title": "2  Week 1- An Introduction to Remote Sensing",
     "section": "2.2 Application",
     "text": "2.2 Application"
   },
@@ -37,21 +37,21 @@
   {
     "objectID": "Week3.html#summary",
     "href": "Week3.html#summary",
-    "title": "4  Week3-Corrections",
+    "title": "4  Week 3-Corrections",
     "section": "4.1 SUMMARY",
     "text": "4.1 SUMMARY\nThis week we looked at the story of Virginia Norwood known as the mother of Landsat. She designed the Multispectral Scanner (MSS) against the good old RBV(return beam vidicon) sensor.\nLandsat collects images in long narrow strips called “swaths.” Previous Landsat sensors swept back and forth across the swath like a whisk broom to collect data.\nIn contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a push broom.\n\nhttps://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/\nGEOMETRIC CORRECTION\nGeometric distortions introduced by sensor system attitude (roll, pitch, and yaw) and/or altitude changes can be corrected using ground control points and appropriate mathematical models (e.g., Im et al., 2009). A ground control point (GCP) is a location on the surface of the Earth (e.g., a road intersection) that can be identified on the imagery and located accurately on a map.\nThere are two types of geometric correction-\n\nimage-to-image rectification and\nimage-to-image registration\n\nImage-to-map rectification is the process by which the geometry of an image is made planimetric. The image-to-map rectification process normally involves selecting GCP image pixel coordinates (row and column) with their map coordinates counterparts (e.g., meters northing and easting in a Universal Transverse Mercator map projection).\n\n\n\n\n\nImage-to-image Registration\nImage-to-image registration is the translation and rotation alignment process by which two images of like geometry and of the same geographic area are positioned coincidentally concerning one another so that corresponding elements of the same ground area appear in the same place on the registered images.\n\n\n\nExample of image-to-image hybrid registration\n\n\nATMOSPHERIC CORRECTION\nThe two most important sources of environmental attenuation are\n1) atmosphere attenuation caused by scattering and absorption in the atmosphere, and 2) topographic attenuation.\nFor example, consider the case of the normalized difference vegetation index (NDVI) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data.\nA rather simple method to correct raw satellite (or any other imagery) is called dark object subtraction(DOS) which uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so to remove it we will subtract that value from the rest of the pixels within the image.\nDIGITAL NUMBER\nFirst, we need to download some raw satellite data that comes in DN format. we are using Lansat 8 collection1 (or 2) level-1 bundle.\nTexture Analysis is one of the most important characteristics dealt with during image interpretation and classification. Texture analysis has been successfully applied to forestry and vegetation studies using a variety of remote sensing data (Asner et al., 2002; Franklin et al., 2000) and radar images (Costa, 2004; Hess et al., 2003)."
   },
   {
     "objectID": "Week3.html#application",
     "href": "Week3.html#application",
-    "title": "4  Week3-Corrections",
+    "title": "4  Week 3-Corrections",
     "section": "4.2 APPLICATION",
-    "text": "4.2 APPLICATION\nThe practical content addressed corrections using raw satellite imagery, merging images, and enhancements. This application section will focus on studies that have made use of atmospheric corrections.\nMultispectral and radar satellite remote sensing (SRS) imagery has become an important source for investigating species ecology and ecosystem structure. SRS data fusion techniques, Integrating and fusing multispectral and radar images can significantly improve our ability to assess the distribution as well as the horizontal and vertical structure of ecosystems.\nMultispectral sensors passively measure electromagnetic radiation reflected from the Earth's surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.\nAdditionally, radar sensors penetrate atmospheric conditions that incapacitate multispectral sensors, such as clouds, haze, and fog, and can (depending on wavelength) return information from below the canopy (Santoro, Shvidenko, McCallum, Askne, & Schmullius, 2007) or even from subsurface layers (McCauley et al., 1982).\nThis type of fusion includes object-level fusion, in which a landscape is divided into multi-pixel objects based on information from different remote sensors (Blaschke, 2010), and pixel-level fusion, where pixel values are combined to derive a fused image with new pixel values, either in the spatial (Zhang, 2010) or the temporal (Reiche, Verbesselt, Hoekman, & Herold, 2015) domain. Since both pixel-and object-level fusions result in a new image, we will here refer to them as image fusion"
+    "text": "4.2 APPLICATION\nThe practical content addressed corrections using raw satellite imagery, merging images, and enhancements. This application section will focus on studies that have made use of atmospheric corrections.\nMultispectral and radar satellite remote sensing (SRS) imagery has become an important source for investigating species ecology and ecosystem structure. SRS data fusion techniques, Integrating and fusing multispectral and radar images can significantly improve our ability to assess the distribution as well as the horizontal and vertical structure of ecosystems.\nMultispectral sensors passively measure electromagnetic radiation reflected from the Earth’s surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.\nAdditionally, radar sensors penetrate atmospheric conditions that incapacitate multispectral sensors, such as clouds, haze, and fog, and can (depending on wavelength) return information from below the canopy (Santoro, Shvidenko, McCallum, Askne, & Schmullius, 2007) or even from subsurface layers (McCauley et al., 1982).\nThis type of fusion includes object-level fusion, in which a landscape is divided into multi-pixel objects based on information from different remote sensors (Blaschke, 2010), and pixel-level fusion, where pixel values are combined to derive a fused image with new pixel values, either in the spatial (Zhang, 2010) or the temporal (Reiche, Verbesselt, Hoekman, & Herold, 2015) domain. Since both pixel-and object-level fusions result in a new image, we will here refer to them as image fusion"
   },
   {
     "objectID": "Week3.html#reflection",
     "href": "Week3.html#reflection",
-    "title": "4  Week3-Corrections",
+    "title": "4  Week 3-Corrections",
     "section": "4.3 REFLECTION",
     "text": "4.3 REFLECTION\nWell, this week was quite interesting and intense as we learned a lot of different techniques to improve our imagery. What I understood is that when we download imagery from the satellite onto our computer the first step to use it in our analysis is to check its characteristics like the DN, and radiance value. After that, we take measures like atmospheric correction, geometric correction, fusion, and other techniques that improve the quality of imagery. Usually these days the the above corrections are already done so we do not have to check the above but it is a good practice to know all these specifics about the satellite imagery. We can always use image fusion or image enhancement and even change the texture."
   },
@@ -60,13 +60,69 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Earth Science Data Systems, NASA. 2023. “MODIS |\nEarthdata.” https://www.earthdata.nasa.gov/sensors/modis."
+    "text": "Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David\nThau, and Rebecca Moore. 2017. “Google Earth Engine:\nPlanetary-scale Geospatial Analysis for\nEveryone.” Remote Sensing of Environment, Big\nRemotely Sensed Data: Tools, applications and experiences,\n202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031."
   },
   {
     "objectID": "Week1.html#reflection",
     "href": "Week1.html#reflection",
-    "title": "2  Week1- An Introduction to Remote Sensing",
+    "title": "2  Week 1- An Introduction to Remote Sensing",
     "section": "2.3 Reflection",
-    "text": "2.3 Reflection\nWhen I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. (Earth Science Data Systems 2023)\nSome terminology I came across-\nThermometer-measure the temperature of the air, soil, or water\nAnemometer-measure wind speed\nPsychrometer-to measure air humidity\nGPS-Global Positioning System\nTransducers\nSpectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.\nleaf area index-(LAI)\nRADAR-Radio detection and Ranging\nLiDAR-Light detection and Ranging\n\n\n\n\nEarth Science Data Systems, NASA. 2023. “MODIS | Earthdata.” https://www.earthdata.nasa.gov/sensors/modis."
+    "text": "2.3 Reflection\nWhen I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. (earthsciencedatasystems2023?)\nSome terminology I came across-\nThermometer-measure the temperature of the air, soil, or water\nAnemometer-measure wind speed\nPsychrometer-to measure air humidity\nGPS-Global Positioning System\nTransducers\nSpectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.\nleaf area index-(LAI)\nRADAR-Radio detection and Ranging\nLiDAR-Light detection and Ranging"
+  },
+  {
+    "objectID": "Week5.html",
+    "href": "Week5.html",
+    "title": "6  Week5 - Google Earth Engine",
+    "section": "",
+    "text": "7 SUMMARY\nThis week we studied the much awaited Google Earth Engine. ” Google Earth Engine is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geospatial datasets. It is designed to help researchers easily disseminate their results to other researchers, policy makers, NGOs, field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine’s resources, without needing to be an expert in application development, web programming or HTML.” (Gorelick et al. 2017)\n\n\n8 APPLICATION\n\n\n9 REFLECTION\n\n\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. “Google Earth Engine: Planetary-scale Geospatial Analysis for Everyone.” Remote Sensing of Environment, Big Remotely Sensed Data: Tools, applications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031."
+  },
+  {
+    "objectID": "Week4.html",
+    "href": "Week4.html",
+    "title": "5  Week4 - Policy",
+    "section": "",
+    "text": "6 SUMMARY\n\n\n7 APPLICATION\n\n\n8 REFLECTION"
+  },
+  {
+    "objectID": "Week5.html#summary",
+    "href": "Week5.html#summary",
+    "title": "6  Week 5 - Google Earth Engine",
+    "section": "6.1 SUMMARY",
+    "text": "6.1 SUMMARY\nThis week we studied the much awaited Google Earth Engine. ” Google Earth Engine is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geospatial datasets. It is designed to help researchers easily disseminate their results to other researchers, policy makers, NGOs, field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine’s resources, without needing to be an expert in application development, web programming or HTML.” (Gorelick et al. 2017)\nIt is accessed and controlled through an application programming interface (API) and an associated web-based interactive development environment (IDE) that enables rapid prototyping and visualization of results. So basically GEE can load large datasets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.\nGEE has a concept of client and server side where the code which we put runs on the client side i.e. Browser so we do not run anything locally which speeds up the process. It uses Javascript as the programming Language.\nThe raster data is called image and the vector data is called feature.\nA stack of images is called Image Collection and Feature stack (lots of polygons) is known as Feature Collection.\n\n\n\nGEE Screen : (“Beginner’s Cookbook | Google Earth Engine,” n.d., TC25)"
+  },
+  {
+    "objectID": "Week5.html#application",
+    "href": "Week5.html#application",
+    "title": "6  Week 5 - Google Earth Engine",
+    "section": "6.2 APPLICATION",
+    "text": "6.2 APPLICATION"
+  },
+  {
+    "objectID": "Week5.html#reflection",
+    "href": "Week5.html#reflection",
+    "title": "6  Week 5 - Google Earth Engine",
+    "section": "6.3 REFLECTION",
+    "text": "6.3 REFLECTION\n\n\n\n\n“Beginner’s Cookbook | Google Earth Engine.” n.d. https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook.\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. “Google Earth Engine: Planetary-scale Geospatial Analysis for Everyone.” Remote Sensing of Environment, Big Remotely Sensed Data: Tools, applications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031."
+  },
+  {
+    "objectID": "Week4.html#summary",
+    "href": "Week4.html#summary",
+    "title": "5  Week 4 - Policy",
+    "section": "5.1 SUMMARY",
+    "text": "5.1 SUMMARY"
+  },
+  {
+    "objectID": "Week4.html#application",
+    "href": "Week4.html#application",
+    "title": "5  Week 4 - Policy",
+    "section": "5.2 APPLICATION",
+    "text": "5.2 APPLICATION"
+  },
+  {
+    "objectID": "Week4.html#reflection",
+    "href": "Week4.html#reflection",
+    "title": "5  Week 4 - Policy",
+    "section": "5.3 REFLECTION",
+    "text": "5.3 REFLECTION"
   }
 ]

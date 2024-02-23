@@ -18,4 +18,20 @@ A stack of images is called **Image Collection** and Feature stack (lots of poly
 
 ## APPLICATION
 
+"GEE is free and allows users to write open-source code that can be run by others in one click, thereby yielding fully reproducible results. These features have put GEE on the cutting edge of scientific research. The following plot visualizes the number of journal articles conducted using different geospatial analysis software platforms" [@ballinger2024]
+
+![](images/WoS Articles.png)
+
+Here we can discuss some GEE applications along with several case studies
+
+**Vegetation**-
+
+The full archive of the Landsat imagery was processed within GEE to map the vegetation dynamics from 1988 to 2017 in Queensland, Australia [@xie2019]. Field observations were utilized to evaluate the performance of the proposed algorithm and an overall accuracy of 82.6% was reported. The authors emphasized the high computational efficiency of GEE compared to when they did the same analysis using traditional methods. The Image below accounts for different applications where GEE is used.
+
+![ GEE Applications[@amani2020]](images/GEE-Apllications.png){fig-align="center"}
+
+Long et al. [@long2019] proposed an automatic method for producing a global annual burned area maps using all available Landsat images acquired between 2014 and 2015 within the GEE cloud computing platform.
+
 ## REFLECTION
+
+Overall this week was quite anticipated from so long as everyone was waiting to learn GEE and how to use this tool and finally when we got to work on it. it seems pretty easy and straightforward. I think the processing time is very fast as we were able to finish the practical in class otherwise if we compare it with SNAP or even R we first need to download and sort out the imagery to do the analysis which took quite some time. Today we learn how to use the aggregrate function like hoe to use the reduce function and calculate the mean, median and standard variation of the stack of images.

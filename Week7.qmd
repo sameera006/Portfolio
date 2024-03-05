@@ -1,0 +1,75 @@
+---
+title: "Week 7 - Classification- The Big Question"
+---
+
+## SUMMARY
+
+Pre-classified data
+
+**Dynamic World Data**- data has SR, TOA
+
+how was it trained -
+
+ISSUES- Blobbiness-50x50 m
+
+Confusion Matrix
+
+The first example of people putting their training data online- ML /Deep Learning.
+
+For global application such data is amazing. GEE
+
+**OBJECT BASED IMAGE ANALYSIS**
+
+pixels -distance -
+
+OBIA is simmilarity between pixels. trying to match the similar pixels.
+
+SLIC (Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours
+
+**The SLIC algorithm works iteratively**, repeating the above process until it reaches the expected number of iterations.
+
+sub pixel analysis/ spectral mixture analysis
+
+VIS triangle -find single pure end member
+
+MESMA- multiple endmember spectral analysis
+
+Accuracy Assessment
+
+in RS we focus on PA-producer accuracy
+
+user's accuracy and overall accuracy
+
+where the model is correct - true positive
+
+true negative
+
+where the model is incorrect- FP & FN
+
+Kappa issues
+
+**Supervised Classification in Remote Sensing**
+
+In supervised classification, you select training samples and classify your image based on your chosen samples. Your training samples are key because they will determine which class each pixel inherits in your overall image.
+
+![](images/sup-classification.png)
+
+[@gisgeography2016]
+
+Good approach - train and test split
+
+-   This is simply holding back a % of the original data used to train the model to then test it at the end
+
+    ![](images/Screenshot 2024-03-05 105251.png)
+
+what do you think of spatial autocorrelation in this sense?
+
+OBIA is dealing with spatial autocorrelation
+
+In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted.
+
+Spatial Cross validation
+
+## APPLICATION
+
+## REFLECTION

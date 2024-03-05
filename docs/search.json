@@ -124,5 +124,47 @@
     "title": "5  Week 4 - Policy",
     "section": "5.3 REFLECTION",
     "text": "5.3 REFLECTION\nIf i am a city planner how can we start to address this What areas should i start with (funding often limited) What stage in the planning process might this come Who would be responsible (e.g. what department) What skills do they need What benefits can this bring to the city (often finances!) How does this help the city align with global agendas What stakeholders do i need to consider\n\n\n\n\nJose, Tanya. 2023. “Project in-Depth: The Great Green Wall, Africa.” https://www.re-thinkingthefuture.com/materials-construction/a11157-project-in-depth-the-great-green-wall-africa/.\n\n\n“Koch Quoted in BBC Article on Dubai, Desertification.” n.d. https://www.maxwell.syr.edu/news/article/koch-quoted-in-bbc-article-on-dubai-desertification.\n\n\nStallwood, Paige. 2022. “Desertification in Africa: Causes, Effects and Solutions.” https://earth.org/desertification-in-africa/."
+  },
+  {
+    "objectID": "Week7.html#summary",
+    "href": "Week7.html#summary",
+    "title": "8  Week 7 - Classification- The Big Question",
+    "section": "8.1 SUMMARY",
+    "text": "8.1 SUMMARY\nPre-classified data\nDynamic World Data- data has SR, TOA\nhow was it trained -\nISSUES- Blobbiness-50x50 m\nConfusion Matrix\nThe first example of people putting their training data online- ML /Deep Learning.\nFor global application such data is amazing. GEE\nOBJECT BASED IMAGE ANALYSIS\npixels -distance -\nOBIA is simmilarity between pixels. trying to match the similar pixels.\nSLIC (Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours\nThe SLIC algorithm works iteratively, repeating the above process until it reaches the expected number of iterations.\nsub pixel analysis/ spectral mixture analysis\nVIS triangle -find single pure end member\nMESMA- multiple endmember spectral analysis\nAccuracy Assessment\nin RS we focus on PA-producer accuracy\nuser’s accuracy and overall accuracy\nwhere the model is correct - true positive\ntrue negative\nwhere the model is incorrect- FP & FN\nKappa issues\nSupervised Classification in Remote Sensing\nIn supervised classification, you select training samples and classify your image based on your chosen samples. Your training samples are key because they will determine which class each pixel inherits in your overall image.\n\n(GISGeography 2016)\nGood approach - train and test split\n\nThis is simply holding back a % of the original data used to train the model to then test it at the end\n\n\nwhat do you think of spatial autocorrelation in this sense?\nOBIA is dealing with spatial autocorrelation\nIn ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted.\nSpatial Cross validation"
+  },
+  {
+    "objectID": "Week7.html#application",
+    "href": "Week7.html#application",
+    "title": "8  Week 7 - Classification- The Big Question",
+    "section": "8.2 APPLICATION",
+    "text": "8.2 APPLICATION"
+  },
+  {
+    "objectID": "Week7.html#reflection",
+    "href": "Week7.html#reflection",
+    "title": "8  Week 7 - Classification- The Big Question",
+    "section": "8.3 REFLECTION",
+    "text": "8.3 REFLECTION\n\n\n\n\nGISGeography. 2016. “Supervised and Unsupervised Classification in Remote Sensing.” https://gisgeography.com/supervised-unsupervised-classification-arcgis/."
+  },
+  {
+    "objectID": "Week6.html#summary",
+    "href": "Week6.html#summary",
+    "title": "7  Week 6- Classification-1",
+    "section": "7.1 SUMMARY",
+    "text": "7.1 SUMMARY"
+  },
+  {
+    "objectID": "Week6.html#application",
+    "href": "Week6.html#application",
+    "title": "7  Week 6- Classification-1",
+    "section": "7.2 APPLICATION",
+    "text": "7.2 APPLICATION"
+  },
+  {
+    "objectID": "Week6.html#reflection",
+    "href": "Week6.html#reflection",
+    "title": "7  Week 6- Classification-1",
+    "section": "7.3 REFLECTION",
+    "text": "7.3 REFLECTION"
   }
 ]

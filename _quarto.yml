@@ -13,6 +13,8 @@ book:
     - Week3.qmd
     - Week4.qmd
     - Week5.qmd
+    - Week6.qmd
+    - Week7.qmd
     - references.qmd
 
 bibliography: references.bib

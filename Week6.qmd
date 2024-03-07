@@ -32,10 +32,40 @@ Machine learning is defined as the science of computer modeling of learning proc
 
 While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of **overfitting** and **underfitting**. [@singh2018]
 
-So decision trees are not good with new data. so we move to random forest which is kind a collection of many decision tree.
+So decision trees are not good with new or big size data. Higher depth DTs are more prone to overfitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.
 
 **Random Forests**
 
+Random Forests (RFs) are composed of multiple independent decision trees that are trained independently on a random subset of data.
+
+![](images/1_ixvrbH45K8CcNZaj98JGuA.webp)
+
+[@bhatia2019]
+
+In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out varibles are called OOB.
+
+how do we apply these methods with the satellite imagery?
+
+**Image Classification Techniques** - it is the process of assigning landcover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.
+
+1.  Supervised
+
+2.  Unsupervised
+
+3.  Object based Image Classification
+
+    Unsupervised classification usually referred as clustering/k-means. some common clustering algorithm are ISODATA.
+
+    Supervised Classification we use Maximum likelihood and support vector machines(SVM).
+
 ## APPLICATION
 
+[@tariq2023]
+
+[@hansen2013]
+
+[@shahtahmassebi2021]
+
 ## REFLECTION
+
+So, this week was about classification and had a lot of content to cover. I think this is the most important lecture because all the methods taught during the lecture are used very commonly for digital image processing and in future will be used mostly. I understood about decision trees and random forest and how machine learning plays an important role in the field of remote sensing. By week 6 all we did earlier is making sense and helpful in understanding about different applications where we can use this like detecting fires, flood risk, desertification and LULC heat maps.

@@ -151,7 +151,7 @@
     "href": "Week6.html#summary",
     "title": "7  Week 6- Classification-1",
     "section": "7.1 SUMMARY",
-    "text": "7.1 SUMMARY"
+    "text": "7.1 SUMMARY\nClassification can be used in many studies like Urban Expansion using Landsat data, Air pollution, Urban green Spaces, monitoring forest like illegal logging, and Forest fires. in all these studies land cover is extracted from the earth observation data.\nSo, the process of classification involves inductive learning which means that by looking at the map we know where is ground or barren land or urban or forest area and accordingly we can classify.\nFor classification we use an expert system.\n\n(“What Is a Knowledge-Based System in the Context of Artificial Intelligence?” n.d.)\nso the expert system consist of the knowledge base and inference engine. what we want to find out how a computer replicate human knowledge. and how expert system is applied to remote sensing.\nMachine learning is defined as the science of computer modeling of learning process. there are number of machine learning data decision tree /regression tree.\nCART (Classification and Regression Tree)\nClassification tree classify data into two or more discrete categories. For example Landcover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which dependens on the conditions outside hot or cold, the speed of wind and the weather.\n\n\n\n\n\n\n\n\n\n\n\n\n(“Decision Tree Tutorials & Notes | Machine Learning,” n.d.)\nRegression trees predict continuous dependant variable like numerical variable for example total PopulationThey subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. the option with the lowest impurity goes to the top of the tree and becomes the root.\nWhile discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of overfitting and underfitting. (Singh 2018)"
   },
   {
     "objectID": "Week6.html#application",
@@ -165,6 +165,6 @@
     "href": "Week6.html#reflection",
     "title": "7  Week 6- Classification-1",
     "section": "7.3 REFLECTION",
-    "text": "7.3 REFLECTION"
+    "text": "7.3 REFLECTION\nSSIFICATION-\n\n\n\n\n“Decision Tree Tutorials & Notes | Machine Learning.” n.d. https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/ml-decision-tree/tutorial/.\n\n\nSingh, Seema. 2018. “Understanding the Bias-Variance Tradeoff.” https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229.\n\n\n“What Is a Knowledge-Based System in the Context of Artificial Intelligence?” n.d. https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence."
   }
 ]

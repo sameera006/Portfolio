@@ -4,6 +4,38 @@ title: "Week 6- Classification-1"
 
 ## SUMMARY
 
+Classification can be used in many studies like Urban Expansion using Landsat data, Air pollution, Urban green Spaces, monitoring forest like illegal logging, and Forest fires. in all these studies land cover is extracted from the earth observation data.
+
+So, the process of classification involves inductive learning which means that by looking at the map we know where is ground or barren land or urban or forest area and accordingly we can classify.
+
+For classification we use an expert system.
+
+![](images/main-qimg-a63e873b68b7d220020991140f0a896c-lq.jpg)
+
+[@whatis]
+
+so the expert system consist of the knowledge base and inference engine. what we want to find out how a computer replicate human knowledge. and how expert system is applied to remote sensing.
+
+Machine learning is defined as the science of computer modeling of learning process. there are number of machine learning data decision tree /regression tree.
+
+**CART (Classification and Regression Tree)**
+
+**Classification tree** classify data into two or more discrete categories. For example Landcover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which dependens on the conditions outside hot or cold, the speed of wind and the weather.
+
+|                                            |                                  |
+|--------------------------------------------|----------------------------------|
+| ![](images/decision-tree.png){width="266"} | ![](images/dt1.png){width="286"} |
+
+[@decision]
+
+**Regression trees** predict continuous dependant variable like numerical variable for example total PopulationThey subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. the option with the lowest impurity goes to the top of the tree and becomes the root.
+
+While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of **overfitting** and **underfitting**. [@singh2018]
+
+So decision trees are not good with new data. so we move to random forest which is kind a collection of many decision tree.
+
+**Random Forests**
+
 ## APPLICATION
 
 ## REFLECTION

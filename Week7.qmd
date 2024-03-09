@@ -32,9 +32,17 @@ there comes also a question why do we need object based analysis to improve in s
 |-----------------------------------|---------------------------------|------------------------------------------|
 | ![](images/image-to-classify.png) | ![](images/diff-crops-type.png) | ![](images/per-pixel-classification.png) |
 
-we use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers.
+we use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers. we also talk about spectral gradient and can we use super-pixels to remove the salt and pepper noise.
 
-SLIC (Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours
+![](images/Gradient-function.png)
+
+**SNIC**- (super pixel non-iterative clustering) Seeded region growing
+
+this makes clusters without k-means. It uses a regular grid of points (like k-means) but then assigns pixels to points through distance color and co-ordinates - it represents normalised spatial and color distances. we also have seed grid which denotes spacing in pixel. we can set square or hex grid.
+
+Image.reduceConnectedComponents
+
+(Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours
 
 **The SLIC algorithm works iteratively**, repeating the above process until it reaches the expected number of iterations.
 

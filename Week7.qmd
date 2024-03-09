@@ -22,7 +22,17 @@ For global application such data is amazing. GEE
 
 pixels -distance -
 
-OBIA is simmilarity between pixels. trying to match the similar pixels.
+OBIA is similarity between pixels. trying to match the similar pixels.
+
+for example - we take a RGB near-infrared 1m image. its a typical kind of image where we want to do segmentation and OBIA. we do OBIA to do clean classification. like if we classify on the mean of all the vectors inside a particular polygon we will get a solid result as opposed to classifying on individual pixels we will get a lot salt and pepper noise.
+
+there comes also a question why do we need object based analysis to improve in signal and noise. there are thousand pixels here so we might want to turn these things into objects.
+
+| Original Image to Classify        | Different Crop Types            | Per Pixel Classification                 |
+|-----------------------------------|---------------------------------|------------------------------------------|
+| ![](images/image-to-classify.png) | ![](images/diff-crops-type.png) | ![](images/per-pixel-classification.png) |
+
+we use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers.
 
 SLIC (Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours
 
@@ -60,7 +70,7 @@ Good approach - train and test split
 
 -   This is simply holding back a % of the original data used to train the model to then test it at the end
 
-    ![](images/Screenshot 2024-03-05 105251.png)
+    ![](images/Screenshot%202024-03-05%20105251.png)
 
 what do you think of spatial autocorrelation in this sense?
 

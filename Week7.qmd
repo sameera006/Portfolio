@@ -90,4 +90,22 @@ Spatial Cross validation
 
 ## APPLICATION
 
+The researchers lately have diverted themselves to a much simpler task of simplifying an image into a smaller cluster of pixels called super pixels than using traditional segmentation algorithms. Several applications such as object localization, multi-class segmentation, optical flow, body model estimation, object tracking, depth estimation took advantage of super pixels.
+
+The algorithm to do this is Simple linear Iterative Clustering Algorithm(SLIC) but it has some limitations. It requires several iterations for the centroids to converge. It uses a distance map of the same size as the number of input pixels, which amounts to significant memory consumption for image stacks or video volumes. Lastly, SLIC enforces connectivity only as a post-processing step. So the better version of this is simple non-iterative clustering (SNIC). It is non-iterative, explicitly enforces connectivity, is computationally cheaper, uses lesser memory.[@achanta2017]
+
+Spatial autocorrelation is inherent to remotely sensed
+data. nearby pixels are more similar than distant ones. The evaluation of classification
+accuracy has always been considered as an important issue in the remote sensing
+community. \[\@congalton1991\]. Despite the importance attached to the accuracy
+assessment protocol, a gap, sometimes a serious one, is often found between the
+performance metrics of a model and the real quality of the resulting map. This
+tends to reduce the confidence placed in accuracy statistics and to discredit
+the true capacity of remote sensing in the opinion of the t end users. Because
+of spatial autocorrelation, spectral values of close pixels are often more
+similar than those of distant ones, producing falsely high accuracy metrics if
+the sampling design is not used for testing. [@roberts2017]
+
+![](images/spatial-autocorrealtion.png)
+
 ## REFLECTION

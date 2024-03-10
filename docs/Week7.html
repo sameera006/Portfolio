@@ -210,23 +210,16 @@ div.csl-indent {
 
 <section id="summary" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> SUMMARY</h2>
-<p>Pre-classified data</p>
-<p><strong>Dynamic World Data</strong>- data has SR, TOA</p>
-<p>how was it trained -</p>
-<p>ISSUES- Blobbiness-50x50 m</p>
-<p>Confusion Matrix</p>
-<p>The first example of people putting their training data online- ML /Deep Learning.</p>
-<p>For global application such data is amazing. GEE</p>
-<p><strong>OBJECT BASED IMAGE ANALYSIS</strong></p>
-<p>pixels -distance -</p>
-<p>OBIA is similarity between pixels. trying to match the similar pixels.</p>
-<p>for example - we take a RGB near-infrared 1m image. its a typical kind of image where we want to do segmentation and OBIA. we do OBIA to do clean classification. like if we classify on the mean of all the vectors inside a particular polygon we will get a solid result as opposed to classifying on individual pixels we will get a lot salt and pepper noise.</p>
-<p>there comes also a question why do we need object based analysis to improve in signal and noise. there are thousand pixels here so we might want to turn these things into objects.</p>
+<p>There is some Pre-classified data which can be used where we don’t need to do the classification. For example <strong>Dynamic World Data</strong> which use SR for labelling but use TOA for the model. here we use Machine learning models like Convolution Neural Network. Accuracy is assessed through Confusion Matrix.</p>
+<p>When we use such classified data we check that how was it trained. There are some issues like blobbiness as its a 50x50 m image.</p>
+<p><strong>OBJECT BASED IMAGE ANALYSIS (OBIA)</strong></p>
+<p>Here we talk about pixels and distance mainly Euclidian distance. OBIA is similarity between pixels. It tries to match the similar pixels. for example - Take a RGB near-infrared 1m image. Its a typical kind of image where we want to do segmentation and OBIA. we do OBIA to do clean classification. Like if we classify on the mean of all the vectors inside a particular polygon we will get a solid result as opposed to classifying on individual pixels we will get a lot salt and pepper noise.</p>
+<p>There comes also a question why do we need object based analysis? It is to improve in signal and noise. There are thousand pixels here so we might want to turn these things into objects.</p>
 <table class="table">
 <colgroup>
-<col style="width: 31%">
-<col style="width: 30%">
-<col style="width: 38%">
+<col style="width: 25%">
+<col style="width: 33%">
+<col style="width: 40%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -238,48 +231,65 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td><img src="images/image-to-classify.png" class="img-fluid"></td>
-<td><img src="images/diff-crops-type.png" class="img-fluid"></td>
-<td><img src="images/per-pixel-classification.png" class="img-fluid"></td>
+<td><img src="images/diff-crops-type.png" class="img-fluid" width="889"></td>
+<td><img src="images/per-pixel-classification.png" class="img-fluid" width="906"></td>
 </tr>
 </tbody>
 </table>
-<p>we use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers.</p>
-<p>SLIC (Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours</p>
+<p><strong>Fig1: Process of Classification</strong></p>
+<p>We use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers. we also talk about spectral gradient and can we use super-pixels to remove the salt and pepper noise.</p>
+<p><img src="images/Gradient-function.png" class="img-fluid"></p>
+<p><strong>Fig2: Spectral Gradient and Distances</strong></p>
+<p><strong>SNIC</strong>- (Super pixel non-iterative clustering) Seeded region growing</p>
+<p>This makes clusters without using k-means. It uses a regular grid of points (like k-means) but then assigns pixels to points through distance color and co-ordinates - it represents normalised spatial and color distances. we also have seed grid which denotes spacing in pixel. we can set square or hex grid.</p>
+<p><strong>Image.reduceConnectedComponents</strong></p>
+<p>(Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours</p>
 <p><strong>The SLIC algorithm works iteratively</strong>, repeating the above process until it reaches the expected number of iterations.</p>
 <p>sub pixel analysis/ spectral mixture analysis</p>
-<p>VIS triangle -find single pure end member</p>
-<p>MESMA- multiple endmember spectral analysis</p>
-<p>Accuracy Assessment</p>
-<p>in RS we focus on PA-producer accuracy</p>
-<p>user’s accuracy and overall accuracy</p>
-<p>where the model is correct - true positive</p>
-<p>true negative</p>
-<p>where the model is incorrect- FP &amp; FN</p>
-<p>Kappa issues</p>
 <p><strong>Supervised Classification in Remote Sensing</strong></p>
 <p>In supervised classification, you select training samples and classify your image based on your chosen samples. Your training samples are key because they will determine which class each pixel inherits in your overall image.</p>
 <p><img src="images/sup-classification.png" class="img-fluid"></p>
-<p><span class="citation" data-cites="gisgeography2016">(<a href="references.html#ref-gisgeography2016" role="doc-biblioref">GISGeography 2016</a>)</span></p>
-<p>Good approach - train and test split</p>
+<p><strong>Fig3: Classification and Validation</strong><span class="citation" data-cites="gisgeography2016">(<a href="references.html#ref-gisgeography2016" role="doc-biblioref">GISGeography 2016</a>)</span></p>
+<p>The good approach is to train and test split</p>
 <ul>
 <li><p>This is simply holding back a % of the original data used to train the model to then test it at the end</p>
 <p><img src="images/Screenshot 2024-03-05 105251.png" class="img-fluid"></p></li>
 </ul>
-<p>what do you think of spatial autocorrelation in this sense?</p>
-<p>OBIA is dealing with spatial autocorrelation</p>
-<p>In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted.</p>
-<p>Spatial Cross validation</p>
+<p><strong>Fig.4: Testing and Training the ML model</strong></p>
+<p>What do you think of spatial autocorrelation in this sense? Is OBIA is dealing with spatial autocorrelation?</p>
+<p>In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted. To solve this we do spatial cross validation</p>
 </section>
 <section id="application" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> APPLICATION</h2>
+<p>The researchers lately have diverted themselves to a much simpler task of simplifying an image into a smaller cluster of pixels called super pixels than using traditional segmentation algorithms. Several applications such as object localization, multi-class segmentation, optical flow, body model estimation, object tracking, depth estimation took advantage of super pixels.</p>
+<p>The algorithm to do this is Simple linear Iterative Clustering Algorithm(SLIC) but it has some limitations. It requires several iterations for the centroids to converge. It uses a distance map of the same size as the number of input pixels, which amounts to significant memory consumption for image stacks or video volumes. Lastly, SLIC enforces connectivity only as a post-processing step. So the better version of this is simple non-iterative clustering (SNIC). It is non-iterative, explicitly enforces connectivity, is computationally cheaper, uses lesser memory.<span class="citation" data-cites="achanta2017">(<a href="references.html#ref-achanta2017" role="doc-biblioref">Achanta and Susstrunk 2017</a>)</span></p>
+<p>Spatial autocorrelation is inherent to remotely sensed data. nearby pixels are more similar than distant ones. The evaluation of classification accuracy has always been considered as an important issue in the remote sensing community. <span class="citation" data-cites="congalton1991">(<a href="references.html#ref-congalton1991" role="doc-biblioref">Congalton 1991</a>)</span></p>
+<p>Despite the importance attached to the accuracy assessment protocol, a gap, sometimes a serious one, is often found between the performance metrics of a model and the real quality of the resulting map. This tends to reduce the confidence placed in accuracy statistics and to discredit the true capacity of remote sensing in the opinion of the t end users. Because of spatial autocorrelation, spectral values of close pixels are often more similar than those of distant ones, producing falsely high accuracy metrics if the sampling design is not used for testing. <span class="citation" data-cites="roberts2017">(<a href="references.html#ref-roberts2017" role="doc-biblioref">Roberts et al. 2017</a>)</span></p>
+<p>From a statistical point of view, two problems can arise with spatial autocorrelation: (1) spatial non-independence of the classification errors (or model residuals) and (2) spatial non-independence of the training and test sets used for accuracy assessment.</p>
+<p>The six cross-validation strategies with different sample sizes were applied to the department of Herault-34. The classification performances obtained by cross-validation on Herault-34 are given in Fig. 5. Overall, the results show that ignoring dependence between training and test sets leads to very high accuracy metrics whatever the sample size. This is particularly clear at the pixel level but also at the object level with large samples. Compared to sampling strategies that account for spatial autocorrelation, the accuracy metrics are overestimated. Our results revealed notable underestimation of generalization errors when traditional non spatial approaches were used to assess the accuracy. Pixel-based samplings were the most affected. Object-based strategies mitigate the effect of spatial dependence since the pixels used for training and testing never belong to the same forest stands. Nonetheless, non-spatial data-splitting at the object level also leads to overestimation of predictive performance. we need to change practices in classification accuracy assessment using spatial imagery. A data splitting design ensuring spatial independence between the training and test sets should be the standard approach for validation. <span class="citation" data-cites="karasiak2022">(<a href="references.html#ref-karasiak2022" role="doc-biblioref">Karasiak et al. 2022</a>)</span></p>
+<p><img src="images/spatial-autocorrealtion.png" class="img-fluid"></p>
+<p><strong>Fig.5: Average Overall accuracy based on the RF classifier</strong></p>
 </section>
 <section id="reflection" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> REFLECTION</h2>
+<p>This week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of overfitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran’s I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-achanta2017" class="csl-entry" role="listitem">
+Achanta, Radhakrishna, and Sabine Susstrunk. 2017. <span>“2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR).”</span> In, 4895–4904. Honolulu, HI: IEEE. <a href="https://doi.org/10.1109/CVPR.2017.520">https://doi.org/10.1109/CVPR.2017.520</a>.
+</div>
+<div id="ref-congalton1991" class="csl-entry" role="listitem">
+Congalton, Russell G. 1991. <span>“A Review of Assessing the Accuracy of Classifications of Remotely Sensed Data.”</span> <em>Remote Sensing of Environment</em> 37 (1): 35–46. <a href="https://doi.org/10.1016/0034-4257(91)90048-B">https://doi.org/10.1016/0034-4257(91)90048-B</a>.
+</div>
 <div id="ref-gisgeography2016" class="csl-entry" role="listitem">
 GISGeography. 2016. <span>“Supervised and Unsupervised Classification in Remote Sensing.”</span> <a href="https://gisgeography.com/supervised-unsupervised-classification-arcgis/">https://gisgeography.com/supervised-unsupervised-classification-arcgis/</a>.
+</div>
+<div id="ref-karasiak2022" class="csl-entry" role="listitem">
+Karasiak, N., J.-F. Dejoux, C. Monteil, and D. Sheeren. 2022. <span>“Spatial Dependence Between Training and Test Sets: Another Pitfall of Classification Accuracy Assessment in Remote Sensing.”</span> <em>Machine Learning</em> 111 (7): 2715–40. <a href="https://doi.org/10.1007/s10994-021-05972-1">https://doi.org/10.1007/s10994-021-05972-1</a>.
+</div>
+<div id="ref-roberts2017" class="csl-entry" role="listitem">
+Roberts, David R., Volker Bahn, Simone Ciuti, Mark S. Boyce, Jane Elith, Gurutzeta Guillera-Arroita, Severin Hauenstein, et al. 2017. <span>“Cross<span>-</span>Validation Strategies for Data with Temporal, Spatial, Hierarchical, or Phylogenetic Structure.”</span> <em>Ecography</em> 40 (8): 913–29. <a href="https://doi.org/10.1111/ecog.02881">https://doi.org/10.1111/ecog.02881</a>.
 </div>
 </div>
 </section>

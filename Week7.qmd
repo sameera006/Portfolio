@@ -16,7 +16,7 @@ There comes also a question why do we need object based analysis? It is to impro
 
 | Original Image to Classify        | Different Crop Types                         | Per Pixel Classification                              |
 |-----------------------------------|----------------------------------------------|-------------------------------------------------------|
-| ![](images/image-to-classify.png) | ![](images/diff-crops-type.png){width="889"} | ![](images/per-pixel-classification.png){width="906"} |
+| ![](images/image-to-classify.png) | ![](images/diff-crops-type.png){width="889"} | ![](images/per-pixel-classification.png){width="889"} |
 
 **Fig1: Process of Classification**
 

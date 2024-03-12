@@ -20,19 +20,19 @@ Machine learning is defined as the science of computer modeling of learning proc
 
 **CART (Classification and Regression Tree)**
 
-**Classification tree** classify data into two or more discrete categories. For example Landcover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which dependens on the conditions outside hot or cold, the speed of wind and the weather.
+**Classification tree** classify data into two or more discrete categories. For example Land cover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which depend on the conditions outside hot or cold, the speed of wind and the weather.
 
 |                                            |                                  |
-|--------------------------------------------|----------------------------------|
+|----------------------------------------|-------------------------------|
 | ![](images/decision-tree.png){width="266"} | ![](images/dt1.png){width="286"} |
 
 [@decision]
 
-**Regression trees** predict continuous dependant variable like numerical variable for example total PopulationThey subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. the option with the lowest impurity goes to the top of the tree and becomes the root.
+**Regression trees** predict continuous dependent variable like numerical variable for example total population. They subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. The option with the lowest impurity goes to the top of the tree and becomes the root.
 
-While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of **overfitting** and **underfitting**. [@singh2018]
+While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of over fitting and under fittingg. [@singh2018]
 
-So decision trees are not good with new or big size data. Higher depth DTs are more prone to overfitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.
+So decision trees (DTs) are not good with new or big size data. Higher depth DTs are more prone to over fitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.
 
 **Random Forests**
 
@@ -42,11 +42,11 @@ Random Forests (RFs) are composed of multiple independent decision trees that ar
 
 [@bhatia2019]
 
-In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out varibles are called OOB.
+In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out variables are called OOB.
 
 how do we apply these methods with the satellite imagery?
 
-**Image Classification Techniques** - it is the process of assigning landcover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.
+**Image Classification Techniques** - it is the process of assigning land cover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.
 
 1.  Supervised
 
@@ -60,11 +60,17 @@ how do we apply these methods with the satellite imagery?
 
 ## APPLICATION
 
-[@tariq2023]
+"Identifying specific crop types, cropland, and cropping patterns using space-based observations is challenging because different crop types and cropping patterns have similarity spectral signatures. But combining satellite imagery with machine learning methods helps in monitoring the above concern. In this study, Sentinel-2 and Landsat-8 time series data were used with the Decision Tree Classifier (DTC) and Random Forest (RF) methods to map cropland and crop types in Gujranwala's sub-districts. Optical remote sensing NDVI time series data facilitated cropland mapping, revealing wheat as the predominant crop with 85% coverage, while barley occupied only 0.07% of the total crop area. The analysis focused on areas with consistent agricultural calendars, parcel morphology, and climatic conditions. DTC and RF methods showcased wheat's superior accuracy."[@tariq2023]
 
-[@hansen2013]
+"Remote sensing helps study Urban Green Spaces (UGSs), but less is known about non-tree species, change detection, and health assessment. Most research focuses on large UGSs, neglecting smaller areas like street trees and parks, which are still significant. Urban managers need to identify vegetation species to maintain and protect UGSs from invasive species. Previously, this was costly and hard, relying on field surveys. Now, remote sensing allows for accurate and timely identification of vegetation species in urban areas."[@shahtahmassebi2021]
 
-[@shahtahmassebi2021]
+The key concerns in the above study is the presence of shadow in high spatial resolution imagery which can reduce the accuracy of UGSs mapping ([@zhang2012]; [@merry2014]). There is also a need to develop methods for extracting informative and intelligent information from Google Street View, for example, species characteristics and the quality of UGSs as might be perceived by users of the spaces.
+
+A new study suggests creating, testing, and implementing a machine learning approach to assess green space quality based on human perception, using transfer learning from pre-existing models. The findings show that the developed models performed well in six key areas: accuracy, precision, recall, F1-score, Cohen\'s Kappa, and Average ROC-AUC. [@rustamov2023]
+
+![](images/green-space-ML.png)
+
+Using remote sensing data, particularly the Normalized Difference Vegetation Index (NDVI), is a common method to evaluate green space quantity on satellite images. [@sun2021] However, this approach has limitations when assessing green space quality. Remote sensing struggles to detect subtle changes in quality-related variables and provides only a two-dimensional view, which may not accurately represent the green space perceived at eye level. Additionally, while quantity matters, green space quality is more crucial for human health. The complexity of feature extraction in Convolutional Neural Networks (CNN) depends on the number of layers, with fewer layers resulting in weaker learning abilities for complex features.[@ayadi2022]
 
 ## REFLECTION
 

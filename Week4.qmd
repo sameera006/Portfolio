@@ -6,7 +6,7 @@ title: "Week 4 - Policy"
 
 Climate-induced desertification is having adverse effects on the African continent each year the Earth continues to warm. It impacts the everyday lives of Africans -- from their crops, livestock, and housing -- to African wildlife and biodiversity. [@stallwood2022]
 
-[Desertification](https://www.maxwell.syr.edu/news/article/koch-quoted-in-bbc-article-on-dubai-desertification) is \"the process by which fertile land becomes desert, typically as a result of drought, deforestation or inappropriate agriculture.\" It is where semi-arid lands, such as grasslands or shrublands, decrease and eventually disappear. [@kochquo]
+[Desertification](https://www.maxwell.syr.edu/news/article/koch-quoted-in-bbc-article-on-dubai-desertification) is "the process by which fertile land becomes desert, typically as a result of drought, deforestation or inappropriate agriculture." It is where semi-arid lands, such as grasslands or shrublands, decrease and eventually disappear. [@kochquo]
 
 According to European Commision world atlas of Desertification
 
@@ -38,13 +38,13 @@ The Sahel region is the most vulnerable region on the continent because of the 1
 
 According to united nation global outlook2 report found that intensive agriculture methods are responsible for upto 80% of deforestation.
 
-With the Sahel region being the most vulnerable and heavily affected by desertification, an initiative known as [\'The Green Wall\'](https://earth.org/the-great-green-wall-legacy/) was put in place for the Sahara and Sahel in 2007. Its ambitious aim is to grow an 8,000-kilometre natural wonder across the entire width of Africa in order to increase the amount of arable land bordering the Sahara desert. The idea is that planting more trees will combat desertification, create jobs, increase food security and bring migrated populations back home to Africa.
+With the Sahel region being the most vulnerable and heavily affected by desertification, an initiative known as ['The Green Wall'](https://earth.org/the-great-green-wall-legacy/) was put in place for the Sahara and Sahel in 2007. Its ambitious aim is to grow an 8,000-kilometre natural wonder across the entire width of Africa in order to increase the amount of arable land bordering the Sahara desert. The idea is that planting more trees will combat desertification, create jobs, increase food security and bring migrated populations back home to Africa.
 
-The Great Green Wall\'s goal for 2030 is to restore 247 million acres of destroyed land and create 10 million jobs in affected rural areas.[AFR100\'s goal of restoring 100 million hectares by 2030 ](https://afr100.org/content/100-million-hectares-africa-under-restoration-2030)is not as far-fetched as we may think despite the ambitious goal, especially since the Great Green wall [received \$14 billion in funding](https://earth.org/the-great-green-wall-accelerator/) for the next ten years at the recent One Planet Summit for Biodiversity. [@stallwood2022]
+The Great Green Wall's goal for 2030 is to restore 247 million acres of destroyed land and create 10 million jobs in affected rural areas.[AFR100's goal of restoring 100 million hectares by 2030 ](https://afr100.org/content/100-million-hectares-africa-under-restoration-2030)is not as far-fetched as we may think despite the ambitious goal, especially since the Great Green wall [received \$14 billion in funding](https://earth.org/the-great-green-wall-accelerator/) for the next ten years at the recent One Planet Summit for Biodiversity. [@stallwood2022]
 
 ![Figure 2: The Eleven Nations that are investing in the Great Green Wall Initiative \_\@National Geographic [@jose2023]](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-1-1.webp)
 
-The Great Green Wall concept was first put forth in the early 2000s in response to the Sahel region\'s increasing desertification and degradation of the land.![Figure 3: Saplings raised in village nursery in Téra, Niger\_\@ Centre National de Semences Forestières, Niger.](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-3-1.webp)
+The Great Green Wall concept was first put forth in the early 2000s in response to the Sahel region's increasing desertification and degradation of the land.![Figure 3: Saplings raised in village nursery in Téra, Niger\_\@ Centre National de Semences Forestières, Niger.](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-3-1.webp)
 
 Some examples of case studies-
 
@@ -54,4 +54,6 @@ The spatio temporalcharacteristics of desertification in Mongolia in 1990--2020 
 
 ## REFLECTION
 
-If i am a city planner how can we start to address this What areas should i start with (funding often limited) What stage in the planning process might this come Who would be responsible (e.g. what department) What skills do they need What benefits can this bring to the city (often finances!) How does this help the city align with global agendas What stakeholders do i need to consider
+\*\*NEED TO UPDATE it
+
+*If i am a city planner how can we start to address this What areas should i start with (funding often limited) What stage in the planning process might this come Who would be responsible (e.g. what department) What skills do they need What benefits can this bring to the city (often finances!) How does this help the city align with global agendas What stakeholders do i need to consider*

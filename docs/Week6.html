@@ -218,7 +218,7 @@ div.csl-indent {
 <p>so the expert system consist of the knowledge base and inference engine. what we want to find out how a computer replicate human knowledge. and how expert system is applied to remote sensing.</p>
 <p>Machine learning is defined as the science of computer modeling of learning process. there are number of machine learning data decision tree /regression tree.</p>
 <p><strong>CART (Classification and Regression Tree)</strong></p>
-<p><strong>Classification tree</strong> classify data into two or more discrete categories. For example Landcover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which dependens on the conditions outside hot or cold, the speed of wind and the weather.</p>
+<p><strong>Classification tree</strong> classify data into two or more discrete categories. For example Land cover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which depend on the conditions outside hot or cold, the speed of wind and the weather.</p>
 <table class="table">
 <colgroup>
 <col style="width: 56%">
@@ -232,16 +232,16 @@ div.csl-indent {
 </tbody>
 </table>
 <p><span class="citation" data-cites="decision">(<a href="references.html#ref-decision" role="doc-biblioref"><span>“Decision Tree Tutorials &amp; Notes | Machine Learning,”</span> n.d.</a>)</span></p>
-<p><strong>Regression trees</strong> predict continuous dependant variable like numerical variable for example total PopulationThey subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. the option with the lowest impurity goes to the top of the tree and becomes the root.</p>
-<p>While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of <strong>overfitting</strong> and <strong>underfitting</strong>. <span class="citation" data-cites="singh2018">(<a href="references.html#ref-singh2018" role="doc-biblioref">Singh 2018</a>)</span></p>
-<p>So decision trees are not good with new or big size data. Higher depth DTs are more prone to overfitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.</p>
+<p><strong>Regression trees</strong> predict continuous dependent variable like numerical variable for example total population. They subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. The option with the lowest impurity goes to the top of the tree and becomes the root.</p>
+<p>While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of over fitting and under fittingg. <span class="citation" data-cites="singh2018">(<a href="references.html#ref-singh2018" role="doc-biblioref">Singh 2018</a>)</span></p>
+<p>So decision trees (DTs) are not good with new or big size data. Higher depth DTs are more prone to over fitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.</p>
 <p><strong>Random Forests</strong></p>
 <p>Random Forests (RFs) are composed of multiple independent decision trees that are trained independently on a random subset of data.</p>
 <p><img src="images/1_ixvrbH45K8CcNZaj98JGuA.webp" class="img-fluid"></p>
 <p><span class="citation" data-cites="bhatia2019">(<a href="references.html#ref-bhatia2019" role="doc-biblioref">Bhatia 2019</a>)</span></p>
-<p>In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out varibles are called OOB.</p>
+<p>In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out variables are called OOB.</p>
 <p>how do we apply these methods with the satellite imagery?</p>
-<p><strong>Image Classification Techniques</strong> - it is the process of assigning landcover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.</p>
+<p><strong>Image Classification Techniques</strong> - it is the process of assigning land cover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.</p>
 <ol type="1">
 <li><p>Supervised</p></li>
 <li><p>Unsupervised</p></li>
@@ -252,9 +252,12 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> APPLICATION</h2>
-<p><span class="citation" data-cites="tariq2023">(<a href="references.html#ref-tariq2023" role="doc-biblioref">Tariq et al. 2023</a>)</span></p>
-<p><span class="citation" data-cites="hansen2013">(<a href="references.html#ref-hansen2013" role="doc-biblioref">Hansen et al. 2013</a>)</span></p>
-<p><span class="citation" data-cites="shahtahmassebi2021">(<a href="references.html#ref-shahtahmassebi2021" role="doc-biblioref">Shahtahmassebi et al. 2021</a>)</span></p>
+<p>“Identifying specific crop types, cropland, and cropping patterns using space-based observations is challenging because different crop types and cropping patterns have similarity spectral signatures. But combining satellite imagery with machine learning methods helps in monitoring the above concern. In this study, Sentinel-2 and Landsat-8 time series data were used with the Decision Tree Classifier (DTC) and Random Forest (RF) methods to map cropland and crop types in Gujranwala’s sub-districts. Optical remote sensing NDVI time series data facilitated cropland mapping, revealing wheat as the predominant crop with 85% coverage, while barley occupied only 0.07% of the total crop area. The analysis focused on areas with consistent agricultural calendars, parcel morphology, and climatic conditions. DTC and RF methods showcased wheat’s superior accuracy.”<span class="citation" data-cites="tariq2023">(<a href="references.html#ref-tariq2023" role="doc-biblioref">Tariq et al. 2023</a>)</span></p>
+<p>“Remote sensing helps study Urban Green Spaces (UGSs), but less is known about non-tree species, change detection, and health assessment. Most research focuses on large UGSs, neglecting smaller areas like street trees and parks, which are still significant. Urban managers need to identify vegetation species to maintain and protect UGSs from invasive species. Previously, this was costly and hard, relying on field surveys. Now, remote sensing allows for accurate and timely identification of vegetation species in urban areas.”<span class="citation" data-cites="shahtahmassebi2021">(<a href="references.html#ref-shahtahmassebi2021" role="doc-biblioref">Shahtahmassebi et al. 2021</a>)</span></p>
+<p>The key concerns in the above study is the presence of shadow in high spatial resolution imagery which can reduce the accuracy of UGSs mapping (<span class="citation" data-cites="zhang2012">(<a href="references.html#ref-zhang2012" role="doc-biblioref">Zhang and Qiu 2012</a>)</span>; <span class="citation" data-cites="merry2014">(<a href="references.html#ref-merry2014" role="doc-biblioref">Merry et al. 2014</a>)</span>). There is also a need to develop methods for extracting informative and intelligent information from Google Street View, for example, species characteristics and the quality of UGSs as might be perceived by users of the spaces.</p>
+<p>A new study suggests creating, testing, and implementing a machine learning approach to assess green space quality based on human perception, using transfer learning from pre-existing models. The findings show that the developed models performed well in six key areas: accuracy, precision, recall, F1-score, Cohen's Kappa, and Average ROC-AUC. <span class="citation" data-cites="rustamov2023">(<a href="references.html#ref-rustamov2023" role="doc-biblioref">Rustamov, Rustamov, and Zaki 2023</a>)</span></p>
+<p><img src="images/green-space-ML.png" class="img-fluid"></p>
+<p>Using remote sensing data, particularly the Normalized Difference Vegetation Index (NDVI), is a common method to evaluate green space quantity on satellite images. <span class="citation" data-cites="sun2021">(<a href="references.html#ref-sun2021" role="doc-biblioref">Sun et al. 2021</a>)</span> However, this approach has limitations when assessing green space quality. Remote sensing struggles to detect subtle changes in quality-related variables and provides only a two-dimensional view, which may not accurately represent the green space perceived at eye level. Additionally, while quantity matters, green space quality is more crucial for human health. The complexity of feature extraction in Convolutional Neural Networks (CNN) depends on the number of layers, with fewer layers resulting in weaker learning abilities for complex features.<span class="citation" data-cites="ayadi2022">(<a href="references.html#ref-ayadi2022" role="doc-biblioref">Ayadi and Lachiri 2022</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> REFLECTION</h2>
@@ -262,14 +265,20 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-ayadi2022" class="csl-entry" role="listitem">
+Ayadi, Souha, and Zied Lachiri. 2022. <span>“Deep Neural Network for Visual Emotion Recognition Based on ResNet50 Using Song-Speech Characteristics.”</span> <em>2022 5th International Conference on Advanced Systems and Emergent Technologies (IC<span>_</span>ASET)</em>, March, 363–68. <a href="https://doi.org/10.1109/IC_ASET53395.2022.9765898">https://doi.org/10.1109/IC_ASET53395.2022.9765898</a>.
+</div>
 <div id="ref-bhatia2019" class="csl-entry" role="listitem">
 Bhatia, Navnina. 2019. <span>“What Is Out of Bag (OOB) Score in Random Forest?”</span> <a href="https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710">https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710</a>.
 </div>
 <div id="ref-decision" class="csl-entry" role="listitem">
 <span>“Decision Tree Tutorials &amp; Notes | Machine Learning.”</span> n.d. <a href="https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/ml-decision-tree/tutorial/">https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/ml-decision-tree/tutorial/</a>.
 </div>
-<div id="ref-hansen2013" class="csl-entry" role="listitem">
-Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova, A. Tyukavina, D. Thau, et al. 2013. <span>“High-Resolution Global Maps of 21st-Century Forest Cover Change.”</span> <em>Science</em> 342 (6160): 850–53. <a href="https://doi.org/10.1126/science.1244693">https://doi.org/10.1126/science.1244693</a>.
+<div id="ref-merry2014" class="csl-entry" role="listitem">
+Merry, Krista, Jacek Siry, Pete Bettinger, and J. M. Bowker. 2014. <span>“Urban Tree Cover Change in Detroit and Atlanta, USA, 1951<span></span>2010.”</span> <em>Cities</em> 41 (December): 123–31. <a href="https://doi.org/10.1016/j.cities.2014.06.012">https://doi.org/10.1016/j.cities.2014.06.012</a>.
+</div>
+<div id="ref-rustamov2023" class="csl-entry" role="listitem">
+Rustamov, Jaloliddin, Zahiriddin Rustamov, and Nazar Zaki. 2023. <span>“Green Space Quality Analysis Using Machine Learning Approaches.”</span> <em>Sustainability</em> 15 (10): 7782. <a href="https://doi.org/10.3390/su15107782">https://doi.org/10.3390/su15107782</a>.
 </div>
 <div id="ref-shahtahmassebi2021" class="csl-entry" role="listitem">
 Shahtahmassebi, Amir Reza, Chenlu Li, Yifan Fan, Yani Wu, Yue lin, Muye Gan, Ke Wang, Arunima Malik, and George Alan Blackburn. 2021. <span>“Remote Sensing of Urban Green Spaces: A Review.”</span> <em>Urban Forestry &amp; Urban Greening</em> 57 (January): 126946. <a href="https://doi.org/10.1016/j.ufug.2020.126946">https://doi.org/10.1016/j.ufug.2020.126946</a>.
@@ -277,11 +286,17 @@ Shahtahmassebi, Amir Reza, Chenlu Li, Yifan Fan, Yani Wu, Yue lin, Muye Gan, Ke 
 <div id="ref-singh2018" class="csl-entry" role="listitem">
 Singh, Seema. 2018. <span>“Understanding the Bias-Variance Tradeoff.”</span> <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229</a>.
 </div>
+<div id="ref-sun2021" class="csl-entry" role="listitem">
+Sun, Yi, Xingzhi Wang, Jiayin Zhu, Liangjian Chen, Yuhang Jia, Jean M. Lawrence, Luo-hua Jiang, Xiaohui Xie, and Jun Wu. 2021. <span>“Using Machine Learning to Examine Street Green Space Types at a High Spatial Resolution: Application in Los Angeles County on Socioeconomic Disparities in Exposure.”</span> <em>The Science of the Total Environment</em> 787 (September): 147653. <a href="https://doi.org/10.1016/j.scitotenv.2021.147653">https://doi.org/10.1016/j.scitotenv.2021.147653</a>.
+</div>
 <div id="ref-tariq2023" class="csl-entry" role="listitem">
 Tariq, Aqil, Jianguo Yan, Alexandre S. Gagnon, Mobushir Riaz Khan, and Faisal Mumtaz. 2023. <span>“Mapping of Cropland, Cropping Patterns and Crop Types by Combining Optical Remote Sensing Images with Decision Tree Classifier and Random Forest.”</span> <em>Geo-Spatial Information Science</em> 26 (3): 302–20. <a href="https://doi.org/10.1080/10095020.2022.2100287">https://doi.org/10.1080/10095020.2022.2100287</a>.
 </div>
 <div id="ref-whatis" class="csl-entry" role="listitem">
 <span>“What Is a Knowledge-Based System in the Context of Artificial Intelligence?”</span> n.d. <a href="https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence">https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence</a>.
+</div>
+<div id="ref-zhang2012" class="csl-entry" role="listitem">
+Zhang, C., and F. Qiu. 2012. <span>“Mapping Individual Tree Species in an Urban Forest Using Airborne Lidar Data and Hyperspectral Imagery: AAG Remote Sensing Specialty Group 2011 Award Winner.”</span> <em>Photogrammetric Engineering and Remote Sensing</em> 78 (10): 1079–87. <a href="https://doi.org/10.14358/PERS.78.10.1079">https://doi.org/10.14358/PERS.78.10.1079</a>.
 </div>
 </div>
 </section>

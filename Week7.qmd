@@ -1,84 +1,77 @@
 ---
-title: "Week 7 - Classification- The Big Question"
+title: "Week 6- Classification-1"
 ---
 
 ## SUMMARY
 
-There is some Pre-classified data which can be used where we don't need to do the classification. For example **Dynamic World Data** which use SR for labelling but use TOA for the model. here we use Machine learning models like Convolution Neural Network. Accuracy is assessed through Confusion Matrix.
+Classification can be used in many studies like Urban Expansion using Landsat data, Air pollution, Urban green Spaces, monitoring forest like illegal logging, and Forest fires. in all these studies land cover is extracted from the earth observation data.
 
-When we use such classified data we check that how was it trained. There are some issues like blobbiness as its a 50x50 m image.
+So, the process of classification involves inductive learning which means that by looking at the map we know where is ground or barren land or urban or forest area and accordingly we can classify.
 
-**OBJECT BASED IMAGE ANALYSIS (OBIA)**
+For classification we use an expert system.
 
-Here we talk about pixels and distance mainly Euclidian distance. OBIA is similarity between pixels. It tries to match the similar pixels. for example - Take a RGB near-infrared 1m image. Its a typical kind of image where we want to do segmentation and OBIA. we do OBIA to do clean classification. Like if we classify on the mean of all the vectors inside a particular polygon we will get a solid result as opposed to classifying on individual pixels we will get a lot salt and pepper noise.
+![](images/main-qimg-a63e873b68b7d220020991140f0a896c-lq.jpg)
 
-There comes also a question why do we need object based analysis? It is to improve in signal and noise. There are thousand pixels here so we might want to turn these things into objects.
+[@whatis]
 
-| Original Image to Classify        | Different Crop Types                         | Per Pixel Classification                              |
-|-----------------------------------|----------------------------------------------|-------------------------------------------------------|
-| ![](images/image-to-classify.png) | ![](images/diff-crops-type.png){width="889"} | ![](images/per-pixel-classification.png){width="889"} |
+so the expert system consist of the knowledge base and inference engine. what we want to find out how a computer replicate human knowledge. and how expert system is applied to remote sensing.
 
-**Fig1: Process of Classification**
+Machine learning is defined as the science of computer modeling of learning process. there are number of machine learning data decision tree /regression tree.
 
-We use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers. we also talk about spectral gradient and can we use super-pixels to remove the salt and pepper noise.
+**CART (Classification and Regression Tree)**
 
-![](images/Gradient-function.png)
+**Classification tree** classify data into two or more discrete categories. For example Land cover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which depend on the conditions outside hot or cold, the speed of wind and the weather.
 
-**Fig2: Spectral Gradient and Distances**
+|                                            |                                  |
+|----------------------------------------|-------------------------------|
+| ![](images/decision-tree.png){width="266"} | ![](images/dt1.png){width="286"} |
 
-**SNIC**- (Super pixel non-iterative clustering) Seeded region growing
+[@decision]
 
-This makes clusters without using k-means. It uses a regular grid of points (like k-means) but then assigns pixels to points through distance color and co-ordinates - it represents normalised spatial and color distances. we also have seed grid which denotes spacing in pixel. we can set square or hex grid.
+**Regression trees** predict continuous dependent variable like numerical variable for example total population. They subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. The option with the lowest impurity goes to the top of the tree and becomes the root.
 
-**Image.reduceConnectedComponents**
+While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of over fitting and under fittingg. [@singh2018]
 
-(Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours
+So decision trees (DTs) are not good with new or big size data. Higher depth DTs are more prone to over fitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.
 
-**The SLIC algorithm works iteratively**, repeating the above process until it reaches the expected number of iterations.
+**Random Forests**
 
-sub pixel analysis/ spectral mixture analysis
+Random Forests (RFs) are composed of multiple independent decision trees that are trained independently on a random subset of data.
 
-**Supervised Classification in Remote Sensing**
+![](images/1_ixvrbH45K8CcNZaj98JGuA.webp)
 
-In supervised classification, you select training samples and classify your image based on your chosen samples. Your training samples are key because they will determine which class each pixel inherits in your overall image.
+[@bhatia2019]
 
-![](images/sup-classification.png)
+In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out variables are called OOB.
 
-**Fig3: Classification and Validation**[@gisgeography2016]
+how do we apply these methods with the satellite imagery?
 
-The good approach is to train and test split
+**Image Classification Techniques** - it is the process of assigning land cover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.
 
--   This is simply holding back a % of the original data used to train the model to then test it at the end
+1.  Supervised
 
-    ![](images/Screenshot%202024-03-05%20105251.png)
+2.  Unsupervised
 
-**Fig.4: Testing and Training the ML model**
+3.  Object based Image Classification
 
-What do you think of spatial autocorrelation in this sense? Is OBIA is dealing with spatial autocorrelation?
+    Unsupervised classification usually referred as clustering/k-means. some common clustering algorithm are ISODATA.
 
-In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted. To solve this we do spatial cross validation
+    Supervised Classification we use Maximum likelihood and support vector machines(SVM).
 
 ## APPLICATION
 
-The researchers lately have diverted themselves to a much simpler task of simplifying an image into a smaller cluster of pixels called super pixels than using traditional segmentation algorithms. Several applications such as object localization, multi-class segmentation, optical flow, body model estimation, object tracking, depth estimation took advantage of super pixels.
+"Identifying specific crop types, cropland, and cropping patterns using space-based observations is challenging because different crop types and cropping patterns have similarity spectral signatures. But combining satellite imagery with machine learning methods helps in monitoring the above concern. In this study, Sentinel-2 and Landsat-8 time series data were used with the Decision Tree Classifier (DTC) and Random Forest (RF) methods to map cropland and crop types in Gujranwala's sub-districts. Optical remote sensing NDVI time series data facilitated cropland mapping, revealing wheat as the predominant crop with 85% coverage, while barley occupied only 0.07% of the total crop area. The analysis focused on areas with consistent agricultural calendars, parcel morphology, and climatic conditions. DTC and RF methods showcased wheat's superior accuracy."[@tariq2023]
 
-The algorithm to do this is Simple linear Iterative Clustering Algorithm(SLIC) but it has some limitations. It requires several iterations for the centroids to converge. It uses a distance map of the same size as the number of input pixels, which amounts to significant memory consumption for image stacks or video volumes. Lastly, SLIC enforces connectivity only as a post-processing step. So the better version of this is simple non-iterative clustering (SNIC). It is non-iterative, explicitly enforces connectivity, is computationally cheaper, uses lesser memory.[@achanta2017]
+"Remote sensing helps study Urban Green Spaces (UGSs), but less is known about non-tree species, change detection, and health assessment. Most research focuses on large UGSs, neglecting smaller areas like street trees and parks, which are still significant. Urban managers need to identify vegetation species to maintain and protect UGSs from invasive species. Previously, this was costly and hard, relying on field surveys. Now, remote sensing allows for accurate and timely identification of vegetation species in urban areas."[@shahtahmassebi2021]
 
-Spatial autocorrelation is inherent to remotely sensed data. nearby pixels are more similar than distant ones. The evaluation of classification accuracy has always been considered as an important issue in the remote sensing
-community. [@congalton1991]
+The key concerns in the above study is the presence of shadow in high spatial resolution imagery which can reduce the accuracy of UGSs mapping ([@zhang2012]; [@merry2014]). There is also a need to develop methods for extracting informative and intelligent information from Google Street View, for example, species characteristics and the quality of UGSs as might be perceived by users of the spaces.
 
-Despite the importance attached to the accuracy assessment protocol, a gap, sometimes a serious one, is often found between the performance metrics of a model and the real quality of the resulting map. This tends to reduce the confidence placed in accuracy statistics and to discredit the true capacity of remote sensing in the opinion of the t end users. Because of spatial autocorrelation, spectral values of close pixels are often more
-similar than those of distant ones, producing falsely high accuracy metrics if
-the sampling design is not used for testing. [@roberts2017]
+A new study suggests creating, testing, and implementing a machine learning approach to assess green space quality based on human perception, using transfer learning from pre-existing models. The findings show that the developed models performed well in six key areas: accuracy, precision, recall, F1-score, Cohen\'s Kappa, and Average ROC-AUC. [@rustamov2023]
 
-From a statistical point of view, two problems can arise with spatial autocorrelation: (1) spatial non-independence of the classification errors (or model residuals) and (2) spatial non-independence of the training and test sets used for accuracy assessment.
+![](images/green-space-ML.png)
 
-The six cross-validation strategies with different sample sizes were applied to the department of Herault-34. The classification performances obtained by cross-validation on Herault-34 are given in Fig. 5. Overall, the results show that ignoring dependence between training and test sets leads to very high accuracy metrics whatever the sample size. This is particularly clear at the pixel level but also at the object level with large samples. Compared to sampling strategies that account for spatial autocorrelation, the accuracy metrics are overestimated. Our results revealed notable underestimation of generalization errors when traditional non spatial approaches were used to assess the accuracy. Pixel-based samplings were the most affected. Object-based strategies mitigate the effect of spatial dependence since the pixels used for training and testing never belong to the same forest stands. Nonetheless, non-spatial data-splitting at the object level also leads to overestimation of predictive performance. we need to change practices in classification accuracy assessment using spatial imagery. A data splitting design ensuring spatial independence between the training and test sets should be the standard approach for validation. [@karasiak2022]
-
-![](images/spatial-autocorrealtion.png)
-
-**Fig.5: Average Overall accuracy based on the RF classifier**
+Using remote sensing data, particularly the Normalized Difference Vegetation Index (NDVI), is a common method to evaluate green space quantity on satellite images. [@sun2021] However, this approach has limitations when assessing green space quality. Remote sensing struggles to detect subtle changes in quality-related variables and provides only a two-dimensional view, which may not accurately represent the green space perceived at eye level. Additionally, while quantity matters, green space quality is more crucial for human health. The complexity of feature extraction in Convolutional Neural Networks (CNN) depends on the number of layers, with fewer layers resulting in weaker learning abilities for complex features.[@ayadi2022]
 
 ## REFLECTION
 
-This week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of overfitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran's I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.
+So, this week was about classification and had a lot of content to cover. I think this is the most important lecture because all the methods taught during the lecture are used very commonly for digital image processing and in future will be used mostly. I understood about decision trees and random forest and how machine learning plays an important role in the field of remote sensing. By week 6 all we did earlier is making sense and helpful in understanding about different applications where we can use this like detecting fires, flood risk, desertification and LULC heat maps.

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My Learning Diary - 7&nbsp; Week 6- Classification-1</title>
+<title>My Learning Diary - 6&nbsp; Week 6 - Introduction to Google Earth Engine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Week7.html" rel="next">
-<link href="./Week5.html" rel="prev">
+<link href="./Week4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -93,7 +93,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week6.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 6- Classification-1</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 - Introduction to Google Earth Engine</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,19 +150,19 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5 - Google Earth Engine</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./Week6.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 6- Classification-1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 - Introduction to Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 6- Classification-1</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 7 - Classification- The Big Question</span></span></a>
   </div>
 </li>
@@ -182,9 +182,9 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> SUMMARY</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> APPLICATION</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> REFLECTION</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> SUMMARY</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> APPLICATION</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> REFLECTION</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +193,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 6- Classification-1</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 - Introduction to Google Earth Engine</span></h1>
 </div>
 
 
@@ -208,95 +208,55 @@ div.csl-indent {
 
 </header>
 
-<section id="summary" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> SUMMARY</h2>
-<p>Classification can be used in many studies like Urban Expansion using Landsat data, Air pollution, Urban green Spaces, monitoring forest like illegal logging, and Forest fires. in all these studies land cover is extracted from the earth observation data.</p>
-<p>So, the process of classification involves inductive learning which means that by looking at the map we know where is ground or barren land or urban or forest area and accordingly we can classify.</p>
-<p>For classification we use an expert system.</p>
-<p><img src="images/main-qimg-a63e873b68b7d220020991140f0a896c-lq.jpg" class="img-fluid"></p>
-<p><span class="citation" data-cites="whatis">(<a href="references.html#ref-whatis" role="doc-biblioref"><span>“What Is a Knowledge-Based System in the Context of Artificial Intelligence?”</span> n.d.</a>)</span></p>
-<p>so the expert system consist of the knowledge base and inference engine. what we want to find out how a computer replicate human knowledge. and how expert system is applied to remote sensing.</p>
-<p>Machine learning is defined as the science of computer modeling of learning process. there are number of machine learning data decision tree /regression tree.</p>
-<p><strong>CART (Classification and Regression Tree)</strong></p>
-<p><strong>Classification tree</strong> classify data into two or more discrete categories. For example Land cover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which depend on the conditions outside hot or cold, the speed of wind and the weather.</p>
-<table class="table">
-<colgroup>
-<col style="width: 56%">
-<col style="width: 43%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><img src="images/decision-tree.png" class="img-fluid" width="266"></td>
-<td><img src="images/dt1.png" class="img-fluid" width="286"></td>
-</tr>
-</tbody>
-</table>
-<p><span class="citation" data-cites="decision">(<a href="references.html#ref-decision" role="doc-biblioref"><span>“Decision Tree Tutorials &amp; Notes | Machine Learning,”</span> n.d.</a>)</span></p>
-<p><strong>Regression trees</strong> predict continuous dependent variable like numerical variable for example total population. They subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. The option with the lowest impurity goes to the top of the tree and becomes the root.</p>
-<p>While discussing model prediction it is important to understand prediction errors(bias and variance). so it is very important to understand these errors which will help us build accurate models and avoid the mistake of over fitting and under fittingg. <span class="citation" data-cites="singh2018">(<a href="references.html#ref-singh2018" role="doc-biblioref">Singh 2018</a>)</span></p>
-<p>So decision trees (DTs) are not good with new or big size data. Higher depth DTs are more prone to over fitting and thus leads to higher variance. This shortcoming of DTs is explored by random forest model.</p>
-<p><strong>Random Forests</strong></p>
-<p>Random Forests (RFs) are composed of multiple independent decision trees that are trained independently on a random subset of data.</p>
-<p><img src="images/1_ixvrbH45K8CcNZaj98JGuA.webp" class="img-fluid"></p>
-<p><span class="citation" data-cites="bhatia2019">(<a href="references.html#ref-bhatia2019" role="doc-biblioref">Bhatia 2019</a>)</span></p>
-<p>In RFs we talk about bootstrapping and out of bag(OOB) error which is basically we do not train all the values and what is left is then tested and validated with the model. the left out variables are called OOB.</p>
-<p>how do we apply these methods with the satellite imagery?</p>
-<p><strong>Image Classification Techniques</strong> - it is the process of assigning land cover classes to pixels. For example classes include water, urban, Forest, agriculture and grassland.</p>
-<ol type="1">
-<li><p>Supervised</p></li>
-<li><p>Unsupervised</p></li>
-<li><p>Object based Image Classification</p>
-<p>Unsupervised classification usually referred as clustering/k-means. some common clustering algorithm are ISODATA.</p>
-<p>Supervised Classification we use Maximum likelihood and support vector machines(SVM).</p></li>
-</ol>
+<section id="summary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> SUMMARY</h2>
+<p>This week we studied the much awaited Google Earth Engine. ” <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/google-earth-engine" title="Learn more about Google Earth Engine from ScienceDirect's AI-generated Topic Pages">Google Earth Engine</a>&nbsp;is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geospatial datasets. It is designed to help researchers easily disseminate their results to other researchers, policy makers,&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/non-governmental-organisation" title="Learn more about NGOs from ScienceDirect's AI-generated Topic Pages">NGOs</a>, field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine’s resources, without needing to be an expert in application development, web programming or&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/document-markup-languages" title="Learn more about HTML from ScienceDirect's AI-generated Topic Pages">HTML</a>.” <span class="citation" data-cites="gorelick2017">(<a href="references.html#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span></p>
+<p>It is accessed and controlled through an&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/application-programming-interface" title="Learn more about application programming interface from ScienceDirect's AI-generated Topic Pages">application programming interface</a>&nbsp;(API) and an associated web-based interactive development environment (IDE) that enables&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/rapid-prototyping" title="Learn more about rapid prototyping from ScienceDirect's AI-generated Topic Pages">rapid prototyping</a>&nbsp;and visualization of results. So basically GEE can load large datasets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.</p>
+<p>GEE has a concept of <strong>client</strong> and <strong>server</strong> side where the code which we put runs on the client side i.e.&nbsp;Browser so we do not run anything locally which speeds up the process. It uses <strong>Javascript</strong> as the programming Language.</p>
+<p>The raster data is called <strong>image</strong> and the vector data is called <strong>feature</strong>.</p>
+<p>A stack of images is called <strong>Image Collection</strong> and Feature stack (lots of polygons) is known as <strong>Feature Collection</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ee-editor_1440.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">GEE Screen : <span class="citation" data-cites="beginner">(<a href="references.html#ref-beginner" role="doc-biblioref"><span>“Beginner’s Cookbook | Google Earth Engine,”</span> n.d.</a>)</span></figcaption>
+</figure>
+</div>
 </section>
-<section id="application" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> APPLICATION</h2>
-<p>“Identifying specific crop types, cropland, and cropping patterns using space-based observations is challenging because different crop types and cropping patterns have similarity spectral signatures. But combining satellite imagery with machine learning methods helps in monitoring the above concern. In this study, Sentinel-2 and Landsat-8 time series data were used with the Decision Tree Classifier (DTC) and Random Forest (RF) methods to map cropland and crop types in Gujranwala’s sub-districts. Optical remote sensing NDVI time series data facilitated cropland mapping, revealing wheat as the predominant crop with 85% coverage, while barley occupied only 0.07% of the total crop area. The analysis focused on areas with consistent agricultural calendars, parcel morphology, and climatic conditions. DTC and RF methods showcased wheat’s superior accuracy.”<span class="citation" data-cites="tariq2023">(<a href="references.html#ref-tariq2023" role="doc-biblioref">Tariq et al. 2023</a>)</span></p>
-<p>“Remote sensing helps study Urban Green Spaces (UGSs), but less is known about non-tree species, change detection, and health assessment. Most research focuses on large UGSs, neglecting smaller areas like street trees and parks, which are still significant. Urban managers need to identify vegetation species to maintain and protect UGSs from invasive species. Previously, this was costly and hard, relying on field surveys. Now, remote sensing allows for accurate and timely identification of vegetation species in urban areas.”<span class="citation" data-cites="shahtahmassebi2021">(<a href="references.html#ref-shahtahmassebi2021" role="doc-biblioref">Shahtahmassebi et al. 2021</a>)</span></p>
-<p>The key concerns in the above study is the presence of shadow in high spatial resolution imagery which can reduce the accuracy of UGSs mapping (<span class="citation" data-cites="zhang2012">(<a href="references.html#ref-zhang2012" role="doc-biblioref">Zhang and Qiu 2012</a>)</span>; <span class="citation" data-cites="merry2014">(<a href="references.html#ref-merry2014" role="doc-biblioref">Merry et al. 2014</a>)</span>). There is also a need to develop methods for extracting informative and intelligent information from Google Street View, for example, species characteristics and the quality of UGSs as might be perceived by users of the spaces.</p>
-<p>A new study suggests creating, testing, and implementing a machine learning approach to assess green space quality based on human perception, using transfer learning from pre-existing models. The findings show that the developed models performed well in six key areas: accuracy, precision, recall, F1-score, Cohen's Kappa, and Average ROC-AUC. <span class="citation" data-cites="rustamov2023">(<a href="references.html#ref-rustamov2023" role="doc-biblioref">Rustamov, Rustamov, and Zaki 2023</a>)</span></p>
-<p><img src="images/green-space-ML.png" class="img-fluid"></p>
-<p>Using remote sensing data, particularly the Normalized Difference Vegetation Index (NDVI), is a common method to evaluate green space quantity on satellite images. <span class="citation" data-cites="sun2021">(<a href="references.html#ref-sun2021" role="doc-biblioref">Sun et al. 2021</a>)</span> However, this approach has limitations when assessing green space quality. Remote sensing struggles to detect subtle changes in quality-related variables and provides only a two-dimensional view, which may not accurately represent the green space perceived at eye level. Additionally, while quantity matters, green space quality is more crucial for human health. The complexity of feature extraction in Convolutional Neural Networks (CNN) depends on the number of layers, with fewer layers resulting in weaker learning abilities for complex features.<span class="citation" data-cites="ayadi2022">(<a href="references.html#ref-ayadi2022" role="doc-biblioref">Ayadi and Lachiri 2022</a>)</span></p>
+<section id="application" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> APPLICATION</h2>
+<p>“GEE is free and allows users to write open-source code that can be run by others in one click, thereby yielding fully reproducible results. These features have put GEE on the cutting edge of scientific research. The following plot visualizes the number of journal articles conducted using different geospatial analysis software platforms” <span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
+<p><img src="images/WoS Articles.png" class="img-fluid"></p>
+<p>Here we can discuss some GEE applications along with several case studies</p>
+<p><strong>Vegetation</strong>-</p>
+<p>The full archive of the Landsat imagery was processed within GEE to map the vegetation dynamics from 1988 to 2017 in Queensland, Australia <span class="citation" data-cites="xie2019">(<a href="references.html#ref-xie2019" role="doc-biblioref"><strong>xie2019?</strong></a>)</span>. Field observations were utilized to evaluate the performance of the proposed algorithm and an overall accuracy of 82.6% was reported. The authors emphasized the high computational efficiency of GEE compared to when they did the same analysis using traditional methods. The Image below accounts for different applications where GEE is used.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GEE-Apllications.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">GEE Applications<span class="citation" data-cites="amani2020">(<a href="references.html#ref-amani2020" role="doc-biblioref">Amani et al. 2020</a>)</span></figcaption>
+</figure>
+</div>
+<p>Long et al. <span class="citation" data-cites="long2019">(<a href="references.html#ref-long2019" role="doc-biblioref">Long et al. 2019</a>)</span> proposed an automatic method for producing a global annual burned area maps using all available Landsat images acquired between 2014 and 2015 within the GEE cloud computing platform.</p>
 </section>
-<section id="reflection" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> REFLECTION</h2>
-<p>So, this week was about classification and had a lot of content to cover. I think this is the most important lecture because all the methods taught during the lecture are used very commonly for digital image processing and in future will be used mostly. I understood about decision trees and random forest and how machine learning plays an important role in the field of remote sensing. By week 6 all we did earlier is making sense and helpful in understanding about different applications where we can use this like detecting fires, flood risk, desertification and LULC heat maps.</p>
+<section id="reflection" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> REFLECTION</h2>
+<p>Overall this week was quite anticipated from so long as everyone was waiting to learn GEE and how to use this tool and finally when we got to work on it. it seems pretty easy and straightforward. I think the processing time is very fast as we were able to finish the practical in class otherwise if we compare it with SNAP or even R we first need to download and sort out the imagery to do the analysis which took quite some time. Today we learn how to use the aggregrate function like hoe to use the reduce function and calculate the mean, median and standard variation of the stack of images.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-ayadi2022" class="csl-entry" role="listitem">
-Ayadi, Souha, and Zied Lachiri. 2022. <span>“Deep Neural Network for Visual Emotion Recognition Based on ResNet50 Using Song-Speech Characteristics.”</span> <em>2022 5th International Conference on Advanced Systems and Emergent Technologies (IC<span>_</span>ASET)</em>, March, 363–68. <a href="https://doi.org/10.1109/IC_ASET53395.2022.9765898">https://doi.org/10.1109/IC_ASET53395.2022.9765898</a>.
+<div id="ref-amani2020" class="csl-entry" role="listitem">
+Amani, Meisam, Arsalan Ghorbanian, Seyed Ali Ahmadi, Mohammad Kakooei, Armin Moghimi, S. Mohammad Mirmazloumi, Sayyed Hamed Alizadeh Moghaddam, et al. 2020. <span>“Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 13: 5326–50. <a href="https://doi.org/10.1109/JSTARS.2020.3021052">https://doi.org/10.1109/JSTARS.2020.3021052</a>.
 </div>
-<div id="ref-bhatia2019" class="csl-entry" role="listitem">
-Bhatia, Navnina. 2019. <span>“What Is Out of Bag (OOB) Score in Random Forest?”</span> <a href="https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710">https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710</a>.
+<div id="ref-ballinger2024" class="csl-entry" role="listitem">
+Ballinger, Dr Ollie. 2024. <span>“CASA0025: Building Spatial Applications with Big Data.”</span> <a href="https://oballinger.github.io/CASA0025/">https://oballinger.github.io/CASA0025/</a>.
 </div>
-<div id="ref-decision" class="csl-entry" role="listitem">
-<span>“Decision Tree Tutorials &amp; Notes | Machine Learning.”</span> n.d. <a href="https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/ml-decision-tree/tutorial/">https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/ml-decision-tree/tutorial/</a>.
+<div id="ref-beginner" class="csl-entry" role="listitem">
+<span>“Beginner’s Cookbook | Google Earth Engine.”</span> n.d. <a href="https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook">https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook</a>.
 </div>
-<div id="ref-merry2014" class="csl-entry" role="listitem">
-Merry, Krista, Jacek Siry, Pete Bettinger, and J. M. Bowker. 2014. <span>“Urban Tree Cover Change in Detroit and Atlanta, USA, 1951<span></span>2010.”</span> <em>Cities</em> 41 (December): 123–31. <a href="https://doi.org/10.1016/j.cities.2014.06.012">https://doi.org/10.1016/j.cities.2014.06.012</a>.
+<div id="ref-gorelick2017" class="csl-entry" role="listitem">
+Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google <span>Earth Engine</span>: <span class="nocase">Planetary-scale</span> Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em>, Big <span>Remotely Sensed Data</span>: Tools, applications and experiences, 202 (December): 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
 </div>
-<div id="ref-rustamov2023" class="csl-entry" role="listitem">
-Rustamov, Jaloliddin, Zahiriddin Rustamov, and Nazar Zaki. 2023. <span>“Green Space Quality Analysis Using Machine Learning Approaches.”</span> <em>Sustainability</em> 15 (10): 7782. <a href="https://doi.org/10.3390/su15107782">https://doi.org/10.3390/su15107782</a>.
-</div>
-<div id="ref-shahtahmassebi2021" class="csl-entry" role="listitem">
-Shahtahmassebi, Amir Reza, Chenlu Li, Yifan Fan, Yani Wu, Yue lin, Muye Gan, Ke Wang, Arunima Malik, and George Alan Blackburn. 2021. <span>“Remote Sensing of Urban Green Spaces: A Review.”</span> <em>Urban Forestry &amp; Urban Greening</em> 57 (January): 126946. <a href="https://doi.org/10.1016/j.ufug.2020.126946">https://doi.org/10.1016/j.ufug.2020.126946</a>.
-</div>
-<div id="ref-singh2018" class="csl-entry" role="listitem">
-Singh, Seema. 2018. <span>“Understanding the Bias-Variance Tradeoff.”</span> <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229</a>.
-</div>
-<div id="ref-sun2021" class="csl-entry" role="listitem">
-Sun, Yi, Xingzhi Wang, Jiayin Zhu, Liangjian Chen, Yuhang Jia, Jean M. Lawrence, Luo-hua Jiang, Xiaohui Xie, and Jun Wu. 2021. <span>“Using Machine Learning to Examine Street Green Space Types at a High Spatial Resolution: Application in Los Angeles County on Socioeconomic Disparities in Exposure.”</span> <em>The Science of the Total Environment</em> 787 (September): 147653. <a href="https://doi.org/10.1016/j.scitotenv.2021.147653">https://doi.org/10.1016/j.scitotenv.2021.147653</a>.
-</div>
-<div id="ref-tariq2023" class="csl-entry" role="listitem">
-Tariq, Aqil, Jianguo Yan, Alexandre S. Gagnon, Mobushir Riaz Khan, and Faisal Mumtaz. 2023. <span>“Mapping of Cropland, Cropping Patterns and Crop Types by Combining Optical Remote Sensing Images with Decision Tree Classifier and Random Forest.”</span> <em>Geo-Spatial Information Science</em> 26 (3): 302–20. <a href="https://doi.org/10.1080/10095020.2022.2100287">https://doi.org/10.1080/10095020.2022.2100287</a>.
-</div>
-<div id="ref-whatis" class="csl-entry" role="listitem">
-<span>“What Is a Knowledge-Based System in the Context of Artificial Intelligence?”</span> n.d. <a href="https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence">https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence</a>.
-</div>
-<div id="ref-zhang2012" class="csl-entry" role="listitem">
-Zhang, C., and F. Qiu. 2012. <span>“Mapping Individual Tree Species in an Urban Forest Using Airborne Lidar Data and Hyperspectral Imagery: AAG Remote Sensing Specialty Group 2011 Award Winner.”</span> <em>Photogrammetric Engineering and Remote Sensing</em> 78 (10): 1079–87. <a href="https://doi.org/10.14358/PERS.78.10.1079">https://doi.org/10.14358/PERS.78.10.1079</a>.
+<div id="ref-long2019" class="csl-entry" role="listitem">
+Long, Tengfei, Zhaoming Zhang, Guojin He, Weili Jiao, Chao Tang, Bingfang Wu, Xiaomei Zhang, Wang guizhou Wang guizhou, and Ranyu Yin. 2019. <span>“30 m Resolution Global Annual Burned Area Mapping Based on Landsat Images and Google Earth Engine.”</span> <em>Remote Sensing</em> 11 (February): 489. <a href="https://doi.org/10.3390/rs11050489">https://doi.org/10.3390/rs11050489</a>.
 </div>
 </div>
 </section>
@@ -537,13 +497,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Week5.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5 - Google Earth Engine</span></span>
+      <a href="./Week4.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4 - Policy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Week7.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 7 - Classification- The Big Question</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 6- Classification-1</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

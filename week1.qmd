@@ -56,28 +56,54 @@ Rayleigh scattering describes the behavior of light when interacting with very s
 
 ![](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="488"}
 
-## **Application**
-
-## **Reflection**
-
-When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It's just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It's like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. [@earthsciencedatasystems2023]
-
 Some **terminology** I came across-
 
-Thermometer-measure the temperature of the air, soil, or water
+.panelset[
 
-Anemometer-measure wind speed
+.panel[.panel-name[Thermometer]
 
-Psychrometer-to measure air humidity
 
-GPS-Global Positioning System
+]
 
-Transducers
+.panel[.panel-name[Anemometer]
 
-Spectroradiometer to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.
+> measure wind speed
+
+]
+
+.panel[.panel-name[Psychrometer]
+
+> to measure air humidity
+
+]
+
+.panel[.panel-name[GPS]
+
+> Global Positioning System is a network of satellites and receiving devices used to determine the location of something on Earth
+
+]
+
+.panel[.panel-name[Transducers]
+
+> It is an electronic device that converts energy from one form to another. 
+]
+
+.panel[.panel-name[Spectroradiometer]
+
+> to measure the spectral reflectance characteristics of the material within the IFOV of the radiometer on the ground.
+
+]
+
+]
 
 leaf area index-(LAI)
 
 RADAR-Radio detection and Ranging
 
 LiDAR-Light detection and Ranging
+
+## **Application**
+
+## **Reflection**
+
+When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It's just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It's like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. [@earthsciencedatasystems2023]

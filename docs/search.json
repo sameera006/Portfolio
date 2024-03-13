@@ -172,7 +172,7 @@
     "href": "Week9.html#summary",
     "title": "9  Week 9- Synthetic Aperture Radar (SAR) Data",
     "section": "9.1 SUMMARY",
-    "text": "9.1 SUMMARY\nToday final topic was on Synthetic Aperture Radar (SAR) data\nSAR is an active sensor which means a sensor which provides their own illumination. for example an active sensor sees the world as the way bats do as they emit a chirp and listen to the backscatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes do or camera do.\nRadar sensor picks up the signal reflected backscattered from the earth surface. They check the topology of the surface based on how it reflects.\nInterpreting Radar Images\n\nRegions of calm water and other smooth surfaces appear black, because the radar pulse reflects away from the spacecraft\nRough surfaces appear brighter, as they reflect the radar in all directions, and more of the energy is scattered back to the antenna."
+    "text": "9.1 SUMMARY\nToday final topic was on Synthetic Aperture Radar (SAR) data\nSAR is an active sensor which means a sensor which provides their own illumination. for example an active sensor sees the world as the way bats do as they emit a chirp and listen to the backscatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes do or camera do.\nRadar sensor picks up the signal reflected backscattered from the earth surface. They check the topology of the surface based on how it reflects.\nInterpreting Radar Images\n\nRegions of calm water and other smooth surfaces appear black, because the radar pulse reflects away from the spacecraft\nRough surfaces appear brighter, as they reflect the radar in all directions, and more of the energy is scattered back to the antenna. \n\nThey see through weather and clouds. Different wavelengths penetrates through different surfaces used in different applications. So choice of wavelenghth is important.\n\n(Earth Science Data Systems 2020)\nThe most commonly used Band in imaging is C-band with 4-8 GHz frequency.\n** SAR Polarization **\nSo we have vertical and horizontal transmission and reflection.\n\n\n\n\n\nHorizontally and vertically polarized radar signal.(Dabboor et al. 2018)"
   },
   {
     "objectID": "Week9.html#application",
@@ -186,6 +186,6 @@
     "href": "Week9.html#reflection",
     "title": "9  Week 9- Synthetic Aperture Radar (SAR) Data",
     "section": "9.3 REFLECTION",
-    "text": "9.3 REFLECTION"
+    "text": "9.3 REFLECTION\n\n\n\n\nDabboor, Mohammed, Brian Brisco, Mohammed Dabboor, and Brian Brisco. 2018. “Wetland Monitoring and Mapping Using Synthetic Aperture Radar.” In. IntechOpen. https://doi.org/10.5772/intechopen.80224.\n\n\nEarth Science Data Systems, NASA. 2020. “What Is Synthetic Aperture Radar? | Earthdata.” https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar."
   }
 ]

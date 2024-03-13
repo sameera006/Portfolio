@@ -10,11 +10,29 @@ SAR is an active sensor which means a sensor which provides their own illuminati
 
 Radar sensor picks up the signal reflected backscattered from the earth surface. They check the topology of the surface based on how it reflects.
 
-**Interpreting Radar Images**
+Interpreting Radar Images
 
 -   Regions of calm water and other smooth surfaces appear black, because the radar pulse reflects away from the spacecraft
 
 -   Rough surfaces appear brighter, as they reflect the radar in all directions, and more of the energy is scattered back to the antenna. 
+
+They see through weather and clouds. Different wavelengths penetrates through different surfaces used in different applications. So choice of wavelenghth is important.
+
+![](images/wavelenghts-SAR.png){width="409"}
+
+[@earthsciencedatasystems2020]
+
+The most commonly used Band in imaging is C-band with 4-8 GHz frequency.
+
+\*\* SAR Polarization \*\*
+
+So we have vertical and horizontal transmission and reflection.
+
+![](images/F3.png){fig-align="center" width="451"}
+
+**Horizontally and vertically polarized radar signal.[@dabboor2018]**
+
+![]()
 
 ## APPLICATION
 

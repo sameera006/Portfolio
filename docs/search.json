@@ -166,5 +166,26 @@
     "title": "8  Week 7 - Classification- The Big Question",
     "section": "8.3 REFLECTION",
     "text": "8.3 REFLECTION\nThis week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of overfitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran’s I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.\n\n\n\n\nAchanta, Radhakrishna, and Sabine Susstrunk. 2017. “2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR).” In, 4895–4904. Honolulu, HI: IEEE. https://doi.org/10.1109/CVPR.2017.520.\n\n\nCongalton, Russell G. 1991. “A Review of Assessing the Accuracy of Classifications of Remotely Sensed Data.” Remote Sensing of Environment 37 (1): 35–46. https://doi.org/10.1016/0034-4257(91)90048-B.\n\n\nGISGeography. 2016. “Supervised and Unsupervised Classification in Remote Sensing.” https://gisgeography.com/supervised-unsupervised-classification-arcgis/.\n\n\nKarasiak, N., J.-F. Dejoux, C. Monteil, and D. Sheeren. 2022. “Spatial Dependence Between Training and Test Sets: Another Pitfall of Classification Accuracy Assessment in Remote Sensing.” Machine Learning 111 (7): 2715–40. https://doi.org/10.1007/s10994-021-05972-1.\n\n\nRoberts, David R., Volker Bahn, Simone Ciuti, Mark S. Boyce, Jane Elith, Gurutzeta Guillera-Arroita, Severin Hauenstein, et al. 2017. “Cross-Validation Strategies for Data with Temporal, Spatial, Hierarchical, or Phylogenetic Structure.” Ecography 40 (8): 913–29. https://doi.org/10.1111/ecog.02881."
+  },
+  {
+    "objectID": "Week9.html#summary",
+    "href": "Week9.html#summary",
+    "title": "9  Week 9- Synthetic Aperture Radar (SAR) Data",
+    "section": "9.1 SUMMARY",
+    "text": "9.1 SUMMARY\nToday final topic was on Synthetic Aperture Radar (SAR) data\nSAR is an active sensor which means a sensor which provides their own illumination. for example an active sensor sees the world as the way bats do as they emit a chirp and listen to the backscatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes do or camera do.\nRadar sensor picks up the signal reflected backscattered from the earth surface. They check the topology of the surface based on how it reflects.\nInterpreting Radar Images\n\nRegions of calm water and other smooth surfaces appear black, because the radar pulse reflects away from the spacecraft\nRough surfaces appear brighter, as they reflect the radar in all directions, and more of the energy is scattered back to the antenna."
+  },
+  {
+    "objectID": "Week9.html#application",
+    "href": "Week9.html#application",
+    "title": "9  Week 9- Synthetic Aperture Radar (SAR) Data",
+    "section": "9.2 APPLICATION",
+    "text": "9.2 APPLICATION\nSAR is used in tracking flooding. Area that is flooded appear darker."
+  },
+  {
+    "objectID": "Week9.html#reflection",
+    "href": "Week9.html#reflection",
+    "title": "9  Week 9- Synthetic Aperture Radar (SAR) Data",
+    "section": "9.3 REFLECTION",
+    "text": "9.3 REFLECTION"
   }
 ]

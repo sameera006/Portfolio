@@ -30,19 +30,17 @@ The **Hot topics** being discussed around the world like urban green space and a
 
 Different types of satellite imagery.
 
-**Sentinel 2**
+**Sentinel 2 -**The main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across most bands, it has higher spatial resolution, its revisit time is shorter, and it has more spectral bands). However, Landsat 8 has thermal infrared bands, which means that it can be used to measure temperature.
 
-The main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across most bands, it has higher spatial resolution, its revisit time is shorter, and it has more spectral bands). However, Landsat 8 has thermal infrared bands, which means that it can be used to measure temperature.
-
-Landsat 8 --its history like the origin of satellite imagery USGS -Landsat 8 has a mission to collect global data and give scientists the ability to access changes in Earth's landscape.
+**Landsat 8** --its history like the origin of satellite imagery USGS -Landsat 8 has a mission to collect global data and give scientists the ability to access changes in Earth's landscape.
 
 Remote sensing is performed using an instrument, often referred to as a sensor.
 
 Two types of **Sensors**
 
-Passive sensors record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.
+**Passive sensors** record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.
 
-and Active such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.
+and **Active** such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.
 
 Remote sensor data are collected passively (e.g. digital cameras) or actively (e.g., RADAR, LiDAR) using analog or digital remote sensing instruments.
 
@@ -56,10 +54,10 @@ Rayleigh scattering describes the behavior of light when interacting with very s
 
 ![](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="488"}
 
-
 ## **Application**
 
+**to do -Need two put outputs from the practical and some literature review**
 
 ## **Reflection**
 
-When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It's just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It's like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps. [@earthsciencedatasystems2023]
+When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It's just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It's like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps.

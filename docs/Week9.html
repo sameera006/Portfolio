@@ -216,16 +216,21 @@ div.csl-indent {
 
 <section id="summary" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> SUMMARY</h2>
-<p>Today final topic was on Synthetic Aperture Radar (SAR) data</p>
-<p>SAR is an active sensor which means a sensor which provides their own illumination. for example an active sensor sees the world as the way bats do as they emit a chirp and listen to the backscatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes do or camera do.</p>
+<p>Synthetic Aperture Radar (SAR) data</p>
+<p>"SAR instruments send pulses of microwaves toward Earth's surface and listen for the reflections of those waves. The radar waves can penetrate cloud cover, vegetation, and the dark of night to detect changes that might not show up in visible light imagery. When Earth's crust moves due to an earthquake, when dry land is suddenly covered by flood water, or when buildings have been damaged or toppled, the amplitude and phase of radar wave reflections changes in those areas and indicates to the satellite that something on the ground has changed."</p>
+<p>It is an active sensor which means a sensor which provides their own illumination. For example it sees the world as the way bats do as they emit a chirp and listen to the backscatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes or camera does.</p>
 <p>Radar sensor picks up the signal reflected backscattered from the earth surface. They check the topology of the surface based on how it reflects.</p>
 <p>Interpreting Radar Images</p>
 <ul>
 <li><p>Regions of calm water and other smooth surfaces appear black, because the radar pulse reflects away from the spacecraft</p></li>
 <li><p>Rough surfaces appear brighter, as they reflect the radar in all directions, and more of the energy is scattered back to the antenna.&nbsp;</p></li>
 </ul>
-<p>They see through weather and clouds. Different wavelengths penetrates through different surfaces used in different applications. So choice of wavelenghth is important.</p>
-<p><img src="images/wavelenghts-SAR.png" class="img-fluid" width="409"></p>
+<p>Different wavelengths penetrates through different surfaces used in different applications. So choice of wavelenghth is important.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wavelenghts-SAR.png" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
 <p><span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></p>
 <p>The most commonly used Band in imaging is C-band with 4-8 GHz frequency.</p>
 <p>** SAR Polarization **</p>
@@ -236,17 +241,32 @@ div.csl-indent {
 </figure>
 </div>
 <p><strong>Horizontally and vertically polarized radar signal.<span class="citation" data-cites="dabboor2018">(<a href="references.html#ref-dabboor2018" role="doc-biblioref">Dabboor et al. 2018</a>)</span></strong></p>
+<p>SAR is used in tracking flooding. Area that is flooded appear darker.</p>
+<p>It is also used for blast damage assessment.</p>
+<p>Here we take an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.</p>
+<p>It is basically just a signal-to-noise ratio. So we have pre and post-event images and it calculates the difference between two sample means(signal) and divides it by the standard deviation of both samples(noise). The t-value is a measure of how many standard deviations the difference between the two mean is. We need to filter the image collection to the ascending and descending orbits, and then calculate the t-value for each orbit separately.<span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/blast damage.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 <p><img src=".png" class="img-fluid"></p>
 </section>
 <section id="application" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="application"><span class="header-section-number">9.2</span> APPLICATION</h2>
 <p>SAR is used in tracking flooding. Area that is flooded appear darker.</p>
+<p>It is also used for blast damage assessment.</p>
+<p>Here we take an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.</p>
+<p>It is basically just a signal-to-noise ratio. So we have pre and post-event images and it calculates the difference between two sample means(signal) and divides it by the standard deviation of both samples(noise). The t-value is a measure of how many standard deviations the difference between the two mean is. We need to filter the image collection to the ascending and descending orbits, and then calculate the t-value for each orbit separately.<span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> REFLECTION</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-ballinger2024" class="csl-entry" role="listitem">
+Ballinger, Dr Ollie. 2024. <span>“CASA0025: Building Spatial Applications with Big Data.”</span> <a href="https://oballinger.github.io/CASA0025/">https://oballinger.github.io/CASA0025/</a>.
+</div>
 <div id="ref-dabboor2018" class="csl-entry" role="listitem">
 Dabboor, Mohammed, Brian Brisco, Mohammed Dabboor, and Brian Brisco. 2018. <span>“Wetland Monitoring and Mapping Using Synthetic Aperture Radar.”</span> In. IntechOpen. <a href="https://doi.org/10.5772/intechopen.80224">https://doi.org/10.5772/intechopen.80224</a>.
 </div>

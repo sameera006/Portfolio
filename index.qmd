@@ -1,4 +1,4 @@
-# ABOUT
+# ABOUT {.unnumbered}
 
 This is my online Learning diary.
 
@@ -8,4 +8,4 @@ Hi! I am Sameera. I am from India and have lived in many different parts of the 
 
 Reading maps has fascinated me ever since I attended cartography lessons back in school; however, I never knew that I would find my calling in the same field in the future. It is exhilarating how I followed my passion and entered the field of GIS after spending over six years working as a lecturer at an undergraduate college.
 
-I love travelling. My favorite destination till date is Leh, Ladakh. Here's the picture from that place.![](images/WhatsApp Image 2024-03-12 at 10.54.09.jpeg)
+I love travelling. My favorite destination till date is Leh, Ladakh. Here's the picture from that place.![](images/WhatsApp%20Image%202024-03-12%20at%2010.54.09.jpeg)

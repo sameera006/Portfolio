@@ -56,7 +56,13 @@ Rayleigh scattering describes the behavior of light when interacting with very s
 
 ## **Application**
 
-**to do -Need two put outputs from the practical and some literature review**
+**Remote sensing** plays a crucial role in modern agriculture by providing data-driven insights. It aids in recent yield estimation,facilitates monitoring crop health and development, Detecting infestations remotely.[@shah2023]. Despite advancements in sensor technologies, the agricultural sector faces **knowledge gaps** regarding the sufficiency, appropriateness, and techno-economic feasibility of remote sensing (RS) technologies.
+
+Another aspect of remote sensing can be seen in a phenomena where water used by croplands depends on crop types, soil types, latitudelocation, type of irrigation, and a host of other issues. So, a proper understanding of these issues need us to inter-link croplands to water use, and food production considering a changing climate and keeping in view environmental sustainability, ecological integrity, and continued robust growth of economy.
+
+-   
+
+Sentinel 2 performs better than Landsat 8 as it has better spatial resolution as seen from the pixel size column in the table above [@ahady2021]. It also has a better temporal resolution of ten days at the equator using one satellite, and five days using two satellites, under the assumption of cloud-free conditions ([Sentinel Online, n.d.](https://jamestansongen.github.io/CASA0023_Learning-Diary/references.html#ref-sentinelonline)). In contrast, Landsat 8 has a temporal resolution of 16 days ([Castaldi 2021](https://jamestansongen.github.io/CASA0023_Learning-Diary/references.html#ref-castaldiSentinel2Landsat8MultiTemporal2021)).
 
 ## **Reflection**
 

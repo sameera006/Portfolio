@@ -1,5 +1,5 @@
 ---
-title: "Week 1- An Introduction to Remote Sensing"
+title: "An Introduction to Remote Sensing"
 format: html
 editor: visual
 ---
@@ -10,15 +10,17 @@ CASA0023 Remotely Sensing Cities and Environments is about remotely sensed earth
 
 **What is remote sensing?**
 
-According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (in situ or in-place data collection), and/or at some remote distance from the subject matter known as **Remote Sensing** of the environment. Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.
+According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (insitu or in-place data collection), and/or at some remote distance from the subject matter known as **Remote Sensing** of the environment.
+
+Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.
 
 The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.
 
-![](images/optical.gif){fig-align="center"}
+![ **Figure 1-Remote Sensing Process [@zotero-271]**](images/optical.gif){fig-align="center" width="500"}
 
-**Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission. It can also refer to smaller things, like bits of debris or paint flecks that have fallen off a rocket. Some human-made junk has been left on the Moon, too.
+**Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission.
 
-![](images/international-space-station-two-column.jpg.thumb.768.768.jpg){fig-align="center" width="463"}
+![Figure 2 - Space Junk [@2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center"}
 
 **Spectral Resolution** is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.
 
@@ -26,9 +28,9 @@ The majority of remotely sensed data are analyzed using digital image processing
 
 **Temporal Resolution** The temporal resolution of a remote sensing system generally refers to how often and when the sensor records imagery of a particular area.
 
-The **Hot topics** being discussed around the world like urban green space and accessibility, Illegal logging, Forest Fire, and temperature studies.
+The **Hot topics** being discussed around the world like **urban green space** and accessibility, **Illegal logging**, **Forest Fire**, and **temperature studies**.
 
-Different types of satellite imagery.
+**Different types of satellite imagery**-
 
 **Sentinel 2 -**The main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across most bands, it has higher spatial resolution, its revisit time is shorter, and it has more spectral bands). However, Landsat 8 has thermal infrared bands, which means that it can be used to measure temperature.
 
@@ -36,23 +38,28 @@ Different types of satellite imagery.
 
 Remote sensing is performed using an instrument, often referred to as a sensor.
 
-Two types of **Sensors**
+**Sensors**
 
 **Passive sensors** record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.
 
-and **Active** such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.
+and **Active** sensors such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.
 
 Remote sensor data are collected passively (e.g. digital cameras) or actively (e.g., RADAR, LiDAR) using analog or digital remote sensing instruments.
 
 **Atmospheric scattering**
 
-Atmospheric scattering is the natural phenomenon mainly responsible for the colours we observe in the sky
+-   **Atmospheric scattering** causes the colors we see in the sky due to sunlight interacting with particles in the atmosphere.
 
-Atmospheric scattering is a natural phenomenon that can be described as the result of the interaction between sunlight and particles in the atmosphere. When we look to the sky during the day we see mostly blue, while at sunset we get a more reddish color, especially near the horizon.
+```{=html}
+<!-- -->
+```
+-   **Rayleigh scattering** explains how light interacts with small particles, resulting in blue skies during the day.
 
-Rayleigh scattering describes the behavior of light when interacting with very small particles (most of the particles present in the atmosphere). Mie scattering can be used to describe the behavior of light interacting with any kind of particles, nevertheless, it is mostly used to describe the interaction with larger particles such as haze. The core of the atmospheric scattering computational models is the method to solve the scattering equations of Mie and Rayleigh.
+![Figure 3: Rayleigh Scattering [@2024c]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="488"}
 
-![](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="488"}
+This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. we do this by generating point of interest (POIs) matches with both images.
+
+![](images/SNAP-sentinel-lansat.png)
 
 ## **Application**
 
@@ -60,9 +67,7 @@ Rayleigh scattering describes the behavior of light when interacting with very s
 
 Another aspect of remote sensing can be seen in a phenomena where water used by croplands depends on crop types, soil types, latitudelocation, type of irrigation, and a host of other issues. So, a proper understanding of these issues need us to inter-link croplands to water use, and food production considering a changing climate and keeping in view environmental sustainability, ecological integrity, and continued robust growth of economy.
 
--   
-
-Sentinel 2 performs better than Landsat 8 as it has better spatial resolution as seen from the pixel size column in the table above [@ahady2021]. It also has a better temporal resolution of ten days at the equator using one satellite, and five days using two satellites, under the assumption of cloud-free conditions ([Sentinel Online, n.d.](https://jamestansongen.github.io/CASA0023_Learning-Diary/references.html#ref-sentinelonline)). In contrast, Landsat 8 has a temporal resolution of 16 days ([Castaldi 2021](https://jamestansongen.github.io/CASA0023_Learning-Diary/references.html#ref-castaldiSentinel2Landsat8MultiTemporal2021)).
+Sentinel 2 performs better than Landsat 8 as it has better spatial resolution as seen from the pixel size column in the table above [@ahady2021]. It also has a better temporal resolution of ten days at the equator using one satellite, and five days using two satellites, under the assumption of cloud-free conditions [@zotero-277]. In contrast, Landsat 8 has a temporal resolution of 16 days.[@castaldi2021]
 
 ## **Reflection**
 

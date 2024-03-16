@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My Learning Diary - 1&nbsp; Week 1- An Introduction to Remote Sensing</title>
+<title>My Learning Diary - 1&nbsp; An Introduction to Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -74,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1- An Introduction to Remote Sensing</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">An Introduction to Remote Sensing</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -108,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1- An Introduction to Remote Sensing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">An Introduction to Remote Sensing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -120,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3-Corrections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -180,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1- An Introduction to Remote Sensing</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">An Introduction to Remote Sensing</span></h1>
 </div>
 
 
@@ -199,50 +218,73 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.1</span> <strong>Summary</strong></h2>
 <p>CASA0023 Remotely Sensing Cities and Environments is about remotely sensed earth observation(EO) data to make some informed decisions on environmental hazards arising from changing climate.</p>
 <p><strong>What is remote sensing?</strong></p>
-<p>According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (in situ or in-place data collection), and/or at some remote distance from the subject matter known as <strong>Remote Sensing</strong> of the environment. Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.</p>
+<p>According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (insitu or in-place data collection), and/or at some remote distance from the subject matter known as <strong>Remote Sensing</strong> of the environment.</p>
+<p>Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.</p>
 <p>The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/optical.gif" class="img-fluid figure-img"></p>
+<p><img src="images/optical.gif" class="img-fluid figure-img" width="500"></p>
+<figcaption class="figure-caption"><strong>Figure 1-Remote Sensing Process <span class="citation" data-cites="zotero-271">(<a href="references.html#ref-zotero-271" role="doc-biblioref"><strong>zotero-271?</strong></a>)</span></strong></figcaption>
 </figure>
 </div>
-<p><strong>Space junk</strong>, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission. It can also refer to smaller things, like bits of debris or paint flecks that have fallen off a rocket. Some human-made junk has been left on the Moon, too.</p>
+<p><strong>Space junk</strong>, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/international-space-station-two-column.jpg.thumb.768.768.jpg" class="img-fluid figure-img" width="463"></p>
+<p><img src="images/MIT-Orbit-Debris_0.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 2 - Space Junk <span class="citation" data-cites="2017">(<a href="references.html#ref-2017" role="doc-biblioref"><strong>2017?</strong></a>)</span></figcaption>
 </figure>
 </div>
 <p><strong>Spectral Resolution</strong> is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.</p>
 <p><strong>Spatial Resolution</strong> is a measure of the smallest angular or linear separation between two objects that can be resolved by the remote sensing system.</p>
 <p><strong>Temporal Resolution</strong> The temporal resolution of a remote sensing system generally refers to how often and when the sensor records imagery of a particular area.</p>
-<p>The <strong>Hot topics</strong> being discussed around the world like urban green space and accessibility, Illegal logging, Forest Fire, and temperature studies.</p>
-<p>Different types of satellite imagery.</p>
+<p>The <strong>Hot topics</strong> being discussed around the world like <strong>urban green space</strong> and accessibility, <strong>Illegal logging</strong>, <strong>Forest Fire</strong>, and <strong>temperature studies</strong>.</p>
+<p><strong>Different types of satellite imagery</strong>-</p>
 <p><strong>Sentinel 2 -</strong>The main advantage of Sentinel 2 over Landsat 8 is its higher resolution (across most bands, it has higher spatial resolution, its revisit time is shorter, and it has more spectral bands). However, Landsat 8 has thermal infrared bands, which means that it can be used to measure temperature.</p>
 <p><strong>Landsat 8</strong> –its history like the origin of satellite imagery USGS -Landsat 8 has a mission to collect global data and give scientists the ability to access changes in Earth’s landscape.</p>
 <p>Remote sensing is performed using an instrument, often referred to as a sensor.</p>
-<p>Two types of <strong>Sensors</strong></p>
+<p><strong>Sensors</strong></p>
 <p><strong>Passive sensors</strong> record electromagnetic radiation that is reflected or emitted from the terrain. For example, cameras and video recorders can be used to record visible and near-infrared energy reflected from the terrain.</p>
-<p>and <strong>Active</strong> such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.</p>
+<p>and <strong>Active</strong> sensors such as microwave (RADAR), LiDAR, or SONAR, bathe the terrain in machine-made electromagnetic energy and then record the time-lapsed amount of radiant flux scattered back toward the sensor system.</p>
 <p>Remote sensor data are collected passively (e.g.&nbsp;digital cameras) or actively (e.g., RADAR, LiDAR) using analog or digital remote sensing instruments.</p>
 <p><strong>Atmospheric scattering</strong></p>
-<p>Atmospheric scattering is the natural phenomenon mainly responsible for the colours we observe in the sky</p>
-<p>Atmospheric scattering is a natural phenomenon that can be described as the result of the interaction between sunlight and particles in the atmosphere. When we look to the sky during the day we see mostly blue, while at sunset we get a more reddish color, especially near the horizon.</p>
-<p>Rayleigh scattering describes the behavior of light when interacting with very small particles (most of the particles present in the atmosphere). Mie scattering can be used to describe the behavior of light interacting with any kind of particles, nevertheless, it is mostly used to describe the interaction with larger particles such as haze. The core of the atmospheric scattering computational models is the method to solve the scattering equations of Mie and Rayleigh.</p>
+<ul>
+<li><strong>Atmospheric scattering</strong> causes the colors we see in the sky due to sunlight interacting with particles in the atmosphere.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Rayleigh scattering</strong> explains how light interacts with small particles, resulting in blue skies during the day.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg" class="img-fluid figure-img" width="488"></p>
+<figcaption class="figure-caption">Figure 3: Rayleigh Scattering <span class="citation" data-cites="2024c">(<a href="references.html#ref-2024c" role="doc-biblioref"><strong>2024c?</strong></a>)</span></figcaption>
 </figure>
 </div>
+<p>This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. we do this by generating point of interest (POIs) matches with both images.</p>
+<p><img src="images/SNAP-sentinel-lansat.png" class="img-fluid"></p>
 </section>
 <section id="application" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">1.2</span> <strong>Application</strong></h2>
-<p>Sentinel 2 performs better than Landsat 8 as it has better spatial resolution as seen from the pixel size column in the table above&nbsp;<span class="citation" data-cites="ahady2021">(<a href="references.html#ref-ahady2021" role="doc-biblioref"><strong>ahady2021?</strong></a>)</span>. It also has a better temporal resolution of ten days at the equator using one satellite, and five days using two satellites, under the assumption of cloud-free conditions&nbsp;(<a href="https://jamestansongen.github.io/CASA0023_Learning-Diary/references.html#ref-sentinelonline">Sentinel Online, n.d.</a>). In contrast, Landsat 8 has a temporal resolution of 16 days&nbsp;(<a href="https://jamestansongen.github.io/CASA0023_Learning-Diary/references.html#ref-castaldiSentinel2Landsat8MultiTemporal2021">Castaldi 2021</a>).</p>
+<p><strong>Remote sensing</strong>&nbsp;plays a crucial role in modern agriculture by providing data-driven insights. It aids in recent yield estimation,facilitates monitoring crop health and development, Detecting infestations remotely.<span class="citation" data-cites="shah2023">(<a href="references.html#ref-shah2023" role="doc-biblioref">Shah et al. 2023</a>)</span>. Despite advancements in sensor technologies, the agricultural sector faces <strong>knowledge gaps</strong> regarding the sufficiency, appropriateness, and techno-economic feasibility of remote sensing (RS) technologies.</p>
+<p>Another aspect of remote sensing can be seen in a phenomena where water used by croplands depends on crop types, soil types, latitudelocation, type of irrigation, and a host of other issues. So, a proper understanding of these issues need us to inter-link croplands to water use, and food production considering a changing climate and keeping in view environmental sustainability, ecological integrity, and continued robust growth of economy.</p>
+<p>Sentinel 2 performs better than Landsat 8 as it has better spatial resolution as seen from the pixel size column in the table above&nbsp;<span class="citation" data-cites="ahady2021">(<a href="references.html#ref-ahady2021" role="doc-biblioref">Ahady and Kaplan 2021</a>)</span>. It also has a better temporal resolution of ten days at the equator using one satellite, and five days using two satellites, under the assumption of cloud-free conditions&nbsp;<span class="citation" data-cites="zotero-277">(<a href="references.html#ref-zotero-277" role="doc-biblioref"><strong>zotero-277?</strong></a>)</span>. In contrast, Landsat 8 has a temporal resolution of 16 days.<span class="citation" data-cites="castaldi2021">(<a href="references.html#ref-castaldi2021" role="doc-biblioref">Castaldi 2021</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> <strong>Reflection</strong></h2>
 <p>When I think about remote sensing the first thing that comes to my mind is high-resolution images captured by satellites and we humans working on it. Be it land, water, and events like fire, floods, earthquakes, any natural disaster, or man-made disasters like war which includes bombing and destruction of houses. Everything can be recorded, and we can study it, and be aware of it for the future. It’s just like magic. Last week in the Big Data class I was fascinated to see how daily images of Gaza were available and we can see how much destruction has happened or is happening. Remote sensing gives you time-series data through which we can tell how the place has changed in all these years. How many buildings got demolished, how many trees were cut down, and how many new buildings were constructed? In my past life, I have used remotely sensed data to classify land use land-cover and generate environmental impact assessment reports for work. We also studied atmospheric correction which sounds similar to something we did in our GIS class last term. The imagery downloaded can be cleaned just like we clean data or use .csv or .shp files for GIS work. We can remove all the bad layers. Run the software as many times to get the best clean image. It’s like removing all the NaNs. To conclude in more general terms the entire industry is dependent on high-resolution satellite imagery like Google Earth, Google Maps, and Bing Maps.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-ahady2021" class="csl-entry" role="listitem">
+Ahady, Abdul, and Gordana Kaplan. 2021. <span>“Classification Comparison of <span>Landsat-8</span> and <span>Sentinel-2</span> Data in <span>Google Earth Engine</span>, Study Case of the City of <span>Kabul</span>.”</span> <em>International Journal of Engineering and Geosciences</em> 7 (April). <a href="https://doi.org/10.26833/ijeg.860077">https://doi.org/10.26833/ijeg.860077</a>.
+</div>
+<div id="ref-castaldi2021" class="csl-entry" role="listitem">
+Castaldi, Fabio. 2021. <span>“Sentinel-2 and Landsat-8 Multi-Temporal Series to Estimate Topsoil Properties on Croplands.”</span> <em>Remote Sensing</em> 13 (17): 3345. <a href="https://doi.org/10.3390/rs13173345">https://doi.org/10.3390/rs13173345</a>.
+</div>
+<div id="ref-shah2023" class="csl-entry" role="listitem">
+Shah, Adnan Noor, Muhammad Adnan Bukhari, Zahoor Ahmad, Asad Abbas, Abdul Manan, Muhammad Umair Hassan, Muhammad Saqib, et al. 2023. <span>“Application of Remote Sensing in Agriculture.”</span> In, edited by Wajid Nasim Jatoi, Muhammad Mubeen, Muhammad Zaffar Hashmi, Shaukat Ali, Shah Fahad, and Khalid Mahmood, 371–79. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-26692-8_21">https://doi.org/10.1007/978-3-031-26692-8_21</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

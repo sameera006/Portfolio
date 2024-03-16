@@ -1,5 +1,5 @@
 ---
-title: "Week 7 - Classification- The Big Question"
+title: "Classification- The Big Question"
 ---
 
 ## SUMMARY
@@ -15,7 +15,7 @@ Here we talk about pixels and distance mainly Euclidian distance. OBIA is simila
 There comes also a question why do we need object based analysis? It is to improve in signal and noise. There are thousand pixels here so we might want to turn these things into objects.
 
 | Original Image to Classify        | Different Crop Types                         | Per Pixel Classification                              |
-|-----------------------------------|----------------------------------------------|-------------------------------------------------------|
+|-------------------|------------------------|-----------------------------|
 | ![](images/image-to-classify.png) | ![](images/diff-crops-type.png){width="889"} | ![](images/per-pixel-classification.png){width="889"} |
 
 **Fig1: Process of Classification**

@@ -1,5 +1,5 @@
 ---
-title: "Week 6- Classification-1"
+title: "Classification-1"
 ---
 
 ## SUMMARY
@@ -23,7 +23,7 @@ Machine learning is defined as the science of computer modeling of learning proc
 **Classification tree** classify data into two or more discrete categories. For example Land cover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which depend on the conditions outside hot or cold, the speed of wind and the weather.
 
 |                                            |                                  |
-|----------------------------------------|-------------------------------|
+|--------------------------------------------|----------------------------------|
 | ![](images/decision-tree.png){width="266"} | ![](images/dt1.png){width="286"} |
 
 [@decision]
@@ -66,7 +66,7 @@ how do we apply these methods with the satellite imagery?
 
 The key concerns in the above study is the presence of shadow in high spatial resolution imagery which can reduce the accuracy of UGSs mapping ([@zhang2012]; [@merry2014]). There is also a need to develop methods for extracting informative and intelligent information from Google Street View, for example, species characteristics and the quality of UGSs as might be perceived by users of the spaces.
 
-A new study suggests creating, testing, and implementing a machine learning approach to assess green space quality based on human perception, using transfer learning from pre-existing models. The findings show that the developed models performed well in six key areas: accuracy, precision, recall, F1-score, Cohen\'s Kappa, and Average ROC-AUC. [@rustamov2023]
+A new study suggests creating, testing, and implementing a machine learning approach to assess green space quality based on human perception, using transfer learning from pre-existing models. The findings show that the developed models performed well in six key areas: accuracy, precision, recall, F1-score, Cohen's Kappa, and Average ROC-AUC. [@rustamov2023]
 
 ![](images/green-space-ML.png)
 

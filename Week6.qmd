@@ -4,7 +4,7 @@ title: "Introduction to Google Earth Engine"
 
 ## SUMMARY
 
-This week we studied the much awaited Google Earth Engine. " [Google Earth Engine](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/google-earth-engine "Learn more about Google Earth Engine from ScienceDirect's AI-generated Topic Pages") is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geospatial datasets. It is designed to help researchers easily disseminate their results to other researchers, policy makers, [NGOs](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/non-governmental-organisation "Learn more about NGOs from ScienceDirect's AI-generated Topic Pages"), field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine's resources, without needing to be an expert in application development, web programming or [HTML](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/document-markup-languages "Learn more about HTML from ScienceDirect's AI-generated Topic Pages")." [@gorelick2017]
+This week we studied the much awaited Google Earth Engine. " [Google Earth Engine](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/google-earth-engine "Learn more about Google Earth Engine from ScienceDirect's AI-generated Topic Pages") is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geo-spatial data sets. It is designed to help researchers easily disseminate their results to other researchers, policy makers, [NGOs](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/non-governmental-organisation "Learn more about NGOs from ScienceDirect's AI-generated Topic Pages"), field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine's resources, without needing to be an expert in application development, web programming or [HTML](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/document-markup-languages "Learn more about HTML from ScienceDirect's AI-generated Topic Pages")." [@gorelick2017]
 
 It is accessed and controlled through an [application programming interface](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/application-programming-interface "Learn more about application programming interface from ScienceDirect's AI-generated Topic Pages") (API) and an associated web-based interactive development environment (IDE) that enables [rapid prototyping](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/rapid-prototyping "Learn more about rapid prototyping from ScienceDirect's AI-generated Topic Pages") and visualization of results. So basically GEE can load large datasets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.
 
@@ -14,13 +14,25 @@ The raster data is called **image** and the vector data is called **feature**.
 
 A stack of images is called **Image Collection** and Feature stack (lots of polygons) is known as **Feature Collection**.
 
-![GEE Screen : [@beginner]](images/ee-editor_1440.png){fig-align="center"}
+![GEE Screen : [@beginner]](images/ee-editor_1440.png){fig-align="center" width="800"}
+
+This weeks practical was really interesting as we got to use GEE and all the things we did in previous week can be done in google earth engine too with just few lines of code and without downloading any image.
+
+We can make a new point and center the map to it in the **code editor**.
+
+![](images/code-chunk.png){width="800"}
+
+So this code chunk will center the point to Delhi. For loading the imagery either Landsat or sentinel-1 or any other we can simply browse it and and load the data. then we can add different layers, create a filter based on image and reduce it using median reducer. Mosaic the images, clip it and calculate different textures like Principal Component Analysis (PCA) and also calculate indices like NDVI.
+
+![PCA Layer](images/Screenshot 2024-03-17 121636.png){fig-align="center" width="800"}
+
+![NDVI](images/ndvi-gee.png){fig-align="center" width="800"}
 
 ## APPLICATION
 
-"GEE is free and allows users to write open-source code that can be run by others in one click, thereby yielding fully reproducible results. These features have put GEE on the cutting edge of scientific research. The following plot visualizes the number of journal articles conducted using different geospatial analysis software platforms" [@ballinger2024]
+"GEE is free and allows users to write open-source code that can be run by others in one click, thereby yielding fully reproducible results. These features have put GEE on the cutting edge of scientific research. The following plot visualizes the number of journal articles conducted using different geo spatial analysis software platforms" [@ballinger2024]
 
-![](images/WoS%20Articles.png)
+![](images/WoS%20Articles.png){fig-align="center" width="800"}
 
 Here we can discuss some GEE applications along with several case studies
 
@@ -28,12 +40,18 @@ Here we can discuss some GEE applications along with several case studies
 
 The full archive of the Landsat imagery was processed within GEE to map the vegetation dynamics from 1988 to 2017 in Queensland, Australia [@xie2019]. Field observations were utilized to evaluate the performance of the proposed algorithm and an overall accuracy of 82.6% was reported. The authors emphasized the high computational efficiency of GEE compared to when they did the same analysis using traditional methods. The Image below accounts for different applications where GEE is used.
 
-![GEE Applications[@amani2020]](images/GEE-Apllications.png){fig-align="center"}
+![GEE Applications[@amani2020]](images/GEE-Apllications.png){fig-align="center" width="800"}
 
-Long et al. [@long2019] proposed an automatic method for producing a global annual burned area maps using all available Landsat images acquired between 2014 and 2015 within the GEE cloud computing platform. **??**
+There are very clear advantages of GEE with some limitation too as its a web based application.
 
-**MENTION ANY POLICY ??**
+![](images/Screenshot 2024-03-17 120922.png){fig-align="center" width="800"}
+
+[@amani2020]
+
+[@long2019] proposed an automatic method for producing a global annual burned area maps using all available Landsat images acquired between 2014 and 2015 within the GEE cloud computing platform. While according to [@hansen2013], it took 100 h to process 654 178 Landsat-7 images (707 terabytes) within GEE and produce a global map of forests otherwise without this the process would have taken a million hours to complete. Meanwhile we are talking about the advantages of using GEE another paper from [@kumar2018] has done his research that see in many developing countries, the trend of publishing research output using GEE in most disciplines drops behind that for the developed nations.
 
 ## REFLECTION
 
-Overall this week was quite anticipated from so long as everyone was waiting to learn GEE and how to use this tool and finally when we got to work on it. it seems pretty easy and straightforward. I think the processing time is very fast as we were able to finish the practical in class otherwise if we compare it with SNAP or even R we first need to download and sort out the imagery to do the analysis which took quite some time. Today we learn how to use the aggregrate function like hoe to use the reduce function and calculate the mean, median and standard variation of the stack of images.
+Overall this week was quite anticipated from so long as everyone was waiting to learn GEE and how to use this tool and finally when we got to work on it. it seems pretty easy and straightforward. I think the processing time is very fast as we were able to finish the practical in class otherwise if we compare it with SNAP or even R we first need to download and sort out the imagery to do the analysis which took quite some time. Today we learn how to use the aggregate function like how to use the reduce function and calculate the mean, median and standard variation of the stack of images.
+
+The platform has a learning curve, especially for those who haven\'t worked with JavaScript before. Additionally, it appears that extra code is necessary to add features like legends, as opposed to the more straightforward button-click approach in QGIS. Another point of confusion is that one must execute the entire script instead of running relevant code chunks individually. Hopefully, future updates will streamline this process.

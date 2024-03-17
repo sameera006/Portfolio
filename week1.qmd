@@ -16,11 +16,11 @@ Example- the study of daily weather and climate change, land-use/land cover moni
 
 The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.
 
-![ **Figure 1-Remote Sensing Process [@zotero-271]**](images/optical.gif){fig-align="center" width="500"}
+![**Figure 1-Remote Sensing Process [@zotero-271]**](images/optical.gif){fig-align="center" width="500"}
 
 **Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission.
 
-![Figure 2 - Space Junk [@2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center"}
+![Figure 2 - Space Junk [@2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center" width="500"}
 
 **Spectral Resolution** is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.
 
@@ -50,24 +50,21 @@ Remote sensor data are collected passively (e.g. digital cameras) or actively (e
 
 -   **Atmospheric scattering** causes the colors we see in the sky due to sunlight interacting with particles in the atmosphere.
 
-```{=html}
 <!-- -->
-```
+
 -   **Rayleigh scattering** explains how light interacts with small particles, resulting in blue skies during the day.
 
-![Figure 3: Rayleigh Scattering [@2024c]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="488"}
+![Figure 3: Rayleigh Scattering [@2024c]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
 
 This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. we do this by generating point of interest (POIs) matches with both images.
 
-![](images/SNAP-sentinel-lansat.png)
+![](images/SNAP-sentinel-lansat.png){fig-align="center" width="500"}
 
 ## **Application**
 
 **Remote sensing** plays a crucial role in modern agriculture by providing data-driven insights. It aids in recent yield estimation,facilitates monitoring crop health and development, Detecting infestations remotely.[@shah2023]. Despite advancements in sensor technologies, the agricultural sector faces **knowledge gaps** regarding the sufficiency, appropriateness, and techno-economic feasibility of remote sensing (RS) technologies.
 
-Another aspect of remote sensing can be seen in a phenomena where water used by croplands depends on crop types, soil types, latitudelocation, type of irrigation, and a host of other issues. So, a proper understanding of these issues need us to inter-link croplands to water use, and food production considering a changing climate and keeping in view environmental sustainability, ecological integrity, and continued robust growth of economy.
-
-Sentinel 2 performs better than Landsat 8 as it has better spatial resolution as seen from the pixel size column in the table above [@ahady2021]. It also has a better temporal resolution of ten days at the equator using one satellite, and five days using two satellites, under the assumption of cloud-free conditions [@zotero-277]. In contrast, Landsat 8 has a temporal resolution of 16 days.[@castaldi2021]
+Another aspect of remote sensing can be seen in a phenomena where water used by croplands depends on crop types, soil types, latitude location, type of irrigation, and a host of other issues. So, a proper understanding of these issues need us to inter-link croplands to water use, and food production considering a changing climate and keeping in view environmental sustainability, ecological integrity, and continued robust growth of economy.
 
 ## **Reflection**
 

@@ -26,17 +26,25 @@ Different wavelengths penetrates through different surfaces used in different ap
 
 The most commonly used Band in imaging is C-band with 4-8 GHz frequency.
 
-**SAR Polarization**
+**Polarization**
 
-So we have vertical and horizontal transmission and reflection.
+Imaging radars have different polarization configurations. A single polarization transmits and receices a single polarization horizontal-horizontal (HH)or vertical-vertical(VV) imager while a dual-polarization system trnamit in one but receive in two HH and HV or VH and VV imagery.[@zotero-287]
 
-![](images/F3.png){fig-align="center" width="451"}
+![](images/Wave_Polarisation.gif){fig-align="center" width="300"}
 
-**Horizontally and vertically polarized radar signal.[@dabboor2018]**
+**Scattering**
+
+Different surface respond differently to the polarizations like bare earth is most sensitive to VV (rough scattering), leaves go cross VH or HV (volume scattering) and trees/buildings sensitive to HH (double bounce).
+
+![](images/SARPolarization.jpg){fig-align="center"}
+
+[@earthsciencedatasystems2020]
+
+A SAR signal has both phase and amplitude data(backscatter). In GEE only amplitude data is available so if we want to use phase data we use SNAP.
 
 SAR is used in tracking flooding. Area that is flooded appear darker. It is also used for blast damage assessment.
 
-Here we take an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.
+This weeks practical takes an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.
 
 It is basically just a signal-to-noise ratio. So we have pre and post-event images and it calculates the difference between two sample means(signal) and divides it by the standard deviation of both samples(noise). The t-value is a measure of how many standard deviations the difference between the two mean is. We need to filter the image collection to the ascending and descending orbits, and then calculate the t-value for each orbit separately.[@ballinger2024]
 
@@ -44,8 +52,14 @@ It is basically just a signal-to-noise ratio. So we have pre and post-event imag
 
 ![]()
 
-The visualisation parameter corresponds the statistical significance of the change in pixel value. dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.
+The visualization parameter corresponds the statistical significance of the change in pixel value. dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.
 
 ## APPLICATION
 
+SAR data allow us to see through darkness, clouds detecting changes in habitat, level of water or moisture, natural or human disturbance in the earth surface. Therefore taking the example of above practical on battle damage assessment the study discusses the issues of using high resolution optical satellite imagery for getting the highest level of accuracy through Convolution Neural Networks (CNN). As it is financial and computationally expensive plus its not consistent to cloud cover. The advantage of open-access SAR mitigates these problems. It critically analyze [@mueller2021] approach on achieving 0.92 confidence score by training a CNN on damage annotations carried out by the United nations.
+
+It analysed the war-related destruction resulting from the Syrian war. Despite the high accuracy, there are number if limitations like cost and cloud. Here we use open-access SAR imagery and pixel-wise T-Test which is a more generalized approach and can be calculated by simply taking the mean and variance of pre and post image over a period of time.[@ballinger2023]
+
 ## REFLECTION
+
+This week was mainly on SAR. Its advantages over optical and how it works was very useful to learn. Also the practical we learned this week on Beirut explosion was very interesting as it is using the very simple approach for validation of the model without using any machine learning techniques. As i was very curious to know and work on SAR imagery so it really help me understand the perspective and maybe in future i want to do such kind of research.

@@ -233,16 +233,24 @@ div.csl-indent {
 </div>
 <p><span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></p>
 <p>The most commonly used Band in imaging is C-band with 4-8 GHz frequency.</p>
-<p><strong>SAR Polarization</strong></p>
-<p>So we have vertical and horizontal transmission and reflection.</p>
+<p><strong>Polarization</strong></p>
+<p>Imaging radars have different polarization configurations. A single polarization transmits and receices a single polarization horizontal-horizontal (HH)or vertical-vertical(VV) imager while a dual-polarization system trnamit in one but receive in two HH and HV or VH and VV imagery.<span class="citation" data-cites="zotero-287">(<a href="references.html#ref-zotero-287" role="doc-biblioref"><strong>zotero-287?</strong></a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/F3.png" class="img-fluid figure-img" width="451"></p>
+<p><img src="images/Wave_Polarisation.gif" class="img-fluid figure-img" width="300"></p>
 </figure>
 </div>
-<p><strong>Horizontally and vertically polarized radar signal.<span class="citation" data-cites="dabboor2018">(<a href="references.html#ref-dabboor2018" role="doc-biblioref">Dabboor et al. 2018</a>)</span></strong></p>
+<p><strong>Scattering</strong></p>
+<p>Different surface respond differently to the polarizations like bare earth is most sensitive to VV (rough scattering), leaves go cross VH or HV (volume scattering) and trees/buildings sensitive to HH (double bounce).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARPolarization.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></p>
+<p>A SAR signal has both phase and amplitude data(backscatter). In GEE only amplitude data is available so if we want to use phase data we use SNAP.</p>
 <p>SAR is used in tracking flooding. Area that is flooded appear darker. It is also used for blast damage assessment.</p>
-<p>Here we take an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.</p>
+<p>This weeks practical takes an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.</p>
 <p>It is basically just a signal-to-noise ratio. So we have pre and post-event images and it calculates the difference between two sample means(signal) and divides it by the standard deviation of both samples(noise). The t-value is a measure of how many standard deviations the difference between the two mean is. We need to filter the image collection to the ascending and descending orbits, and then calculate the t-value for each orbit separately.<span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -250,21 +258,24 @@ div.csl-indent {
 </figure>
 </div>
 <p><img src=".png" class="img-fluid"></p>
-<p>The visualisation parameter corresponds the statistical significance of the change in pixel value. dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.</p>
+<p>The visualization parameter corresponds the statistical significance of the change in pixel value. dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.</p>
 </section>
 <section id="application" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> APPLICATION</h2>
+<p>SAR data allow us to see through darkness, clouds detecting changes in habitat, level of water or moisture, natural or human disturbance in the earth surface. Therefore taking the example of above practical on battle damage assessment the study discusses the issues of using high resolution optical satellite imagery for getting the highest level of accuracy through Convolution Neural Networks (CNN). As it is financial and computationally expensive plus its not consistent to cloud cover. The advantage of open-access SAR mitigates these problems. It critically analyze <span class="citation" data-cites="mueller2021">(<a href="references.html#ref-mueller2021" role="doc-biblioref"><strong>mueller2021?</strong></a>)</span> approach on achieving 0.92 confidence score by training a CNN on damage annotations carried out by the United nations.</p>
+<p>It analysed the war-related destruction resulting from the Syrian war. Despite the high accuracy, there are number if limitations like cost and cloud. Here we use open-access SAR imagery and pixel-wise T-Test which is a more generalized approach and can be calculated by simply taking the mean and variance of pre and post image over a period of time.<span class="citation" data-cites="ballinger2023">(<a href="references.html#ref-ballinger2023" role="doc-biblioref">Ballinger 2023</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> REFLECTION</h2>
+<p>This week was mainly on SAR. Its advantages over optical and how it works was very useful to learn. Also the practical we learned this week on Beirut explosion was very interesting as it is using the very simple approach for validation of the model without using any machine learning techniques. As i was very curious to know and work on SAR imagery so it really help me understand the perspective and maybe in future i want to do such kind of research.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-ballinger2024" class="csl-entry" role="listitem">
-Ballinger, Dr Ollie. 2024. <span>“<span>CASA0025</span>: <span>Building Spatial Applications</span> with <span>Big Data</span>.”</span> January 10, 2024. <a href="https://oballinger.github.io/CASA0025/">https://oballinger.github.io/CASA0025/</a>.
+<div id="ref-ballinger2023" class="csl-entry" role="listitem">
+Ballinger, Dr Ollie. 2023. <span>“Open Access Damage Detection Using Sentinel-1 Imagery.”</span> <a href="https://oballinger.github.io/PWTT/">https://oballinger.github.io/PWTT/</a>.
 </div>
-<div id="ref-dabboor2018" class="csl-entry" role="listitem">
-Dabboor, Mohammed, Brian Brisco, Mohammed Dabboor, and Brian Brisco. 2018. <span>“Wetland <span>Monitoring</span> and <span>Mapping Using Synthetic Aperture Radar</span>.”</span> In <em>Wetlands <span>Management</span> - <span>Assessing Risk</span> and <span>Sustainable Solutions</span></em>. IntechOpen. <a href="https://doi.org/10.5772/intechopen.80224">https://doi.org/10.5772/intechopen.80224</a>.
+<div id="ref-ballinger2024" class="csl-entry" role="listitem">
+———. 2024. <span>“<span>CASA0025</span>: <span>Building Spatial Applications</span> with <span>Big Data</span>.”</span> January 10, 2024. <a href="https://oballinger.github.io/CASA0025/">https://oballinger.github.io/CASA0025/</a>.
 </div>
 <div id="ref-earthsciencedatasystems2020" class="csl-entry" role="listitem">
 Earth Science Data Systems, NASA. 2020. <span>“What Is <span>Synthetic Aperture Radar</span>? | <span>Earthdata</span>.”</span> Backgrounder. Earth Science Data Systems, NASA. April 10, 2020. <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a>.

@@ -30,7 +30,9 @@ The full archive of the Landsat imagery was processed within GEE to map the vege
 
 ![GEE Applications[@amani2020]](images/GEE-Apllications.png){fig-align="center"}
 
-Long et al. [@long2019] proposed an automatic method for producing a global annual burned area maps using all available Landsat images acquired between 2014 and 2015 within the GEE cloud computing platform.
+Long et al. [@long2019] proposed an automatic method for producing a global annual burned area maps using all available Landsat images acquired between 2014 and 2015 within the GEE cloud computing platform. **??**
+
+**MENTION ANY POLICY ??**
 
 ## REFLECTION
 

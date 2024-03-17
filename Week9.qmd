@@ -60,6 +60,14 @@ SAR data allow us to see through darkness, clouds detecting changes in habitat, 
 
 It analysed the war-related destruction resulting from the Syrian war. Despite the high accuracy, there are number if limitations like cost and cloud. Here we use open-access SAR imagery and pixel-wise T-Test which is a more generalized approach and can be calculated by simply taking the mean and variance of pre and post image over a period of time.[@ballinger2023]
 
+In the similar approach for detection of volcanic ground deformation we can use Sentinel-1 InSAR data. [@albino2022] paper focuses on 64 volcanic centres understanding ground deformation presenting a framework for real-time volcano monitoring and early warning system. Adiitionally if you generalize it the approach does not work for other regions due to geological differences and the paper has not discussed about validating the result.[@carn1999]
+
 ## REFLECTION
 
-This week was mainly on SAR. Its advantages over optical and how it works was very useful to learn. Also the practical we learned this week on Beirut explosion was very interesting as it is using the very simple approach for validation of the model without using any machine learning techniques. As i was very curious to know and work on SAR imagery so it really help me understand the perspective and maybe in future i want to do such kind of research.
+This week was mainly on SAR. Its advantages over optical and how it works was very useful to learn. Also the practical we learned this week on Beirut explosion was very interesting as it is using the very simple approach for validation of the model without using any machine learning techniques. As i was very curious to know and how to work on SAR imagery so it really help me understand the perspective and maybe in future I want to do such kind of research.
+
+As its the end of term 2 and this is my final entry. I just want to summarize my whole journey as very insightful as I learned so many new tools, read so many policies and got to know different methodologies and satellites.
+
+I hope who ever reads my diary gets the gist of Remote Sensing and its applications.
+
+Happy Reading !!

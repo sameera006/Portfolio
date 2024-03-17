@@ -4,11 +4,11 @@ title: "Policy"
 
 ## SUMMARY
 
+Healthy land is central to the wellbeing of the planet\'s ecosystems and biodiversity; it feeds us, shelters us, and provides the backbone to a thriving global economy. The United Nations Convention to combat Desertification (UNCCD) was established in 1994 to protect and restore our land and ensure a safer, just, and more sustainable future.
+
 Climate-induced desertification is having adverse effects on the African continent each year the Earth continues to warm. It impacts the everyday lives of Africans -- from their crops, livestock, and housing -- to African wildlife and biodiversity. [@stallwood2022]
 
-[Desertification](https://www.maxwell.syr.edu/news/article/koch-quoted-in-bbc-article-on-dubai-desertification) is "the process by which fertile land becomes desert, typically as a result of drought, deforestation or inappropriate agriculture." It is where semi-arid lands, such as grasslands or shrublands, decrease and eventually disappear. [@kochquo]
-
-According to European Commision world atlas of Desertification
+According to European Commission world atlas of Desertification
 
 -   Over 75% of the Earth's land area is already degraded, and over 90% could become degraded by 2050.
 
@@ -32,8 +32,6 @@ While at global level desertification is addressed by the United Nations Convent
 
 The importance of land degradation and desertification led to the adoption of Sustainable Development Goal 15.3 aiming at [land degradation](https://phys.org/tags/land+degradation/) neutrality.
 
-## APPLICATION
-
 The Sahel region is the most vulnerable region on the continent because of the 1980 drought. The Sahel lies between the Saharan Desert and the Sudanian Savannah. It is a 3,000-mile stretch of land that includes ten counties and is under constant stress due to frequent droughts, soil erosion, and population growth which has increased logging, illegal farming and land clearing for housing. 
 
 According to united nation global outlook2 report found that intensive agriculture methods are responsible for upto 80% of deforestation.
@@ -46,9 +44,11 @@ The Great Green Wall's goal for 2030 is to restore 247 million acres of destroye
 
 The Great Green Wall concept was first put forth in the early 2000s in response to the Sahel region's increasing desertification and degradation of the land.![Figure 3: Saplings raised in village nursery in Téra, Niger\_\@ Centre National de Semences Forestières, Niger.](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-3-1.webp)
 
-Some examples of case studies-
+## APPLICATION
 
-Monitoring methods based on desertificatio indicators mainly include the single indicator method and multiple in dicatormethod. When using a single indicator to evaluate desertifica tion,most studies used vegetation index thresholds to classify the degree of desertification (Bezerra et al., 2020; Filei et al., 2018). Evidently, this method only considers vegetation cover and ignores soil information, leading to the lower accuracy of the classification results (Wei et al., 2018). The multiple indicator method includes two categories: use of the feature space models for classification, and use of machine learning methods to construct evaluation models and classification criteria. Common feature space models include the albedo-normalized differen tialvegetation index (NDVI) model (Wei et al., 2020) and point-point model (Guo et al., 2020). Because such models only consider two in dicators,it is difficult to accurately monitor complex desertificatio information (Duan et al., 2019). In the common multiple indicator classification methods based on machine learning methods, the in dicatorsmainly include the NDVI, albedo, topsoil grain size index (TGSI), and land surface temperature.
+Desertification monitoring methods primarily consist of the single indicator and the multiple indicator method. In the case of employing a single indicator for desertification assessment, the majority of studies have utilized thresholds of the vegetation index to categorize the desertification level. [@bezerra2020] Evidently, this method only considers vegetation cover and ignores soil information, leading to the lower accuracy of the classification results. [@wei2018] The multiple indicator method includes two categories: use of the feature space models for classification, and use of machine learning methods to construct evaluation models and classification criteria.
+
+Common feature space models include the albedo-normalized differen tialvegetation index (NDVI) model (Wei et al., 2020) and point-point model (Guo et al., 2020). Because such models only consider two in dicators,it is difficult to accurately monitor complex desertificatio information (Duan et al., 2019). In the common multiple indicator classification methods based on machine learning methods, the in dicatorsmainly include the NDVI, albedo, topsoil grain size index (TGSI), and land surface temperature.
 
 The spatio temporalcharacteristics of desertification in Mongolia in 1990--2020 and revealed its driving forces. Based on all Landsat images in 1990--2020 in Mongolia, extensive ground surveys, and the existing desertification classification system, we used decision tree, support vector machine (SVM), RF, naive Bayes (NB), minimum distance (MD), and maximum entropy (ME) classifiers, to extract desertification information for seven periods (1990, 1995, 2000, 2005, 2010, 2015, and 2020).
 

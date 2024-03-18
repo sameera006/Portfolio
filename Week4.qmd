@@ -54,8 +54,6 @@ The following steps are involved in the methodology -
 
 **5. Dashboard**: Build a dashboard to visualize the areas affected and our future predictions. [@zotero-315]
 
-China has made some great progress following these methodologies.
-
 ## REFLECTION
 
 The big learning point for me this week was to learn about so many different policies and yet we see the issues and problem still remains. It has also highlighted how remote sensing data can be used to address multiple factors in a city for a common goal.

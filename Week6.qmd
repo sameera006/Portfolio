@@ -24,7 +24,7 @@ We can make a new point and center the map to it in the **code editor**.
 
 So this code chunk will center the point to Delhi. For loading the imagery either Landsat or sentinel-1 or any other we can simply browse it and and load the data. then we can add different layers, create a filter based on image and reduce it using median reducer. Mosaic the images, clip it and calculate different textures like Principal Component Analysis (PCA) and also calculate indices like NDVI.
 
-![PCA Layer](images/Screenshot 2024-03-17 121636.png){fig-align="center" width="800"}
+![PCA Layer](images/Screenshot%202024-03-17%20121636.png){fig-align="center" width="800"}
 
 ![NDVI](images/ndvi-gee.png){fig-align="center" width="800"}
 
@@ -44,7 +44,7 @@ The full archive of the Landsat imagery was processed within GEE to map the vege
 
 There are very clear advantages of GEE with some limitation too as its a web based application.
 
-![](images/Screenshot 2024-03-17 120922.png){fig-align="center" width="800"}
+![](images/Screenshot%202024-03-17%20120922.png){fig-align="center" width="800"}
 
 [@amani2020]
 
@@ -54,4 +54,4 @@ There are very clear advantages of GEE with some limitation too as its a web bas
 
 Overall this week was quite anticipated from so long as everyone was waiting to learn GEE and how to use this tool and finally when we got to work on it. it seems pretty easy and straightforward. I think the processing time is very fast as we were able to finish the practical in class otherwise if we compare it with SNAP or even R we first need to download and sort out the imagery to do the analysis which took quite some time. Today we learn how to use the aggregate function like how to use the reduce function and calculate the mean, median and standard variation of the stack of images.
 
-The platform has a learning curve, especially for those who haven\'t worked with JavaScript before. Additionally, it appears that extra code is necessary to add features like legends, as opposed to the more straightforward button-click approach in QGIS. Another point of confusion is that one must execute the entire script instead of running relevant code chunks individually. Hopefully, future updates will streamline this process.
+The platform has a learning curve, especially for those who haven't worked with JavaScript before. Additionally, it appears that extra code is necessary to add features like legends, as opposed to the more straightforward button-click approach in QGIS. Another point of confusion is that one must execute the entire script instead of running relevant code chunks individually. Hopefully, future updates will streamline this process.

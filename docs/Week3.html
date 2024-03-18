@@ -220,8 +220,7 @@ div.csl-indent {
 <p>Landsat collects images in long narrow strips called “swaths.” Previous Landsat sensors swept back and forth across the swath like a <strong>whisk broom</strong> to collect data.<br>
 In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a <strong>push broom</strong>.<br>
 <br>
-<a href="https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/" class="uri">https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/</a></p>
-<p><strong>GEOMETRIC CORRECTION</strong></p>
+<strong>GEOMETRIC CORRECTION</strong></p>
 <p>Geometric correction caused by sensor system attitude (roll, pitch, and yaw) or altitude changes can be corrected by ground control points(GCP).<span class="citation" data-cites="nguyen2015">(<a href="references.html#ref-nguyen2015" role="doc-biblioref">Nguyen 2015</a>)</span></p>
 <p>There are two types of geometric correction-</p>
 <ul>
@@ -243,8 +242,27 @@ In contrast, the instruments on Landsat 8 view across the entire swath at once, 
 <p>The two most important sources of environmental attenuation are</p>
 <p>1) atmosphere attenuation caused by scattering and absorption in the atmosphere, and 2) topographic attenuation.</p>
 <p>For example, consider the case of the <strong>normalized difference vegetation index</strong> (NDVI) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data.</p>
+<p>The image below shows the NDVI for Cape Town using Landsat imagery from 2022.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/NDVI-R.png" class="img-fluid figure-img" width="800"></p>
+<figcaption class="figure-caption">NDVI values -Cape Town, South Africa</figcaption>
+</figure>
+</div>
 <p>A rather simple method to correct raw satellite (or any other imagery) is called <strong>dark object subtraction(DOS)</strong> which uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so to remove it we will subtract that value from the rest of the pixels within the image.</p>
 <p>In this week's practical, the focus was on image enhancements such as band ratioing, filter, texture, data fusion, and Principal Component Analysis (PCA). In band ratioing, the contrast between features are enhanced by "dividing the brightness values (digital numbers) in a reflectance curve after the additive atmospheric haze and additive sensor offset have been removed"</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Texture-wk3.png" class="img-fluid figure-img" width="800"></p>
+<figcaption class="figure-caption">Texture Analysis</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/glcm.png" class="img-fluid figure-img" width="800"></p>
+<figcaption class="figure-caption">GLCM</figcaption>
+</figure>
+</div>
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> <strong>APPLICATION</strong></h2>

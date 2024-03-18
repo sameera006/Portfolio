@@ -54,6 +54,10 @@ The good approach is to train and test split
 
 **Fig.4: Testing and Training the ML model**
 
+In the practical, we did subpixel, object-based, image and super pixels classification. Below is the subpixel classification output for Dar es Salaam, Tanzania, using Landsat 8 data.
+
+![](images/Classification-wk8.png){fig-align="center"}
+
 What do you think of spatial autocorrelation in this sense? Is OBIA is dealing with spatial autocorrelation?
 
 In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted. To solve this we do spatial cross validation

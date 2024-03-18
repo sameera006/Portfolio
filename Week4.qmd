@@ -4,7 +4,7 @@ title: "Policy"
 
 ## SUMMARY
 
-Healthy land is central to the wellbeing of the planet's ecosystems and biodiversity; it feeds us, shelters us, and provides the backbone to a thriving global economy. The United Nations Convention to combat Desertification (UNCCD) was established in 1994 to protect and restore our land and ensure a safer, just, and more sustainable future. [@zotero-311]
+Healthy land is central to the well being of the planet's ecosystems and biodiversity; it feeds us, shelters us, and provides the backbone to a thriving global economy. The United Nations Convention to combat Desertification (UNCCD) was established in 1994 to protect and restore our land and ensure a safer, just, and more sustainable future.
 
 Climate-induced desertification is having adverse effects on the African continent each year the Earth continues to warm. It impacts the everyday lives of Africans -- from their crops, livestock, and housing -- to African wildlife and biodiversity. [@stallwood2022]
 
@@ -22,8 +22,6 @@ According to European Commission world atlas of Desertification
 
     ![Figure 1: Desertification and Climate Change in Africa](images/africa_desertification.png)
 
-Under the United Nations' Sustainable Development Agenda, world leaders have committed to "combat desertification, restore [degraded land](https://phys.org/tags/degraded+land/) and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world" by 2030.
-
 The importance of land degradation and desertification led to the adoption of Sustainable Development Goal 15.3 aiming at [land degradation](https://phys.org/tags/land+degradation/) neutrality.
 
 In 2007, an initiative called **"The Green Wall"** was launched for the Sahara and Sahel regions. Its ambitious goal is to create an **8,000-kilometer natural wonder** spanning the entire width of Africa. By planting more trees, this project aims to combat desertification, boost food security, create jobs, and encourage migrants to return home to Africa.
@@ -32,7 +30,7 @@ By 2030, **The Great Green Wall** aims to restore **247 million acres** of degra
 
 ![Figure 2: The Eleven Nations that are investing in the Great Green Wall Initiative \_\@National Geographic [@jose2023]](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-1-1.webp)
 
-The city of my interest is Naimey, the capital city of Niger which is experiencing the issue of desertification.
+The city of my interest is Naimey, the capital city of Niger which is experiencing the issue of desertification. Since 1960, the population of Niger has increased from 1.7 million to 17 million. Mostly are farmers and herders. these people place huge pressure on the vegetation. It is estimated 50 million people globally could be displaced by desertification over the next decade.
 
 One of the main problems what i found was to track the project because there is not a good monitoring and evaluation system in place.
 

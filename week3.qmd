@@ -11,8 +11,6 @@ This week we looked at the story of **Virginia Norwood** known as the mother of 
 Landsat collects images in long narrow strips called "swaths." Previous Landsat sensors swept back and forth across the swath like a **whisk broom** to collect data.\
 In contrast, the instruments on Landsat 8 view across the entire swath at once, building strips of data like a **push broom**.\
 \
-<https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012754/frames/1920x1080_16x9_30p/pushbroomTIFF/>
-
 **GEOMETRIC CORRECTION**
 
 Geometric correction caused by sensor system attitude (roll, pitch, and yaw) or altitude changes can be corrected by ground control points(GCP).[@nguyen2015]
@@ -35,9 +33,17 @@ The two most important sources of environmental attenuation are
 
 For example, consider the case of the **normalized difference vegetation index** (NDVI) derived from Landsat Thematic Mapper (TM ) band 3 (red) and band 4 (near-infrared) data.
 
+The image below shows the NDVI for Cape Town using Landsat imagery from 2022.
+
+![NDVI values -Cape Town, South Africa](images/NDVI-R.png){fig-align="center" width="800"}
+
 A rather simple method to correct raw satellite (or any other imagery) is called **dark object subtraction(DOS)** which uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so to remove it we will subtract that value from the rest of the pixels within the image.
 
 In this week\'s practical, the focus was on image enhancements such as band ratioing, filter, texture, data fusion, and Principal Component Analysis (PCA). In band ratioing, the contrast between features are enhanced by \"dividing the brightness values (digital numbers) in a reflectance curve after the additive atmospheric haze and additive sensor offset have been removed\"
+
+![Texture Analysis](images/Texture-wk3.png){fig-align="center" width="800"}
+
+![GLCM](images/glcm.png){fig-align="center" width="800"}
 
 ## **APPLICATION**
 

@@ -15,7 +15,7 @@ In contrast, the instruments on Landsat 8 view across the entire swath at once, 
 
 **GEOMETRIC CORRECTION**
 
-Geometric distortions introduced by sensor system attitude (roll, pitch, and yaw) and/or altitude changes can be corrected using ground control points and appropriate mathematical models (e.g., Im et al., 2009). A ground control point (**GCP**) is a location on the surface of the Earth (e.g., a road intersection) that can be identified on the imagery and located accurately on a map.
+Geometric correction caused by sensor system attitude (roll, pitch, and yaw) or altitude changes can be corrected by ground control points(GCP).[@nguyen2015]
 
 There are two types of geometric correction-
 
@@ -23,13 +23,7 @@ There are two types of geometric correction-
 
 -   image-to-image registration
 
-**Image-to-map rectification** is the process by which the geometry of an image is made planimetric. The image-to-map rectification process normally involves selecting GCP image pixel coordinates (row and column) with their map coordinates counterparts (e.g., meters northing and easting in a Universal Transverse Mercator map projection).
-
 ![](images/085194c43202c81b1bc66fd011ab5552.GC3.webp){fig-align="center"}
-
-**Image-to-image Registration**
-
-Image-to-image registration is the translation and rotation alignment process by which two images of like geometry and of the same geographic area are positioned coincidentally concerning one another so that corresponding elements of the same ground area appear in the same place on the registered images.
 
 ![Example of image-to-image hybrid registration](images/9bc14fff503998327710bd5d280f55cb.GC5.webp){fig-align="center"}
 
@@ -43,23 +37,11 @@ For example, consider the case of the **normalized difference vegetation index**
 
 A rather simple method to correct raw satellite (or any other imagery) is called **dark object subtraction(DOS)** which uses the idea that the darkest pixel within the image should be 0 and any value it has is attributed to atmosphere. so to remove it we will subtract that value from the rest of the pixels within the image.
 
-**DIGITAL NUMBER**
-
-First, we need to download some raw satellite data that comes in DN format. we are using Lansat 8 collection1 (or 2) level-1 bundle.
-
-**Texture Analysis** is one of the most important characteristics dealt with during image interpretation and classification. Texture analysis has been successfully applied to forestry and vegetation studies using a variety of remote sensing data (Asner et al., 2002; Franklin et al., 2000) and radar images (Costa, 2004; Hess et al., 2003).
+In this week\'s practical, the focus was on image enhancements such as band ratioing, filter, texture, data fusion, and Principal Component Analysis (PCA). In band ratioing, the contrast between features are enhanced by \"dividing the brightness values (digital numbers) in a reflectance curve after the additive atmospheric haze and additive sensor offset have been removed\"
 
 ## **APPLICATION**
 
-The practical content addressed corrections using raw satellite imagery, merging images, and enhancements. This application section will focus on studies that have made use of atmospheric corrections.
-
-Multispectral and radar satellite remote sensing (SRS) imagery has become an important source for investigating species ecology and ecosystem structure. SRS data fusion techniques, Integrating and fusing multispectral and radar images can significantly improve our ability to assess the distribution as well as the horizontal and vertical structure of ecosystems.
-
-Multispectral sensors passively measure electromagnetic radiation reflected from the Earth's surface, radar sensors are active, meaning they emit electromagnetic radiation and then measure the returning signal.
-
-Additionally, radar sensors penetrate atmospheric conditions that incapacitate multispectral sensors, such as clouds, haze, and fog, and can (depending on wavelength) return information from below the canopy (Santoro, Shvidenko, McCallum, Askne, & Schmullius, 2007) or even from subsurface layers (McCauley et al., 1982).
-
-This type of fusion includes object-level fusion, in which a landscape is divided into multi-pixel objects based on information from different remote sensors (Blaschke, 2010), and pixel-level fusion, where pixel values are combined to derive a fused image with new pixel values, either in the spatial (Zhang, 2010) or the temporal (Reiche, Verbesselt, Hoekman, & Herold, 2015) domain. Since both pixel-and object-level fusions result in a new image, we will here refer to them as image fusion
+This application section will focus on studies that have made use of atmospheric corrections. In this theme [@nazeer2021], the atmospheric correction study shows that the Simplified and Robust Surface Reflectance Estimation Method (SREM) indeed presents a promising approach to atmospheric correction in satellite remote sensing data. Its simplicity, not requiring inputs like Aerosol Optical Depth (AOD), aerosol type, water vapor, and ozone, is a significant advantage. But the author should consider the assumptions are true for all conditions. Secondly validation of dataset is very crucial step. And also comparing with other models provides a more comprehensive evaluation of SREM\'s effectiveness. Similarly [@dong2023] study presents a compelling case for the use of the SIAC method in correcting atmospheric effects in wide-swath GF-1 and GF-6 WFV images. The improvement in accuracy for both types of images is a significant achievement. However some limitations includes this method can be used to other types of images basically how can we make it more generalized and validation checking with other models is crucial and incorporating reflectance measurements obtained during a field campaign in the future.
 
 ## REFLECTION
 

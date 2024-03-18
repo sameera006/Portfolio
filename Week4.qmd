@@ -4,25 +4,21 @@ title: "Policy"
 
 ## SUMMARY
 
-Healthy land is central to the wellbeing of the planet\'s ecosystems and biodiversity; it feeds us, shelters us, and provides the backbone to a thriving global economy. The United Nations Convention to combat Desertification (UNCCD) was established in 1994 to protect and restore our land and ensure a safer, just, and more sustainable future.
+Healthy land is central to the wellbeing of the planet's ecosystems and biodiversity; it feeds us, shelters us, and provides the backbone to a thriving global economy. The United Nations Convention to combat Desertification (UNCCD) was established in 1994 to protect and restore our land and ensure a safer, just, and more sustainable future. [@zotero-311]
 
 Climate-induced desertification is having adverse effects on the African continent each year the Earth continues to warm. It impacts the everyday lives of Africans -- from their crops, livestock, and housing -- to African wildlife and biodiversity. [@stallwood2022]
 
 According to European Commission world atlas of Desertification
 
--   Over 75% of the Earth's land area is already degraded, and over 90% could become degraded by 2050.
+1.  Degraded Land: Over 75% of Earth's land area is already degraded, and more than 90% could face degradation by 2050.
 
--   Globally, a total area half of the size of the European Union (4.18 million km²) is degraded annually, with Africa and Asia being the most affected.
+2.  Global Impact: Annually, an area equivalent to half the size of the European Union (about 4.18 million km²) experiences degradation, with Africa and Asia being the most affected regions.
 
--   Land degradation and climate change are estimated to lead to a reduction of global crop yields by about 10% by 2050. Most of this will occur in India, China and sub-Saharan Africa, where land degradation could halve crop production.
+3.  Crop Yields: Land degradation and climate change may reduce global crop yields by 10% by 2050, particularly in India, China, and sub-Saharan Africa.
 
--   As a consequence of accelerated deforestation it will become more difficult to mitigate the effects of climate change
+4.  Displacement: By 2050, up to 700 million people could be displaced due to scarce land resources, potentially reaching 10 billion by the century's end.
 
--   By 2050, up to 700 million people are estimated to have been displaced due to issues linked to scarce land resources. The figure could reach up to 10 billion by the end of this century.
-
--   While land degradation is a global problem, it takes place locally and requires local solutions. Greater commitment and more effective cooperation at the local level are necessary to stop land degradation and loss of biodiversity.
-
-    Further agricultural expansion, one of the main causes of land degradation, could be limited by increasing yields on existing farmland, shifting to plant-based diets, consuming animal proteins from sustainable sources and reducing food loss and waste.
+5.  Local Solutions: Addressing land degradation requires local solutions and stronger cooperation at the local level to preserve biodiversity and combat this global challenge[@2019]
 
     ![Figure 1: Desertification and Climate Change in Africa](images/africa_desertification.png)
 
@@ -30,24 +26,40 @@ Under the United Nations' Sustainable Development Agenda, world leaders have com
 
 The importance of land degradation and desertification led to the adoption of Sustainable Development Goal 15.3 aiming at [land degradation](https://phys.org/tags/land+degradation/) neutrality.
 
-With the Sahel region being the most vulnerable and heavily affected by desertification, an initiative known as ['The Green Wall'](https://earth.org/the-great-green-wall-legacy/) was put in place for the Sahara and Sahel in 2007. Its ambitious aim is to grow an 8,000-kilometre natural wonder across the entire width of Africa in order to increase the amount of arable land bordering the Sahara desert. The idea is that planting more trees will combat desertification, create jobs, increase food security and bring migrated populations back home to Africa.
+In 2007, an initiative called **"The Green Wall"** was launched for the Sahara and Sahel regions. Its ambitious goal is to create an **8,000-kilometer natural wonder** spanning the entire width of Africa. By planting more trees, this project aims to combat desertification, boost food security, create jobs, and encourage migrants to return home to Africa.
 
-The Great Green Wall's goal for 2030 is to restore 247 million acres of destroyed land and create 10 million jobs in affected rural areas.[AFR100's goal of restoring 100 million hectares by 2030 ](https://afr100.org/content/100-million-hectares-africa-under-restoration-2030)is not as far-fetched as we may think despite the ambitious goal, especially since the Great Green wall [received \$14 billion in funding](https://earth.org/the-great-green-wall-accelerator/) for the next ten years at the recent One Planet Summit for Biodiversity. [@stallwood2022]
+By 2030, **The Great Green Wall** aims to restore **247 million acres** of degraded land and generate **10 million jobs** in affected rural areas. The **AFR100** initiative's goal of restoring **100 million hectares** by 2030 is more achievable than it may seem, especially considering the recent **\$14 billion funding** commitment for the Great Green Wall at the One Planet Summit for Biodiversity. [@stallwood2022]
 
 ![Figure 2: The Eleven Nations that are investing in the Great Green Wall Initiative \_\@National Geographic [@jose2023]](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-1-1.webp)
 
-The Great Green Wall concept was first put forth in the early 2000s in response to the Sahel region's increasing desertification and degradation of the land.![Figure 3: Saplings raised in village nursery in Téra, Niger\_\@ Centre National de Semences Forestières, Niger.](images/A11157-Project-in-depth-The-Great-Green-Wall-Africa-Image-3-1.webp)
+The city of my interest is Naimey, the capital city of Niger which is experiencing the issue of desertification.
+
+One of the main problems what i found was to track the project because there is not a good monitoring and evaluation system in place.
 
 ## APPLICATION
 
-Desertification monitoring methods primarily consist of the single indicator and the multiple indicator method. In the case of employing a single indicator for desertification assessment, the majority of studies have utilized thresholds of the vegetation index to categorize the desertification level. [@bezerra2020] Evidently, this method only considers vegetation cover and ignores soil information, leading to the lower accuracy of the classification results. [@wei2018] The multiple indicator method includes two categories: use of the feature space models for classification, and use of machine learning methods to construct evaluation models and classification criteria.
+Desertification monitoring often uses **vegetation index thresholds** to assess land degradation.[@bezerra2020] Evidently, this method only considers vegetation cover and ignores soil information, leading to the lower accuracy of the classification results. [@wei2018]
 
-Common feature space models include the albedo-normalized differen tialvegetation index (NDVI) model (Wei et al., 2020) and point-point model (Guo et al., 2020). Because such models only consider two in dicators,it is difficult to accurately monitor complex desertificatio information (Duan et al., 2019). In the common multiple indicator classification methods based on machine learning methods, the in dicatorsmainly include the NDVI, albedo, topsoil grain size index (TGSI), and land surface temperature.
+To solve this ongoing issue we can come up with some better solutions like instead of just calculating NDVI we should also add NDWI and SAVI index and see the how the soil and water factors this problem. Additionally we can see how population and land is affected. As the policy is already there i think we just need people to think about this situation and involve methods which can boost up the GGW initiative. We can also identify areas where trees can be planted.
 
-The spatio temporalcharacteristics of desertification in Mongolia in 1990--2020 and revealed its driving forces. Based on all Landsat images in 1990--2020 in Mongolia, extensive ground surveys, and the existing desertification classification system, we used decision tree, support vector machine (SVM), RF, naive Bayes (NB), minimum distance (MD), and maximum entropy (ME) classifiers, to extract desertification information for seven periods (1990, 1995, 2000, 2005, 2010, 2015, and 2020).
+![](images/Tree%20cover%20restoration%20potential%20of%20GGW.png){fig-align="center"}
+
+The following steps are involved in the methodology -
+
+ **1. Vegetation index analysis**: Analyse the loss of green, degradation of lands in Iraq over the years (using NDVI, NDWI, and other indices).
+
+**2. Drought area analysis**: Use supervised machine learning algorithms to classify different land type covers.
+
+**3. Times series analysis**: Analyse and predict the desertification process in the next few years through the historical data.
+
+**4. LandUse Land Cover Classification using machine learning with Google Earth Engine:** Using the cloud power provided by Google Earth Engine to train a land cover classifier.
+
+**5. Dashboard**: Build a dashboard to visualize the areas affected and our future predictions. [@zotero-315]
+
+China has made some great progress following these methodologies.
 
 ## REFLECTION
 
-\*\*NEED TO UPDATE it
+The big learning point for me this week was to learn about so many different policies and yet we see the issues and problem still remains. It has also highlighted how remote sensing data can be used to address multiple factors in a city for a common goal.
 
-*If i am a city planner how can we start to address this What areas should i start with (funding often limited) What stage in the planning process might this come Who would be responsible (e.g. what department) What skills do they need What benefits can this bring to the city (often finances!) How does this help the city align with global agendas What stakeholders do i need to consider*
+The application of remote sensing assists policymakers in creating informed maps for desertification decisions. While valuable, it's not a magic solution. Consider stakeholders, potential repercussions, and ongoing monitoring. Challenges exist, including data complexity. Collaboration is key to maximizing its impact in policy.

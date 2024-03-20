@@ -22,7 +22,7 @@ Machine learning is defined as the science of computer modeling of learning proc
 
 **Classification tree** classify data into two or more discrete categories. For example Land cover. Its a tree-like graph with nodes and leaves. Another example we can take is if we want to play badminton which depend on the conditions outside hot or cold, the speed of wind and the weather.
 
-![](images/decision-tree.png){fig-align="center"}
+![](images/decision-tree.png){fig-align="center" width="500"}
 
 ![](images/dt1.png){fig-align="center"}
 
@@ -58,7 +58,7 @@ how do we apply these methods with the satellite imagery?
 
     **Supervised Classification** we use Maximum likelihood and support vector machines(SVM).
 
-    This week\'s practical brings us to Shenzhen where we classified data using CART and Random Forest.
+    This week's practical brings us to Shenzhen where we classified data using CART and Random Forest.
 
     ![CART Classifier](images/CART-classifier.png)
 

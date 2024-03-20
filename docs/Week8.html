@@ -262,14 +262,14 @@ div.csl-indent {
 <p><img src="images/Screenshot 2024-03-05 105251.png" class="img-fluid"></p></li>
 </ul>
 <p><strong>Fig.4: Testing and Training the ML model</strong></p>
-<p>In the practical, we did subpixel, object-based, image and super pixels classification. Below is the subpixel classification output for Dar es Salaam, Tanzania, using Landsat 8 data.</p>
+<p>In the practical, we did sub-pixel, object-based, image and super pixels classification. Below is the sub-pixel classification output for DaresSalaam, Tanzania, using Landsat 8 data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Classification-wk8.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>What do you think of spatial autocorrelation in this sense? Is OBIA is dealing with spatial autocorrelation?</p>
-<p>In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted. To solve this we do spatial cross validation</p>
+<p>The question we can think at this stage is about spatial autocorrelation and is OBIA is dealing with spatial autocorrelation?</p>
+<p>In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or over-fitted. To solve this we do spatial cross validation.</p>
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> APPLICATION</h2>
@@ -277,14 +277,10 @@ div.csl-indent {
 <p>The algorithm to do this is Simple linear Iterative Clustering Algorithm(SLIC) but it has some limitations. It requires several iterations for the centroids to converge. It uses a distance map of the same size as the number of input pixels, which amounts to significant memory consumption for image stacks or video volumes. Lastly, SLIC enforces connectivity only as a post-processing step. So the better version of this is simple non-iterative clustering (SNIC). It is non-iterative, explicitly enforces connectivity, is computationally cheaper, uses lesser memory.<span class="citation" data-cites="achanta2017">(<a href="references.html#ref-achanta2017" role="doc-biblioref">Achanta and Susstrunk 2017</a>)</span></p>
 <p>Spatial autocorrelation is inherent to remotely sensed data. nearby pixels are more similar than distant ones. The evaluation of classification accuracy has always been considered as an important issue in the remote sensing community. <span class="citation" data-cites="congalton1991">(<a href="references.html#ref-congalton1991" role="doc-biblioref">Congalton 1991</a>)</span></p>
 <p>Despite the importance attached to the accuracy assessment protocol, a gap, sometimes a serious one, is often found between the performance metrics of a model and the real quality of the resulting map. This tends to reduce the confidence placed in accuracy statistics and to discredit the true capacity of remote sensing in the opinion of the t end users. Because of spatial autocorrelation, spectral values of close pixels are often more similar than those of distant ones, producing falsely high accuracy metrics if the sampling design is not used for testing. <span class="citation" data-cites="roberts2017">(<a href="references.html#ref-roberts2017" role="doc-biblioref">Roberts et al. 2017</a>)</span></p>
-<p>From a statistical point of view, two problems can arise with spatial autocorrelation: (1) spatial non-independence of the classification errors (or model residuals) and (2) spatial non-independence of the training and test sets used for accuracy assessment.</p>
-<p>The six cross-validation strategies with different sample sizes were applied to the department of Herault-34. The classification performances obtained by cross-validation on Herault-34 are given in Fig. 5. Overall, the results show that ignoring dependence between training and test sets leads to very high accuracy metrics whatever the sample size. This is particularly clear at the pixel level but also at the object level with large samples. Compared to sampling strategies that account for spatial autocorrelation, the accuracy metrics are overestimated. Our results revealed notable underestimation of generalization errors when traditional non spatial approaches were used to assess the accuracy. Pixel-based samplings were the most affected. Object-based strategies mitigate the effect of spatial dependence since the pixels used for training and testing never belong to the same forest stands. Nonetheless, non-spatial data-splitting at the object level also leads to overestimation of predictive performance. we need to change practices in classification accuracy assessment using spatial imagery. A data splitting design ensuring spatial independence between the training and test sets should be the standard approach for validation. <span class="citation" data-cites="karasiak2022">(<a href="references.html#ref-karasiak2022" role="doc-biblioref">Karasiak et al. 2022</a>)</span></p>
-<p><img src="images/spatial-autocorrealtion.png" class="img-fluid"></p>
-<p><strong>Fig.5: Average Overall accuracy based on the RF classifier</strong></p>
 </section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> REFLECTION</h2>
-<p>This week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of overfitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran’s I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.</p>
+<p>This week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of over-fitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran’s I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -296,9 +292,6 @@ Congalton, Russell G. 1991. <span>“A Review of Assessing the Accuracy of Class
 </div>
 <div id="ref-gisgeography2016" class="csl-entry" role="listitem">
 GISGeography. 2016. <span>“Supervised and <span>Unsupervised Classification</span> in <span>Remote Sensing</span>.”</span> GIS Geography. June 30, 2016. <a href="https://gisgeography.com/supervised-unsupervised-classification-arcgis/">https://gisgeography.com/supervised-unsupervised-classification-arcgis/</a>.
-</div>
-<div id="ref-karasiak2022" class="csl-entry" role="listitem">
-Karasiak, N., J.-F. Dejoux, C. Monteil, and D. Sheeren. 2022. <span>“Spatial Dependence Between Training and Test Sets: Another Pitfall of Classification Accuracy Assessment in Remote Sensing.”</span> <em>Machine Learning</em> 111 (7): 2715–40. <a href="https://doi.org/10.1007/s10994-021-05972-1">https://doi.org/10.1007/s10994-021-05972-1</a>.
 </div>
 <div id="ref-roberts2017" class="csl-entry" role="listitem">
 Roberts, David R., Volker Bahn, Simone Ciuti, Mark S. Boyce, Jane Elith, Gurutzeta Guillera‐Arroita, Severin Hauenstein, et al. 2017. <span>“Cross‐validation Strategies for Data with Temporal, Spatial, Hierarchical, or Phylogenetic Structure.”</span> <em>Ecography</em> 40 (8): 913–29. <a href="https://doi.org/10.1111/ecog.02881">https://doi.org/10.1111/ecog.02881</a>.

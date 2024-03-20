@@ -54,13 +54,13 @@ The good approach is to train and test split
 
 **Fig.4: Testing and Training the ML model**
 
-In the practical, we did subpixel, object-based, image and super pixels classification. Below is the subpixel classification output for Dar es Salaam, Tanzania, using Landsat 8 data.
+In the practical, we did sub-pixel, object-based, image and super pixels classification. Below is the sub-pixel classification output for DaresSalaam, Tanzania, using Landsat 8 data.
 
 ![](images/Classification-wk8.png){fig-align="center"}
 
-What do you think of spatial autocorrelation in this sense? Is OBIA is dealing with spatial autocorrelation?
+The question we can think at this stage is about spatial autocorrelation and is OBIA is dealing with spatial autocorrelation?
 
-In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or overfitted. To solve this we do spatial cross validation
+In ML model if we use spatial data and they have not considered spatial autocorrelation between its training and testing data then its considered too good or over-fitted. To solve this we do spatial cross validation.
 
 ## APPLICATION
 
@@ -72,14 +72,6 @@ Spatial autocorrelation is inherent to remotely sensed data. nearby pixels are m
 
 Despite the importance attached to the accuracy assessment protocol, a gap, sometimes a serious one, is often found between the performance metrics of a model and the real quality of the resulting map. This tends to reduce the confidence placed in accuracy statistics and to discredit the true capacity of remote sensing in the opinion of the t end users. Because of spatial autocorrelation, spectral values of close pixels are often more similar than those of distant ones, producing falsely high accuracy metrics if the sampling design is not used for testing. [@roberts2017]
 
-From a statistical point of view, two problems can arise with spatial autocorrelation: (1) spatial non-independence of the classification errors (or model residuals) and (2) spatial non-independence of the training and test sets used for accuracy assessment.
-
-The six cross-validation strategies with different sample sizes were applied to the department of Herault-34. The classification performances obtained by cross-validation on Herault-34 are given in Fig. 5. Overall, the results show that ignoring dependence between training and test sets leads to very high accuracy metrics whatever the sample size. This is particularly clear at the pixel level but also at the object level with large samples. Compared to sampling strategies that account for spatial autocorrelation, the accuracy metrics are overestimated. Our results revealed notable underestimation of generalization errors when traditional non spatial approaches were used to assess the accuracy. Pixel-based samplings were the most affected. Object-based strategies mitigate the effect of spatial dependence since the pixels used for training and testing never belong to the same forest stands. Nonetheless, non-spatial data-splitting at the object level also leads to overestimation of predictive performance. we need to change practices in classification accuracy assessment using spatial imagery. A data splitting design ensuring spatial independence between the training and test sets should be the standard approach for validation. [@karasiak2022]
-
-![](images/spatial-autocorrealtion.png)
-
-**Fig.5: Average Overall accuracy based on the RF classifier**
-
 ## REFLECTION
 
-This week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of overfitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran's I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.
+This week we discussed about object based image analysis i think is very important part of classification. The issues related to that and if for example we have spatial data then we always have spatial autocorrelation. They are kind of related . So we need to keep a check on that which can be resolved through spatial cross validation or object based image analysis. If we are using machine learning models for spatial data we need to take care of over-fitting of data and how can we make the more generalized model which can be use for different imagery. this week also talks about lots of methods we discussed in GIS module like Moran's I, K-means Clustering and GWR. So here we see the merge of Remote Sensing and GIS.

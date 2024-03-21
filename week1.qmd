@@ -16,11 +16,11 @@ Example- the study of daily weather and climate change, land-use/land cover moni
 
 The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.
 
-![Figure 1-Remote Sensing Process. [@crisp2001]](images/optical.gif){fig-align="center" width="500"}
+![ Remote Sensing Process. [@crisp2001]](images/optical.gif){fig-align="center" width="500"}
 
 **Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission.
 
-![Figure 2 - Space Junk. [@mit2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center" width="500"}
+![ Space Junk. [@mit2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center" width="500"}
 
 **Spectral Resolution** is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.
 
@@ -51,11 +51,11 @@ Remote sensor data are collected passively (e.g. digital cameras) or actively (e
 -   **Atmospheric scattering** causes the colors we see in the sky due to sunlight interacting with particles in the atmosphere.
 -   **Rayleigh scattering** explains how light interacts with small particles, resulting in blue skies during the day.
 
-![Figure 3: Rayleigh Scattering [@rayleigh2024]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
+![ Rayleigh Scattering [@rayleigh2024]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
 
-This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. we do this by generating point of interest (POIs) matches with both images.
+This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. We can do this by generating point of interest (POIs) matches with both images. We can see below in the figure
 
-![Sentinel-1 and Landsat image of South Africa](images/SNAP-sentinel-lansat.png){fig-align="center" width="500"}
+![ Sentinel-1 and Landsat image of South Africa](images/SNAP-sentinel-lansat.png){fig-align="center" width="500"}
 
 ## **Application**
 

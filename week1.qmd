@@ -16,7 +16,7 @@ Example- the study of daily weather and climate change, land-use/land cover moni
 
 The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.
 
-![Figure 1-Remote Sensing Process. Source[@crisp2001]](images/optical.gif){fig-align="center" width="500"}
+![Figure 1-Remote Sensing Process. [@crisp2001]](images/optical.gif){fig-align="center" width="500"}
 
 **Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission.
 
@@ -51,11 +51,11 @@ Remote sensor data are collected passively (e.g. digital cameras) or actively (e
 -   **Atmospheric scattering** causes the colors we see in the sky due to sunlight interacting with particles in the atmosphere.
 -   **Rayleigh scattering** explains how light interacts with small particles, resulting in blue skies during the day.
 
-![Figure 3: Rayleigh Scattering](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
+![Figure 3: Rayleigh Scattering [@rayleigh2024]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
 
 This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. we do this by generating point of interest (POIs) matches with both images.
 
-![](images/SNAP-sentinel-lansat.png){fig-align="center" width="500"}
+![Sentinel-1 and Landsat image of South Africa](images/SNAP-sentinel-lansat.png){fig-align="center" width="500"}
 
 ## **Application**
 

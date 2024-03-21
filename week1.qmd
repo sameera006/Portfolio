@@ -10,17 +10,17 @@ CASA0023 Remotely Sensing Cities and Environments is about remotely sensed earth
 
 **What is remote sensing?**
 
-According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (insitu or in-place data collection), and/or at some remote distance from the subject matter known as **Remote Sensing** of the environment.
+According to NASA, Remote Sensing is acquiring information from a distance. The data collection may take place directly in the field (in-situ or in-place data collection), and/or at some remote distance from the subject matter known as **Remote Sensing** of the environment.
 
 Example- the study of daily weather and climate change, land-use/land cover monitoring, food security, military reconnaissance, and many others.
 
 The majority of remotely sensed data are analyzed using digital image processing techniques. A very interesting fact about remote sensing image interpretation is that it is both an art and a science.
 
-![**Figure 1-Remote Sensing Process [@zotero-271]**](images/optical.gif){fig-align="center" width="500"}
+![Figure 1-Remote Sensing Process. Source[@crisp2001]](images/optical.gif){fig-align="center" width="500"}
 
 **Space junk**, or space debris, is any piece of machinery or debris left by humans in space. It can refer to big objects such as dead satellites that have failed or been left in orbit at the end of their mission.
 
-![Figure 2 - Space Junk [@2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center" width="500"}
+![Figure 2 - Space Junk. [@mit2017]](images/MIT-Orbit-Debris_0.jpg){fig-align="center" width="500"}
 
 **Spectral Resolution** is the number and dimension (size) of wavelength intervals (referred to as bands or channels) in the electromagnetic spectrum to which a remote sensing instrument is sensitive.
 
@@ -51,7 +51,7 @@ Remote sensor data are collected passively (e.g. digital cameras) or actively (e
 -   **Atmospheric scattering** causes the colors we see in the sky due to sunlight interacting with particles in the atmosphere.
 -   **Rayleigh scattering** explains how light interacts with small particles, resulting in blue skies during the day.
 
-![Figure 3: Rayleigh Scattering [@2024c]](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
+![Figure 3: Rayleigh Scattering](images/Leehasacamera_-_Sunset_over_the_clouds_(by).jpg){fig-align="center" width="500"}
 
 This week practical we did play with Sentinel and Landsat imagery and compared it with different classes like urban, grass, bare-earth. We compare the spectral signatures from both. we do this by generating point of interest (POIs) matches with both images.
 

@@ -18,7 +18,7 @@ According to European Commission world atlas of Desertification
 
 4.  Displacement: By 2050, up to 700 million people could be displaced due to scarce land resources, potentially reaching 10 billion by the century's end.
 
-5.  Local Solutions: Addressing land degradation requires local solutions and stronger cooperation at the local level to preserve biodiversity and combat this global challenge[@2019]
+5.  Local Solutions: Addressing land degradation requires local solutions and stronger cooperation at the local level to preserve biodiversity and combat this global challenge[@centre]
 
     ![Figure 1: Desertification and Climate Change in Africa](images/africa_desertification.png)
 
@@ -52,7 +52,7 @@ The following steps are involved in the methodology -
 
 **4. LandUse Land Cover Classification using machine learning with Google Earth Engine:** Using the cloud power provided by Google Earth Engine to train a land cover classifier.
 
-**5. Dashboard**: Build a dashboard to visualize the areas affected and our future predictions. [@zotero-315]
+**5. Dashboard**: Build a dashboard to visualize the areas affected and our future predictions. [@omdena]
 
 ## REFLECTION
 

@@ -218,28 +218,29 @@ div.csl-indent {
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> SUMMARY</h2>
 <p>Synthetic Aperture Radar (SAR) data</p>
 <p>“SAR instruments send pulses of microwaves toward Earth’s surface and listen for the reflections of those waves. The radar waves can penetrate cloud cover, vegetation, and the dark of night to detect changes that might not show up in visible light imagery. When Earth’s crust moves due to an earthquake, when dry land is suddenly covered by flood water, or when buildings have been damaged or toppled, the amplitude and phase of radar wave reflections changes in those areas and indicates to the satellite that something on the ground has changed.”</p>
-<p>It is an active sensor which means a sensor which provides their own illumination. For example it sees the world as the way bats do as they emit a chirp and listen to the backscatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes or camera does.</p>
-<p>Radar sensor picks up the signal reflected backscattered from the earth surface. They check the topology of the surface based on how it reflects.</p>
+<p>It is an active sensor which means a sensor which provides their own illumination. For example it sees the world as the way bats do as they emit a chirp and listen to the back scatter of an echo if something gets reflected while passive sensor (optical) sees the world as our eyes or camera does.</p>
+<p>Radar sensor picks up the signal reflected back scattered from the earth surface. They check the topology of the surface based on how it reflects.</p>
 <p>Interpreting Radar Images</p>
 <ul>
 <li><p>Regions of calm water and other smooth surfaces appear black, because the radar pulse reflects away from the spacecraft</p></li>
 <li><p>Rough surfaces appear brighter, as they reflect the radar in all directions, and more of the energy is scattered back to the antenna.&nbsp;</p></li>
 </ul>
-<p>Different wavelengths penetrates through different surfaces used in different applications. So choice of wavelenghth is important.</p>
+<p>Different wavelengths penetrates through different surfaces used in different applications. So choice of wavelength is important.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/wavelenghts-SAR.png" class="img-fluid figure-img" width="500"></p>
 </figure>
 </div>
 <p><span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></p>
-<p>The most commonly used Band in imaging is C-band with 4-8 GHz frequency.</p>
+<p>The most commonly used Band in imaging is <strong>C-band</strong> with <strong>4-8 GHz</strong> frequency.</p>
 <p><strong>Polarization</strong></p>
-<p>Imaging radars have different polarization configurations. A single polarization transmits and receices a single polarization horizontal-horizontal (HH)or vertical-vertical(VV) imager while a dual-polarization system trnamit in one but receive in two HH and HV or VH and VV imagery.<span class="citation" data-cites="zotero-287">(<a href="references.html#ref-zotero-287" role="doc-biblioref"><strong>zotero-287?</strong></a>)</span></p>
+<p>Imaging radars have different polarization configurations. A single polarization transmits and receives a single polarization horizontal-horizontal (HH)or vertical-vertical(VV) image while a dual-polarization system transmit in one but receive in two HH and HV or VH and VV imagery.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Wave_Polarisation.gif" class="img-fluid figure-img" width="300"></p>
 </figure>
 </div>
+<p>Source : <span class="citation" data-cites="polarimetry">(<a href="references.html#ref-polarimetry" role="doc-biblioref">Polarimetry n.d.</a>)</span></p>
 <p><strong>Scattering</strong></p>
 <p>Different surface respond differently to the polarizations like bare earth is most sensitive to VV (rough scattering), leaves go cross VH or HV (volume scattering) and trees/buildings sensitive to HH (double bounce).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -262,7 +263,7 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> APPLICATION</h2>
-<p>SAR data allow us to see through darkness, clouds detecting changes in habitat, level of water or moisture, natural or human disturbance in the earth surface. Therefore taking the example of above practical on battle damage assessment the study discusses the issues of using high resolution optical satellite imagery for getting the highest level of accuracy through Convolution Neural Networks (CNN). As it is financial and computationally expensive plus its not consistent to cloud cover. The advantage of open-access SAR mitigates these problems. It critically analyze <span class="citation" data-cites="mueller2021">(<a href="references.html#ref-mueller2021" role="doc-biblioref"><strong>mueller2021?</strong></a>)</span> approach on achieving 0.92 confidence score by training a CNN on damage annotations carried out by the United nations.</p>
+<p>SAR data allow us to see through darkness, clouds detecting changes in habitat, level of water or moisture, natural or human disturbance in the earth surface. Therefore taking the example of above practical on battle damage assessment the study discusses the issues of using high resolution optical satellite imagery for getting the highest level of accuracy through Convolution Neural Networks (CNN). As it is financial and computationally expensive plus its not consistent to cloud cover. The advantage of open-access SAR mitigates these problems. It critically analyze <span class="citation" data-cites="mueller2021">(<a href="references.html#ref-mueller2021" role="doc-biblioref">Mueller et al. 2021</a>)</span> approach on achieving 0.92 confidence score by training a CNN on damage annotations carried out by the United nations.</p>
 <p>It analysed the war-related destruction resulting from the Syrian war. Despite the high accuracy, there are number if limitations like cost and cloud. Here we use open-access SAR imagery and pixel-wise T-Test which is a more generalized approach and can be calculated by simply taking the mean and variance of pre and post image over a period of time.<span class="citation" data-cites="ballinger2023">(<a href="references.html#ref-ballinger2023" role="doc-biblioref">Ballinger 2023</a>)</span></p>
 <p>In the similar approach for detection of volcanic ground deformation we can use Sentinel-1 InSAR data. <span class="citation" data-cites="albino2022">(<a href="references.html#ref-albino2022" role="doc-biblioref">Albino et al. 2022</a>)</span> paper focuses on 64 volcanic centres understanding ground deformation presenting a framework for real-time volcano monitoring and early warning system. Adiitionally if you generalize it the approach does not work for other regions due to geological differences and the paper has not discussed about validating the result.<span class="citation" data-cites="carn1999">(<a href="references.html#ref-carn1999" role="doc-biblioref">Carn 1999</a>)</span></p>
 </section>
@@ -276,19 +277,25 @@ div.csl-indent {
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-albino2022" class="csl-entry" role="listitem">
-Albino, Fabien, Juliet Biggs, Milan Lazecký, and Yasser Maghsoudi. 2022. <span>“Routine Processing and Automatic Detection of Volcanic Ground Deformation Using Sentinel-1 InSAR Data: Insights from African Volcanoes.”</span> <em>Remote Sensing</em> 14 (22): 5703. <a href="https://doi.org/10.3390/rs14225703">https://doi.org/10.3390/rs14225703</a>.
+Albino, Fabien, Juliet Biggs, Milan Lazecký, and Yasser Maghsoudi. 2022. <span>“Routine <span>Processing</span> and <span>Automatic Detection</span> of <span>Volcanic Ground Deformation Using Sentinel-1 InSAR Data</span>: <span>Insights</span> from <span>African Volcanoes</span>.”</span> <em>Remote Sensing</em> 14 (22, 22): 5703. <a href="https://doi.org/10.3390/rs14225703">https://doi.org/10.3390/rs14225703</a>.
 </div>
 <div id="ref-ballinger2023" class="csl-entry" role="listitem">
-Ballinger, Dr Ollie. 2023. <span>“Open Access Damage Detection Using Sentinel-1 Imagery.”</span> <a href="https://oballinger.github.io/PWTT/">https://oballinger.github.io/PWTT/</a>.
+Ballinger, Dr Ollie. 2023. <span>“Open <span>Access Damage Detection Using Sentinel-1 Imagery</span>.”</span> June 23, 2023. <a href="https://oballinger.github.io/PWTT/">https://oballinger.github.io/PWTT/</a>.
 </div>
 <div id="ref-ballinger2024" class="csl-entry" role="listitem">
 ———. 2024. <span>“<span>CASA0025</span>: <span>Building Spatial Applications</span> with <span>Big Data</span>.”</span> January 10, 2024. <a href="https://oballinger.github.io/CASA0025/">https://oballinger.github.io/CASA0025/</a>.
 </div>
 <div id="ref-carn1999" class="csl-entry" role="listitem">
-Carn, Simon A. 1999. <span>“Application of Synthetic Aperture Radar (SAR) Imagery to Volcano Mapping in the Humid Tropics: A Case Study in East Java, Indonesia.”</span> <em>Bulletin of Volcanology</em> 61 (1): 92–105. <a href="https://doi.org/10.1007/s004450050265">https://doi.org/10.1007/s004450050265</a>.
+Carn, Simon A. 1999. <span>“Application of Synthetic Aperture Radar (<span>SAR</span>) Imagery to Volcano Mapping in the Humid Tropics: A Case Study in <span>East Java</span>, <span>Indonesia</span>.”</span> <em>Bulletin of Volcanology</em> 61 (1): 92–105. <a href="https://doi.org/10.1007/s004450050265">https://doi.org/10.1007/s004450050265</a>.
 </div>
 <div id="ref-earthsciencedatasystems2020" class="csl-entry" role="listitem">
 Earth Science Data Systems, NASA. 2020. <span>“What Is <span>Synthetic Aperture Radar</span>? | <span>Earthdata</span>.”</span> Backgrounder. Earth Science Data Systems, NASA. April 10, 2020. <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a>.
+</div>
+<div id="ref-mueller2021" class="csl-entry" role="listitem">
+Mueller, Hannes, Andre Groeger, Jonathan Hersh, Andrea Matranga, and Joan Serrat. 2021. <span>“Monitoring War Destruction from Space Using Machine Learning.”</span> <em>Proceedings of the National Academy of Sciences</em> 118 (23): e2025400118. <a href="https://doi.org/10.1073/pnas.2025400118">https://doi.org/10.1073/pnas.2025400118</a>.
+</div>
+<div id="ref-polarimetry" class="csl-entry" role="listitem">
+Polarimetry. n.d. <span>“Polarimetry | <span>Get</span> to <span>Know SAR</span>.”</span> NASA-ISRO SAR Mission (NISAR). Accessed March 17, 2024. <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/polarimetry">https://nisar.jpl.nasa.gov/mission/get-to-know-sar/polarimetry</a>.
 </div>
 </div>
 </section>

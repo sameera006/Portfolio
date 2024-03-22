@@ -216,10 +216,10 @@ div.csl-indent {
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> SUMMARY</h2>
-<p>There is some Pre-classified data which can be used where we don’t need to do the classification. For example <strong>Dynamic World Data</strong> which use SR for labelling but use TOA for the model. here we use Machine learning models like Convolution Neural Network. Accuracy is assessed through Confusion Matrix.</p>
+<p>There is some Pre-classified data which can be used where we don’t need to do the classification. For example <strong>Dynamic World Data</strong> which use SR for labeling but use TOA for the model. here we use Machine learning models like Convolution Neural Network. Accuracy is assessed through Confusion Matrix.</p>
 <p>When we use such classified data we check that how was it trained. There are some issues like blobbiness as its a 50x50 m image.</p>
 <p><strong>OBJECT BASED IMAGE ANALYSIS (OBIA)</strong></p>
-<p>Here we talk about pixels and distance mainly Euclidian distance. OBIA is similarity between pixels. It tries to match the similar pixels. for example - Take a RGB near-infrared 1m image. Its a typical kind of image where we want to do segmentation and OBIA. we do OBIA to do clean classification. Like if we classify on the mean of all the vectors inside a particular polygon we will get a solid result as opposed to classifying on individual pixels we will get a lot salt and pepper noise.</p>
+<p>Here we talk about pixels and distance mainly Euclidean distance. OBIA is similarity between pixels. It tries to match the similar pixels. for example - Take a RGB near-infrared 1m image. Its a typical kind of image where we want to do segmentation and OBIA. we do OBIA to do clean classification. Like if we classify on the mean of all the vectors inside a particular polygon we will get a solid result as opposed to classifying on individual pixels we will get a lot salt and pepper noise.</p>
 <p>There comes also a question why do we need object based analysis? It is to improve in signal and noise. There are thousand pixels here so we might want to turn these things into objects.</p>
 <table class="table">
 <colgroup>
@@ -247,9 +247,9 @@ div.csl-indent {
 <p><img src="images/Gradient-function.png" class="img-fluid"></p>
 <p><strong>Fig2: Spectral Gradient and Distances</strong></p>
 <p><strong>SNIC</strong>- (Super pixel non-iterative clustering) Seeded region growing</p>
-<p>This makes clusters without using k-means. It uses a regular grid of points (like k-means) but then assigns pixels to points through distance color and co-ordinates - it represents normalised spatial and color distances. we also have seed grid which denotes spacing in pixel. we can set square or hex grid.</p>
+<p>This makes clusters without using k-means. It uses a regular grid of points (like k-means) but then assigns pixels to points through distance color and co-ordinates - it represents normalized spatial and color distances. we also have seed grid which denotes spacing in pixel. we can set square or hex grid.</p>
 <p><strong>Image.reduceConnectedComponents</strong></p>
-<p>(Simple Linear Iterative Clustering) Algorithm for Superpixel generation is the most common method regular points on the image work out spatial distance (from point to centre of pixel) = closeness to centre colour difference (RGB vs RGB to centre point) = homogenity of colours</p>
+<p>(Simple Linear Iterative Clustering) Algorithm for Super pixel generation is the most common method regular points on the image work out spatial distance (from point to center of pixel) = closeness to center color difference (RGB vs RGB to center point) = homogeneity of colors</p>
 <p><strong>The SLIC algorithm works iteratively</strong>, repeating the above process until it reaches the expected number of iterations.</p>
 <p>sub pixel analysis/ spectral mixture analysis</p>
 <p><strong>Supervised Classification in Remote Sensing</strong></p>
@@ -262,7 +262,7 @@ div.csl-indent {
 <p><img src="images/Screenshot 2024-03-05 105251.png" class="img-fluid"></p></li>
 </ul>
 <p><strong>Fig.4: Testing and Training the ML model</strong></p>
-<p>In the practical, we did sub-pixel, object-based, image and super pixels classification. Below is the sub-pixel classification output for DaresSalaam, Tanzania, using Landsat 8 data.</p>
+<p>In the practical, we did sub-pixel, object-based, image and super pixels classification. Below is the sub-pixel classification output for Dares Salaam, Tanzania, using Landsat 8 data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Classification-wk8.png" class="img-fluid figure-img"></p>

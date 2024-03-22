@@ -52,7 +52,7 @@ The following steps are involved in the methodology -
 
 **4. LandUse Land Cover Classification using machine learning with Google Earth Engine:** Using the cloud power provided by Google Earth Engine to train a land cover classifier.
 
-**5. Dashboard**: Build a dashboard to visualize the areas affected and our future predictions. [@omdena]
+**5. Dashboard**: Build a dashboard to visualize the areas affected and our future predictions. [@omdena2022]
 
 ## REFLECTION
 

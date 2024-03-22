@@ -4,17 +4,17 @@ title: "Classification-1"
 
 ## SUMMARY
 
-Classification can be used in many studies like Urban Expansion using Landsat data, Air pollution, Urban green Spaces, monitoring forest like illegal logging, and Forest fires. in all these studies land cover is extracted from the earth observation data.
+Classification can be used in many studies like Urban Expansion using Landsat data, Air pollution, Urban green Spaces, monitoring forest like illegal logging, and Forest fires. In all these studies land cover is extracted from the earth observation data.
 
-So, the process of classification involves inductive learning which means that by looking at the map we know where is ground or barren land or urban or forest area and accordingly we can classify.
+So, the process of classification involves **inductive learning** which means that by looking at the map we know where is ground or barren land or urban or forest area and accordingly we can classify.
 
 For classification we use an expert system.
 
-![](images/main-qimg-a63e873b68b7d220020991140f0a896c-lq.jpg)
+[![](images/main-qimg-a63e873b68b7d220020991140f0a896c-lq.jpg)](https://www.quora.com/What-is-a-knowledge-based-system-in-the-context-of-artificial-intelligence)
 
-[@whatis]
+[@aftabalam]
 
-So the expert system consist of the knowledge base and inference engine. what we want to find out how a computer replicate human knowledge. and how expert system is applied to remote sensing.
+So, the expert system consist of the knowledge base and inference engine. What we want to find out how a computer replicate human knowledge and how expert system is applied to remote sensing?
 
 Machine learning is defined as the science of computer modeling of learning process. there are number of machine learning data decision tree /regression tree.
 
@@ -26,7 +26,7 @@ Machine learning is defined as the science of computer modeling of learning proc
 
 ![](images/dt1.png){fig-align="center"}
 
-[@decision]
+[@hackerearth]
 
 **Regression trees** predict continuous dependent variable like numerical variable for example total population. They subset the data into smaller chunks. When we create decision tree the end leaves might be a mixture of categories meaning they are impure known as Gini impurity. The option with the lowest impurity goes to the top of the tree and becomes the root.
 
@@ -60,13 +60,13 @@ how do we apply these methods with the satellite imagery?
 
     This week's practical brings us to Shenzhen where we classified data using CART and Random Forest.
 
-    ![CART Classifier](images/CART-classifier.png)
+    ![CART Classifier of Shenzhen.](images/CART-classifier.png)
 
-CART Classifier
+CART Classifier of SHENZHEN
 
 ## APPLICATION
 
-"Identifying specific crop types, cropland, and cropping patterns using space-based observations is challenging because different crop types and cropping patterns have similarity spectral signatures. But combining satellite imagery with machine learning methods helps in monitoring the above concern. In this study, Sentinel-2 and Landsat-8 time series data were used with the Decision Tree Classifier (DTC) and Random Forest (RF) methods to map cropland and crop types in Gujranwala's sub-districts. Optical remote sensing NDVI time series data facilitated cropland mapping, revealing wheat as the predominant crop with 85% coverage, while barley occupied only 0.07% of the total crop area. The analysis focused on areas with consistent agricultural calendars, parcel morphology, and climatic conditions. DTC and RF methods showcased wheat's superior accuracy."[@tariq2023]
+"Identifying specific crop types, cropland, and cropping patterns using space-based observations is challenging because different crop types and cropping patterns have similarity spectral signatures. But combining satellite imagery with machine learning methods helps in monitoring the above concern. In this study, Sentinel-2 and Landsat-8 time series data were used with the Decision Tree Classifier (DTC) and Random Forest (RF) methods to map cropland and crop types in Gujranwala sub-districts. Optical remote sensing NDVI time series data facilitated cropland mapping, revealing wheat as the predominant crop with 85% coverage, while barley occupied only 0.07% of the total crop area. The analysis focused on areas with consistent agricultural calendars, parcel morphology, and climatic conditions. DTC and RF methods showcased wheat's superior accuracy."[@tariq2023]
 
 "Remote sensing helps study Urban Green Spaces (UGSs), but less is known about non-tree species, change detection, and health assessment. Most research focuses on large UGSs, neglecting smaller areas like street trees and parks, which are still significant. Urban managers need to identify vegetation species to maintain and protect UGSs from invasive species. Previously, this was costly and hard, relying on field surveys. Now, remote sensing allows for accurate and timely identification of vegetation species in urban areas."[@shahtahmassebi2021]
 
@@ -76,7 +76,7 @@ A new study suggests creating, testing, and implementing a machine learning appr
 
 ![](images/green-space-ML.png)
 
-Using remote sensing data, particularly the Normalized Difference Vegetation Index (NDVI), is a common method to evaluate green space quantity on satellite images. [@sun2021] However, this approach has limitations when assessing green space quality. Remote sensing struggles to detect subtle changes in quality-related variables and provides only a two-dimensional view, which may not accurately represent the green space perceived at eye level. Additionally, while quantity matters, green space quality is more crucial for human health. The complexity of feature extraction in Convolutional Neural Networks (CNN) depends on the number of layers, with fewer layers resulting in weaker learning abilities for complex features.[@ayadi2022]
+Using remote sensing data, particularly the Normalized Difference Vegetation Index (NDVI), is a common method to evaluate green space quantity on satellite images. [@sun2021] However, this approach has limitations when assessing green space quality. Remote sensing struggles to detect subtle changes in quality-related variables and provides only a two-dimensional view, which may not accurately represent the green space perceived at eye level. Additionally, while quantity matters, green space quality is more crucial for human health. The complexity of feature extraction in Convolution Neural Networks (CNN) depends on the number of layers, with fewer layers resulting in weaker learning abilities for complex features.[@ayadi2022]
 
 ## REFLECTION
 

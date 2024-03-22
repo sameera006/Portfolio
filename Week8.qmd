@@ -52,7 +52,7 @@ The good approach is to train and test split
 
     ![](images/Screenshot%202024-03-05%20105251.png)
 
-**Fig.4: Testing and Training the ML model**
+**Testing and Training the ML model**
 
 In the practical, we did sub-pixel, object-based, image and super pixels classification. Below is the sub-pixel classification output for Dares Salaam, Tanzania, using Landsat 8 data.
 

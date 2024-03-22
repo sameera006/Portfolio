@@ -249,17 +249,18 @@ div.csl-indent {
 </figure>
 </div>
 <p><span class="citation" data-cites="earthsciencedatasystems2020">(<a href="references.html#ref-earthsciencedatasystems2020" role="doc-biblioref">Earth Science Data Systems 2020</a>)</span></p>
-<p>A SAR signal has both phase and amplitude data(backscatter). In GEE only amplitude data is available so if we want to use phase data we use SNAP.</p>
+<p>A SAR signal has both phase and amplitude data(back scatter). In GEE only amplitude data is available so if we want to use phase data we use SNAP.</p>
 <p>SAR is used in tracking flooding. Area that is flooded appear darker. It is also used for blast damage assessment.</p>
 <p>This weeks practical takes an example of Beirut explosion. In this case study we are developing our own change detection algorithm using pixel-wise t-test.</p>
 <p>It is basically just a signal-to-noise ratio. So we have pre and post-event images and it calculates the difference between two sample means(signal) and divides it by the standard deviation of both samples(noise). The t-value is a measure of how many standard deviations the difference between the two mean is. We need to filter the image collection to the ascending and descending orbits, and then calculate the t-value for each orbit separately.<span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/blast damage.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pixel-wise T-Test of Beirut Explosion</figcaption>
 </figure>
 </div>
 <p><img src=".png" class="img-fluid"></p>
-<p>The visualization parameter corresponds the statistical significance of the change in pixel value. dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.</p>
+<p>The visualization parameter corresponds the statistical significance of the change in pixel value. <strong>Dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.</strong></p>
 </section>
 <section id="application" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> APPLICATION</h2>

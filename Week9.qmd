@@ -42,7 +42,7 @@ Different surface respond differently to the polarizations like bare earth is mo
 
 [@earthsciencedatasystems2020]
 
-A SAR signal has both phase and amplitude data(backscatter). In GEE only amplitude data is available so if we want to use phase data we use SNAP.
+A SAR signal has both phase and amplitude data(back scatter). In GEE only amplitude data is available so if we want to use phase data we use SNAP.
 
 SAR is used in tracking flooding. Area that is flooded appear darker. It is also used for blast damage assessment.
 
@@ -50,11 +50,11 @@ This weeks practical takes an example of Beirut explosion. In this case study we
 
 It is basically just a signal-to-noise ratio. So we have pre and post-event images and it calculates the difference between two sample means(signal) and divides it by the standard deviation of both samples(noise). The t-value is a measure of how many standard deviations the difference between the two mean is. We need to filter the image collection to the ascending and descending orbits, and then calculate the t-value for each orbit separately.[@ballinger2024]
 
-![](images/blast%20damage.png){fig-align="center"}
+![Pixel-wise T-Test of Beirut Explosion](images/blast%20damage.png){fig-align="center"}
 
 ![]()
 
-The visualization parameter corresponds the statistical significance of the change in pixel value. dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.
+The visualization parameter corresponds the statistical significance of the change in pixel value. **Dark purple pixel indicate no significant change and yellow pixels indicates a significant change with 95% confidence.**
 
 ## APPLICATION
 

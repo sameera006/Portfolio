@@ -18,13 +18,13 @@ There comes also a question why do we need object based analysis? It is to impro
 |-------------------|------------------------|-----------------------------|
 | ![](images/image-to-classify.png) | ![](images/diff-crops-type.png){width="889"} | ![](images/per-pixel-classification.png){width="889"} |
 
-**Fig1: Process of Classification**
+**Process of Classification**
 
 We use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers. we also talk about spectral gradient and can we use super-pixels to remove the salt and pepper noise.
 
 ![](images/Gradient-function.png)
 
-**Fig2: Spectral Gradient and Distances**
+**Spectral Gradient and Distances**
 
 **SNIC**- (Super pixel non-iterative clustering) Seeded region growing
 
@@ -44,7 +44,7 @@ In supervised classification, you select training samples and classify your imag
 
 ![](images/sup-classification.png)
 
-**Fig3: Classification and Validation**[@gisgeography2016]
+**Classification and Validation**[@gisgeography2016]
 
 The good approach is to train and test split
 
@@ -56,7 +56,7 @@ The good approach is to train and test split
 
 In the practical, we did sub-pixel, object-based, image and super pixels classification. Below is the sub-pixel classification output for Dares Salaam, Tanzania, using Landsat 8 data.
 
-![](images/Classification-wk8.png){fig-align="center"}
+![Classification of DaresSalaam](images/Classification-wk8.png){fig-align="center"}
 
 The question we can think at this stage is about spatial autocorrelation and is OBIA is dealing with spatial autocorrelation?
 

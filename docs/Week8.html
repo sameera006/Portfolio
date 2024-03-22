@@ -242,10 +242,10 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p><strong>Fig1: Process of Classification</strong></p>
+<p><strong>Process of Classification</strong></p>
 <p>We use mode reducer in neighborhood to clean the image. it will remove the single pixel outliers. we also talk about spectral gradient and can we use super-pixels to remove the salt and pepper noise.</p>
 <p><img src="images/Gradient-function.png" class="img-fluid"></p>
-<p><strong>Fig2: Spectral Gradient and Distances</strong></p>
+<p><strong>Spectral Gradient and Distances</strong></p>
 <p><strong>SNIC</strong>- (Super pixel non-iterative clustering) Seeded region growing</p>
 <p>This makes clusters without using k-means. It uses a regular grid of points (like k-means) but then assigns pixels to points through distance color and co-ordinates - it represents normalized spatial and color distances. we also have seed grid which denotes spacing in pixel. we can set square or hex grid.</p>
 <p><strong>Image.reduceConnectedComponents</strong></p>
@@ -255,7 +255,7 @@ div.csl-indent {
 <p><strong>Supervised Classification in Remote Sensing</strong></p>
 <p>In supervised classification, you select training samples and classify your image based on your chosen samples. Your training samples are key because they will determine which class each pixel inherits in your overall image.</p>
 <p><img src="images/sup-classification.png" class="img-fluid"></p>
-<p><strong>Fig3: Classification and Validation</strong><span class="citation" data-cites="gisgeography2016">(<a href="references.html#ref-gisgeography2016" role="doc-biblioref">GISGeography 2016</a>)</span></p>
+<p><strong>Classification and Validation</strong><span class="citation" data-cites="gisgeography2016">(<a href="references.html#ref-gisgeography2016" role="doc-biblioref">GISGeography 2016</a>)</span></p>
 <p>The good approach is to train and test split</p>
 <ul>
 <li><p>This is simply holding back a % of the original data used to train the model to then test it at the end</p>
@@ -266,6 +266,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Classification-wk8.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Classification of DaresSalaam</figcaption>
 </figure>
 </div>
 <p>The question we can think at this stage is about spatial autocorrelation and is OBIA is dealing with spatial autocorrelation?</p>

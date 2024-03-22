@@ -216,37 +216,42 @@ div.csl-indent {
 
 <section id="summary" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> SUMMARY</h2>
-<p>This week we studied the much awaited Google Earth Engine. ” <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/google-earth-engine" title="Learn more about Google Earth Engine from ScienceDirect's AI-generated Topic Pages">Google Earth Engine</a>&nbsp;is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geo-spatial data sets. It is designed to help researchers easily disseminate their results to other researchers, policy makers,&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/non-governmental-organisation" title="Learn more about NGOs from ScienceDirect's AI-generated Topic Pages">NGOs</a>, field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine’s resources, without needing to be an expert in application development, web programming or&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/document-markup-languages" title="Learn more about HTML from ScienceDirect's AI-generated Topic Pages">HTML</a>.” <span class="citation" data-cites="gorelick2017">(<a href="references.html#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span></p>
-<p>It is accessed and controlled through an&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/application-programming-interface" title="Learn more about application programming interface from ScienceDirect's AI-generated Topic Pages">application programming interface</a>&nbsp;(API) and an associated web-based interactive development environment (IDE) that enables&nbsp;<a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/rapid-prototyping" title="Learn more about rapid prototyping from ScienceDirect's AI-generated Topic Pages">rapid prototyping</a>&nbsp;and visualization of results. So basically GEE can load large datasets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.</p>
+<p>This week we studied the much awaited Google Earth Engine abbreviated as <strong>GEE</strong>. “It is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large Geo-spatial data sets. Its not just the speed but the results produced from GEE can be useful to researchers, policy makers, NGOs, field workers and wider public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine’s resources, without needing to be an expert in application development, web programming or&nbsp;HTML.” <span class="citation" data-cites="gorelick2017">(<a href="references.html#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span></p>
+<p>It is interacted with and managed through an <strong>application programming interface</strong> (API) and a web-based interactive development environment (IDE), allowing for quick prototyping and result visualization. So basically GEE can load large data sets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.</p>
 <p>GEE has a concept of <strong>client</strong> and <strong>server</strong> side where the code which we put runs on the client side i.e.&nbsp;Browser so we do not run anything locally which speeds up the process. It uses <strong>Javascript</strong> as the programming Language.</p>
 <p>The raster data is called <strong>image</strong> and the vector data is called <strong>feature</strong>.</p>
 <p>A stack of images is called <strong>Image Collection</strong> and Feature stack (lots of polygons) is known as <strong>Feature Collection</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ee-editor_1440.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">GEE Screen : <span class="citation" data-cites="beginner">(<a href="references.html#ref-beginner" role="doc-biblioref"><strong>beginner?</strong></a>)</span></figcaption>
+<figcaption class="figure-caption">GEE Screen : <span class="citation" data-cites="googlefordevelopers">(<a href="references.html#ref-googlefordevelopers" role="doc-biblioref">Google for Developers, n.d.</a>)</span></figcaption>
 </figure>
 </div>
-<p>This weeks practical was really interesting as we got to use GEE and all the things we did in previous week can be done in google earth engine too with just few lines of code and without downloading any image.</p>
-<p>We can make a new point and center the map to it in the <strong>code editor</strong>.</p>
-<p><img src="images/code-chunk.png" class="img-fluid" width="800"></p>
-<p>So this code chunk will center the point to Delhi. For loading the imagery either Landsat or sentinel-1 or any other we can simply browse it and and load the data. then we can add different layers, create a filter based on image and reduce it using median reducer. Mosaic the images, clip it and calculate different textures like Principal Component Analysis (PCA) and also calculate indices like NDVI.</p>
+<p>This weeks practical was really interesting as we got to use GEE and all the things we did in previous week can be done in here with just few lines of code and without downloading any image.</p>
+<p>We can make a new <strong>point</strong> and center the map to it in the <strong>code editor</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/code-chunk.png" class="img-fluid figure-img" width="800"></p>
+<figcaption class="figure-caption">code-chunk -GEE</figcaption>
+</figure>
+</div>
+<p>So this code chunk will center the point to Delhi. For loading the imagery either Landsat or sentinel-1 or any other we can simply browse it and and load the data. Then we can add different layers, create a <strong>filter</strong> based on image and <strong>reduce</strong> it using <strong>median reducer</strong>. Mosaic the images, clip it and calculate different textures like Principal Component Analysis (<strong>PCA</strong>) and also calculate indices like <strong>NDVI</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2024-03-17 121636.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">PCA Layer</figcaption>
+<figcaption class="figure-caption">PCA Layer of New Delhi.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ndvi-gee.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">NDVI</figcaption>
+<figcaption class="figure-caption">Screenshot of GEE Screen showing NDVI layer.</figcaption>
 </figure>
 </div>
 </section>
 <section id="application" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> APPLICATION</h2>
-<p>“GEE is free and allows users to write open-source code that can be run by others in one click, thereby yielding fully reproducible results. These features have put GEE on the cutting edge of scientific research. The following plot visualizes the number of journal articles conducted using different geo spatial analysis software platforms” <span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
+<p>“As we know that GEE is a free platform which enable users to write open source code and which can be used by others with a single click. So thats the reason of its popularity and below graph shows the growth since its launch being used in several journal articles.” <span class="citation" data-cites="ballinger2024">(<a href="references.html#ref-ballinger2024" role="doc-biblioref">Ballinger 2024</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/WoS Articles.png" class="img-fluid figure-img" width="800"></p>
@@ -282,6 +287,9 @@ Amani, Meisam, Arsalan Ghorbanian, Seyed Ali Ahmadi, Mohammad Kakooei, Armin Mog
 </div>
 <div id="ref-ballinger2024" class="csl-entry" role="listitem">
 Ballinger, Dr Ollie. 2024. <span>“<span>CASA0025</span>: <span>Building Spatial Applications</span> with <span>Big Data</span>.”</span> January 10, 2024. <a href="https://oballinger.github.io/CASA0025/">https://oballinger.github.io/CASA0025/</a>.
+</div>
+<div id="ref-googlefordevelopers" class="csl-entry" role="listitem">
+Google for Developers. n.d. <span>“Beginner’s Cookbook | Google Earth Engine.”</span> <a href="https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook">https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook</a>.
 </div>
 <div id="ref-gorelick2017" class="csl-entry" role="listitem">
 Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google <span>Earth Engine</span>: <span class="nocase">Planetary-scale</span> Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em>, Big <span>Remotely Sensed Data</span>: Tools, applications and experiences, 202 (December): 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.

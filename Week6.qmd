@@ -4,9 +4,9 @@ title: "Introduction to Google Earth Engine"
 
 ## SUMMARY
 
-This week we studied the much awaited Google Earth Engine. " [Google Earth Engine](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/google-earth-engine "Learn more about Google Earth Engine from ScienceDirect's AI-generated Topic Pages") is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large geo-spatial data sets. It is designed to help researchers easily disseminate their results to other researchers, policy makers, [NGOs](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/non-governmental-organisation "Learn more about NGOs from ScienceDirect's AI-generated Topic Pages"), field workers, and even the general public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine's resources, without needing to be an expert in application development, web programming or [HTML](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/document-markup-languages "Learn more about HTML from ScienceDirect's AI-generated Topic Pages")." [@gorelick2017]
+This week we studied the much awaited Google Earth Engine abbreviated as **GEE**. "It is a cloud-based platform that makes it easy to access high-performance computing resources for processing very large Geo-spatial data sets. Its not just the speed but the results produced from GEE can be useful to researchers, policy makers, NGOs, field workers and wider public. Once an algorithm has been developed on Earth Engine, users can produce systematic data products or deploy interactive applications backed by Earth Engine's resources, without needing to be an expert in application development, web programming or HTML." [@gorelick2017]
 
-It is accessed and controlled through an [application programming interface](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/application-programming-interface "Learn more about application programming interface from ScienceDirect's AI-generated Topic Pages") (API) and an associated web-based interactive development environment (IDE) that enables [rapid prototyping](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/rapid-prototyping "Learn more about rapid prototyping from ScienceDirect's AI-generated Topic Pages") and visualization of results. So basically GEE can load large datasets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.
+It is interacted with and managed through an **application programming interface** (API) and a web-based interactive development environment (IDE), allowing for quick prototyping and result visualization. So basically GEE can load large data sets within seconds instead of downloading the big heavy satellite imagery which we did during the first three weeks of our practicals. It consist of Data Catalog which all types of Satellite imagery.
 
 GEE has a concept of **client** and **server** side where the code which we put runs on the client side i.e. Browser so we do not run anything locally which speeds up the process. It uses **Javascript** as the programming Language.
 
@@ -14,23 +14,23 @@ The raster data is called **image** and the vector data is called **feature**.
 
 A stack of images is called **Image Collection** and Feature stack (lots of polygons) is known as **Feature Collection**.
 
-![GEE Screen : [@beginner]](images/ee-editor_1440.png){fig-align="center" width="800"}
+![GEE Screen : [@googlefordevelopers]](images/ee-editor_1440.png){fig-align="center" width="800"}
 
-This weeks practical was really interesting as we got to use GEE and all the things we did in previous week can be done in google earth engine too with just few lines of code and without downloading any image.
+This weeks practical was really interesting as we got to use GEE and all the things we did in previous week can be done in here with just few lines of code and without downloading any image.
 
-We can make a new point and center the map to it in the **code editor**.
+We can make a new **point** and center the map to it in the **code editor**.
 
-![](images/code-chunk.png){width="800"}
+![code-chunk -GEE](images/code-chunk.png){width="800"}
 
-So this code chunk will center the point to Delhi. For loading the imagery either Landsat or sentinel-1 or any other we can simply browse it and and load the data. then we can add different layers, create a filter based on image and reduce it using median reducer. Mosaic the images, clip it and calculate different textures like Principal Component Analysis (PCA) and also calculate indices like NDVI.
+So this code chunk will center the point to Delhi. For loading the imagery either Landsat or sentinel-1 or any other we can simply browse it and and load the data. Then we can add different layers, create a **filter** based on image and **reduce** it using **median reducer**. Mosaic the images, clip it and calculate different textures like Principal Component Analysis (**PCA**) and also calculate indices like **NDVI**.
 
-![PCA Layer](images/Screenshot%202024-03-17%20121636.png){fig-align="center" width="800"}
+![PCA Layer of New Delhi.](images/Screenshot%202024-03-17%20121636.png){fig-align="center" width="800"}
 
-![NDVI](images/ndvi-gee.png){fig-align="center" width="800"}
+![Screenshot of GEE Screen showing NDVI layer.](images/ndvi-gee.png){fig-align="center" width="800"}
 
 ## APPLICATION
 
-"GEE is free and allows users to write open-source code that can be run by others in one click, thereby yielding fully reproducible results. These features have put GEE on the cutting edge of scientific research. The following plot visualizes the number of journal articles conducted using different geo spatial analysis software platforms" [@ballinger2024]
+"As we know that GEE is a free platform which enable users to write open source code and which can be used by others with a single click. So thats the reason of its popularity and below graph shows the growth since its launch being used in several journal articles." [@ballinger2024]
 
 ![](images/WoS%20Articles.png){fig-align="center" width="800"}
 
